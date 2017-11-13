@@ -5,11 +5,7 @@ permalink: /publications/
 ---
 
 1.  Learning Powers of Poisson Binomial Distributions ([arXiv][PBDpowers])
-
-
    [Fotakis Dimitris][fotakis], Vasilis Kontonis, [Piotr Krysta][krysta], [Paul Spirakis][spirakis]
-
-
     Manuscript
 
 
