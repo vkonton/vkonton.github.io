@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Talks
-permalink: /projects/
+permalink: /talks/
 ---
 
 ### [Convex Optimization Minicourse][convex-minicourse]

@@ -1,6 +1,1 @@
----
-bibliography: papers.bib
-nocite: '@*'
-...
-
-# Bibliography
+1. [@FKKS_2017]

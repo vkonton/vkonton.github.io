@@ -1,10 +1,4 @@
----
-layout: page
-title: Research Papers
-permalink: /publications/
----
-
-\<?xml version="1.0" encoding="utf-8"?\>
+<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never">
   <info>
     <title>Chicago Manual of Style (full note, no Ibid.)</title>
@@ -1050,4 +1044,3 @@ permalink: /publications/
     </layout>
   </bibliography>
 </style>
-1.  [@FKKS_2017]
