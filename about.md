@@ -5,8 +5,8 @@ permalink: /about/
 ---
 
 ### Short Bio
-I did my undergraduate studies at the School of ECE of the [National Technical
-University of Athens][ece-ntua] on April 2017; My thesis supervisor was
+I finished my undergraduate studies at the School of ECE of the [National Technical
+University of Athens][ece-ntua] on October 2017; My thesis supervisor was
 Professor [Dimitris Fotakis][fotakis-page].  You can grab a copy of my thesis in Greek
 [here][thesis-link].
 
