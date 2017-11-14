@@ -4,6 +4,10 @@ title: About me
 permalink: /about/
 ---
 
+ <img style="float: right;" src="../assets/photo2.jpg">
+
+
+
 ### Short Bio
 I finished my undergraduate studies at the School of ECE of the [National Technical
 University of Athens][ece-ntua] on October 2017; My thesis supervisor was

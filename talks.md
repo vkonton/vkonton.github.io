@@ -4,24 +4,25 @@ title: Talks
 permalink: /talks/
 ---
 
-* [Learning PBD Powers][pbdpowers]
-   ECCO Research Seminar, University of Liverpool
+* [Learning PBD Powers][pbdpowers],
+   ECCO Research Seminar 2017, University of Liverpool
 
-* Learning Theory Study Group
-   NTUA, Corelab 2017
+---
+
+* Learning Theory Study Group, Corelab NTUA, 2017
    1. [Intoduction, No Free Lunch, Bias-Variance Tradeoff][learning1]
    2. [VC-Dimension][learning2]
 
-* [Convex Optimization Minicourse][convex-minicourse]
-   NTUA, Corelab 2017
+---
+* [Convex Optimization Minicourse][convex-minicourse], Corelab NTUA, 2017
    1. [Convex Problems, LP][convex1]
    2. [QP, SOCP][convex2]
    3. [SDP, GW MaxCut][convex3]
    4. [Vector Optimization, Duality][convex4]
 
+---
 
-* [Programming with Dependent Types][dependent]
-   NTUA, 2015
+* [Programming with Dependent Types][dependent], NTUA, 2015
 
 ---
 
