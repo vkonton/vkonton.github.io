@@ -4,7 +4,7 @@ title: Publications
 permalink: /publications/
 ---
 
-1. Opinion Dynamics with Limited Information.
+1. [Opinion Dynamics with Limited Information.][OpinionDynamics]
    [Fotakis Dimitris][fotakis], Vardis Kandiros, Vasilis Kontonis,  and Stratis Skoulakis
    WINE 2018
 
@@ -12,7 +12,7 @@ permalink: /publications/
    [Fotakis Dimitris][fotakis], Vasilis Kontonis, [Piotr Krysta][krysta], [Paul Spirakis][spirakis]
    Manuscript.
 
-3.  Learning Powers of Poisson Binomial Distributions ([arXiv][PBDpowers])
+3.  [Learning Powers of Poisson Binomial Distributions.][PBDpowers]
    [Fotakis Dimitris][fotakis], Vasilis Kontonis, [Piotr Krysta][krysta], [Paul Spirakis][spirakis]
     Manuscript
 

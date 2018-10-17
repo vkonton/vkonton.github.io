@@ -4,12 +4,8 @@ title: About me
 permalink: /about/
 ---
 
->  <img style="float: right;" src="../assets/photo2.jpg">
-
-
-> ### Short Bio
 I am currently a Computer Science PhD student at University of
-[Wisconsin-Madison][uwm], where and I am fortunate to be advised by Professor
+[Wisconsin-Madison][uwm], where I am fortunate to be advised by Professor
 [Christos Tzamos][tzamos-page].  I am particularly interested in algorithms and
 learning theory.  Lately, I mostly think about efficient and robust algorithms
 for high dimensional inference problems.
