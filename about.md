@@ -4,11 +4,12 @@ title: About me
 permalink: /about/
 ---
 
-I am currently a Computer Science PhD student at University of
-[Wisconsin-Madison][uwm], where I am fortunate to be advised by Professor
-[Christos Tzamos][tzamos-page].  I am particularly interested in algorithms and
-learning theory.  Lately, I mostly think about efficient and robust algorithms
-for high dimensional inference problems.
+Hi! I am a PhD student at the Computer Science Department of University of
+[Wisconsin-Madison][uwm], where I am very fortunate to be advised by
+Professor [Christos Tzamos][tzamos-page].  I am particularly interested in
+algorithms and theoretical machine learning.  Currently, I am working on
+problems related to efficient robust inference in high dimensions.
+
 
 Before coming to UW-Madison, I studied Electrical and Computer Engineering at
 the [National Technical University of Athens][ece-ntua] where I was very lucky
