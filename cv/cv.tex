@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+\usepackage{longtable}
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}}
+\newcommand{\Absender}[1][\normalsize]{\Skype}
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Vasilis Kontonis}}  \\
+\vspace{-2ex}
+%\hline
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{tabular}{l l}
+ University of Wisconsin-Madison & \hspace{1in} \href{mailto:kontonis@wisc.edu}{kontonis@wisc.edu} \\
+ Department of Computer Sciences & \hspace{1in}  Cell: +1 (608) 466-0504 \\
+ 1210 W Dayton St. Madison, WI, USA & \hspace{1in} \\
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{longtable}{@{} l l}
+\Large{Research Interests} & \textbf{Theoretical Computer Science, Machine Learning, Statistics}
+\\
+&\\
+ \Large{Education}
+
+     & \textbf{University of Wisconsin-Madison} \\
+     & Ph.D., Computer Science, 2018 -- present. \\
+     & Advisor: Christos Tzamos\\
+     & \\
+
+     & \textbf{National Technical University of Athens} \\
+     & Master of Engineering in Electrical \& Computer Engineering\\
+     & Thesis: Learning Powers of Poisson Binomial Distributions\\
+     & Advisor: Dimitris Fotakis \\
+     & \\
+
+ \Large{Publications}
+
+     & \textbf{Truncated Statitistics with Unknown Truncation} \\
+     & Vasilis Kontonis, Christos Tzamos, Manolis Zambetakis\\
+     & \emph{Proceedings of the 60th Annual IEEE Symposium on Foundations of}\\
+     & \emph{Computer Science, \textbf{FOCS 2019}}\\
+     & \\
+
+     & \textbf{Learning Halfspaces under Massart Noise} \\
+     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
+     & \emph{Manuscript} \\
+     & \\
+
+     & \textbf{Removing Bias in Machine Learning via Truncated Statistics} \\
+     & Costis Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zambetakis\\
+     & \emph{Manuscript} \\
+     & \\
+
+     & \textbf{Opinion Dynamics with Limited Information} \\
+     & Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, and Stratis Skoulakis\\
+     & \emph{Proceedings of the 14th Conference on Web and Internet Economics} \\
+     & \emph{\textbf{WINE 2018}} \\
+     & \\
+
+     & \textbf{Learning Powers of Poisson Binomial Distributions} \\
+     & Dimitris Fotakis, Vasilis Kontonis, Piotr Krysta, and Paul Spirakis\\
+     & \emph{Manuscript, http://arxiv.org/abs/1707.05662} \\
+     & \\
+
+  \Large{Teaching}
+     & \textbf{Spring 2019, University of Wisconsin-Madison} \\
+     & Teaching Assistant, "Introduction to Algorithms", CS 577 \\
+     & Instructor: Dieter van Melkebeek \\
+     & \\
+
+     &\textbf{Fall 2018, University of Wisconsin-Madison} \\
+     & Teaching Assistant, "Introduction to Algorithms", CS 577 \\
+     & Instructors: Christos Tzamos, Shuchi Chawla \\
+     & \\
+
+     &\textbf{Fall 2017, National Technical University of Athens} \\
+     & Teaching Assistant, "Algorithms and Complexity" \\
+     & Instructor: Aris Pagourtzis \\
+     & \\
+
+     &\textbf{Fall 2016, National Techincal University of Athens} \\
+     & Teaching Assistant, "Operating Systems" \\
+     & Instructors: Nectarios Koziris, Georgios Goumas, Vangelis Koukis\\
+     & \\
+
+  \Large{Service} &\textbf{Conference Reviewer}\\
+
+    & STOC 2020, ALT 2020, SODA 2019, ICML 2019, EC 2019, WINE 2019, MFCS 2018 \\
+    &\\
+
+    &\textbf{Journal Reviewer}\\
+    & Theoretical Computer Science (TCS)\\
+    & \\
+
+ \Large{Talks}
+ &\textbf{Truncated Statistics with Unknown Truncation}\\
+ &\emph{Symposium on Foundations of Computer Science (FOCS 2019)}\\
+ &\emph{Workshop on Algorithms for Learning and Economics (WALE2019)}\\
+ &\emph{14th Athens Colloquium on Algorithms and Complexity (ACAC19)}\\
+ &\emph{Theory Study Group, University of Wisconsin-Madison}\\
+ &\\
+
+ &\href{https://vkonton.github.io/assets/talks/pbdPowers.pdf}
+ {\textbf{Learning Powers of Poisson Binomial Distributions}}\\
+ &\emph{2017, ECCO Research Seminar, University of Liverpool} \\
+&\\
+
+  &\href{https://vkonton.github.io/assets/talks/learning1.pdf}{\textbf{Bias-Variance Tradeoff}},
+  \href{https://vkonton.github.io/assets/talks/learning2.pdf}{\textbf{VC-Dimension}}\\
+  &\emph{2017, Learning Theory Study Group, Corelab, NTUA}\\
+  &\\
+
+  &\href{https://vkonton.github.io/talks/}{\textbf{Applications of LP, QP, SOCP and SDP.}}\\
+  &\textbf{SDP Relaxations: MaxCut.}\\
+  &\textbf{Vector Optimization, Duality} \\
+  &\emph{2017, Convex Optimization Minicourse, Corelab, NTUA.}\\
+  &\\
+
+  &\href{https://vkonton.github.io/assets/talks/dependent.pdf}{\textbf{Programming with Dependent Types}} \\
+  &\emph{2015, Presented within "Lambda-Calculus", undergraduate course.} \\
+  &\\
+
+\Large{Work Experience}
+  &\textbf{Systems and Services Engineer} \href{https://grnet.gr/}{GRNET}\\
+  & \emph{2016, Greek Research and Technology Network, Athens}\\
+  &\\
+
+ \Large{Awards}
+
+ & Recipient of the Eurobank Grant "The great moment for Education" in 2010\\
+ & for graduating first in my high-school. \\
+ &\\
+
+ & Recipient of the Touramanoglou Grant in 2010 for ranking among the top \\
+ & high school graduates of the cities of Ilioupolis and Ymittos. \\
+ &\\
+
+  \Large{Languages}   & English(native), German (advanced) \\
+\Large{and Skills}    & Mathematica, Python, \LaTeX, GNU/Linux\\
+&\\
+
+
+ \Large{References}
+ & \href{http://www.professorone.com}{\textbf{Christos Tzamos}} \\
+ & Assistant Professor, University of Wisconsin-Madison \\
+ & \href{http://www.professortwo.com}{\textbf{Dimitris Fotakis}} \\
+ & Associate Professor, National Techincal University of Athens\\
+ & \href{http://www.professortwo.com}{\textbf{Paul G. Spirakis}} \\
+ & Professor, University of Liverpool\\
+ & \href{http://www.professortwo.com}{\textbf{Piotr Krysta}} \\
+ & Professor, University of Liverpool\\
+\end{longtable}
+
+\end{document}
