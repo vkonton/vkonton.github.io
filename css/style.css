@@ -51,12 +51,21 @@ th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 .outer {
-    width:200px;
-position:absolute;
-    top:40;
-    left:90px;
+  width:200px;
+  /* position:relative; */
+  top:10px;
+  left:0px;
+  margin-top: 170px;
 
 }
+
+/* .row { */
+/*   display: flex; */
+/* } */
+
+/* .column { */
+/*   flex: 10%; */
+/* } */
 
 
 /* unvisited link */
