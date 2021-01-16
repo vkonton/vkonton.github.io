@@ -1,0 +1,62 @@
+current directory: /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210116-9613-1mxqsd1.rb extconf.rb
+checking for libxml/tree.h in /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.1/ports/x86_64-apple-darwin20/libxml2/2.9.9/include/libxml2... yes
+checking for nokogiri.h in /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.1/ext/nokogiri... yes
+creating Makefile
+
+current directory: /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo
+make "DESTDIR=" clean
+
+current directory: /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo
+make "DESTDIR="
+compiling nokogumbo.c
+In file included from nokogumbo.c:53:
+/Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.1/ext/nokogiri/nokogiri.h:13:9: warning: '_GNU_SOURCE' macro redefined [-Wmacro-redefined]
+#define _GNU_SOURCE
+        ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/include/ruby-2.6.0/universal-darwin20/ruby/config.h:16:9: note: previous definition is here
+#define _GNU_SOURCE 1
+        ^
+1 warning generated.
+compiling ./../../gumbo-parser/src/string_buffer.c
+compiling ./../../gumbo-parser/src/svg_attrs.c
+compiling ./../../gumbo-parser/src/ascii.c
+compiling ./../../gumbo-parser/src/util.c
+compiling ./../../gumbo-parser/src/svg_tags.c
+compiling ./../../gumbo-parser/src/vector.c
+compiling ./../../gumbo-parser/src/attribute.c
+compiling ./../../gumbo-parser/src/token_buffer.c
+compiling ./../../gumbo-parser/src/char_ref.c
+compiling ./../../gumbo-parser/src/utf8.c
+compiling ./../../gumbo-parser/src/error.c
+compiling ./../../gumbo-parser/src/tag.c
+compiling ./../../gumbo-parser/src/parser.c
+compiling ./../../gumbo-parser/src/foreign_attrs.c
+compiling ./../../gumbo-parser/src/tokenizer.c
+compiling ./../../gumbo-parser/src/string_piece.c
+compiling ./../../gumbo-parser/src/tag_lookup.c
+linking shared-object nokogumbo/nokogumbo.bundle
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.Internal.sdk/usr/local/lib'
+ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.Internal.sdk/usr/local/lib'
+ld: warning: ignoring file string_buffer.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file nokogumbo.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file svg_attrs.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file ascii.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file util.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file svg_tags.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file vector.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file attribute.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file utf8.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file error.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64ld: warning: ld: warning: ignoring file token_buffer.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ld: warning: ignoring file tokenizer.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ignoring file foreign_attrs.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: 
+ignoring file tag.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ld: warning: ignoring file tag_lookup.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64ignoring file parser.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file string_piece.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+
+ignoring file char_ref.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+
+current directory: /Users/vkonton/minimal/vendor/bundle/ruby/2.6.0/gems/nokogumbo-2.0.2/ext/nokogumbo
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogumbo.bundle ./.gem.20210116-9613-1ay7ndz/nokogumbo
