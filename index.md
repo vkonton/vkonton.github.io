@@ -25,7 +25,12 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 ## Publications
 1. [A Polynomial Time Algorithm For Learning Halfspaces with Tsybakov Noise](https://arxiv.org/abs/2010.01705) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
-    Manuscript
+    [STOC 2021](http://acm-stoc.org/stoc2021/)
+
+1. [Learning Halfspaces with Tsybakov Noise](https://arxiv.org/abs/2006.06467) <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
+    [STOC 2021](http://acm-stoc.org/stoc2021/) <br/>
+    Conference version merged with the above paper
 
 1. [Non-Convex SGD Learns Halfspaces with Adversarial Label Noise](https://arxiv.org/abs/2006.06742) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
