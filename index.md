@@ -23,6 +23,23 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [thesis-link]: http://artemis.cslab.ntua.gr/Dienst/UI/1.0/Display/artemis.ntua.ece/DT2017-0274?abstract=%EA%EF%ED%F4%EF%ED%DE%F2
 
 ## Publications
+
+1. [A Statistical Taylor Theorem and Extrapolation of Truncated Densities](https://arxiv.org/abs/2106.15908) <br/>
+    w/ [C. Daskalakis][daskalakis], [C. Tzamos][tzamos] [M. Zampetakis][zampetakis] <br/>
+    [COLT 2021](http://www.learningtheory.org/colt2021/)
+
+1. [Agnostic Proper Learning of Halfspaces under Gaussian Marginals](https://arxiv.org/abs/2102.05629) <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
+    [COLT 2021](http://www.learningtheory.org/colt2021/)
+
+1. [Efficient Algorithms for Learning from Coarse Labels] <br/>
+    w/ [D. Fotakis][fotakis], [A. Kalavasis][kane], [C. Tzamos][tzamos] <br/>
+    [COLT 2021](http://www.learningtheory.org/colt2021/)
+
+1. [Learning Online Algorithms with Distributional Advice] <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [A. Vakilian][vakilian] [N. Zarifis][zarifis] <br/>
+    [ICML 2021](https://icml.cc)
+
 1. [A Polynomial Time Algorithm For Learning Halfspaces with Tsybakov Noise](https://arxiv.org/abs/2010.01705) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
     [STOC 2021](http://acm-stoc.org/stoc2021/)
@@ -73,6 +90,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [daskalakis]:https://people.csail.mit.edu/costis/
 [skoulakis]:http://www.corelab.ntua.gr/~sskoul/
 [idiakonikolas]:http://www.iliasdiakonikolas.org/
+[vakilian]:http://www.mit.edu/~vakilian/
 
 
 ## Service
