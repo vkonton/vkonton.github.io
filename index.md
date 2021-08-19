@@ -32,11 +32,11 @@ Here is a more complete [CV](assets/cv/cv.pdf).
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
-1. [Efficient Algorithms for Learning from Coarse Labels] <br/>
+1. [Efficient Algorithms for Learning from Coarse Labels](http://proceedings.mlr.press/v134/fotakis21a.html) <br/>
     w/ [D. Fotakis][fotakis], [A. Kalavasis][kane], [C. Tzamos][tzamos] <br/>
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
-1. [Learning Online Algorithms with Distributional Advice] <br/>
+1. [Learning Online Algorithms with Distributional Advice](http://proceedings.mlr.press/v139/diakonikolas21a.html) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [A. Vakilian][vakilian] [N. Zarifis][zarifis] <br/>
     [ICML 2021](https://icml.cc)
 
