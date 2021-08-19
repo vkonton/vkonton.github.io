@@ -25,7 +25,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 ## Publications
 
 1. [A Statistical Taylor Theorem and Extrapolation of Truncated Densities](https://arxiv.org/abs/2106.15908) <br/>
-    w/ [C. Daskalakis][daskalakis], [C. Tzamos][tzamos] [M. Zampetakis][zampetakis] <br/>
+    w/ [C. Daskalakis][daskalakis], [C. Tzamos][tzamos], [M. Zampetakis][zampetakis] <br/>
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
 1. [Agnostic Proper Learning of Halfspaces under Gaussian Marginals](https://arxiv.org/abs/2102.05629) <br/>
@@ -37,7 +37,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
 1. [Learning Online Algorithms with Distributional Advice](http://proceedings.mlr.press/v139/diakonikolas21a.html) <br/>
-    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [A. Vakilian][vakilian] [N. Zarifis][zarifis] <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [A. Vakilian][vakilian], [N. Zarifis][zarifis] <br/>
     [ICML 2021](https://icml.cc)
 
 1. [A Polynomial Time Algorithm For Learning Halfspaces with Tsybakov Noise](https://arxiv.org/abs/2010.01705) <br/>
