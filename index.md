@@ -23,6 +23,9 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [thesis-link]: http://artemis.cslab.ntua.gr/Dienst/UI/1.0/Display/artemis.ntua.ece/DT2017-0274?abstract=%EA%EF%ED%F4%EF%ED%DE%F2
 
 ## Publications
+1. [Learning General Halfspaces with General Massart Noise under the Gaussian Distribution](https://arxiv.org/abs/2108.08767) <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
+    [STOC 2022](http://acm-stoc.org/stoc2022/)
 
 1. [A Statistical Taylor Theorem and Extrapolation of Truncated Densities](https://arxiv.org/abs/2106.15908) <br/>
     w/ [C. Daskalakis][daskalakis], [C. Tzamos][tzamos], [M. Zampetakis][zampetakis] <br/>
