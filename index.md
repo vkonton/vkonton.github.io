@@ -111,10 +111,12 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [skoulakis]:http://www.corelab.ntua.gr/~sskoul/
 [idiakonikolas]:http://www.iliasdiakonikolas.org/
 [vakilian]:http://www.mit.edu/~vakilian/
+[kalavasis]:https://alkisk.github.io
 [vee]:https://scholar.google.com/citations?user=1u8drP0AAAAJ&hl=en
 [trinh]:https://scholar.google.com/citations?user=pVTeodYAAAAJ&hl=en
 [baykal]:https://people.csail.mit.edu/baykal/
 [menghani]:http://www.gaurav.ai
+[iliopoulos]:https://filiop.org
 
 
 ## Service
