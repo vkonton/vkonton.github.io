@@ -24,19 +24,19 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
-1. [Weighted Distillation with Unlabeled Examples]
+1. Weighted Distillation with Unlabeled Examples <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
     [NeurIPS 2022](https://nips.cc)
 
-1. [Linear Label Ranking with Bounded Noise]
+1. Linear Label Ranking with Bounded Noise <br/>
     w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
     [NeurIPS 2022](https://nips.cc)
 
-1. [Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent](https://proceedings.mlr.press/v162/diakonikolas22b.html)
+1. [Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent](https://proceedings.mlr.press/v162/diakonikolas22b.html) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
     [ICML 2022](https://icml.cc)
 
-1. [Learning a Single Neuron with Adversarial Label Noise via Gradient Descent](https://arxiv.org/abs/2206.08918)
+1. [Learning a Single Neuron with Adversarial Label Noise via Gradient Descent](https://arxiv.org/abs/2206.08918) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
     [COLT 2022](http://learningtheory.org/colt2022/)
 
