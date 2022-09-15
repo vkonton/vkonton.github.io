@@ -23,6 +23,23 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [thesis-link]: http://artemis.cslab.ntua.gr/Dienst/UI/1.0/Display/artemis.ntua.ece/DT2017-0274?abstract=%EA%EF%ED%F4%EF%ED%DE%F2
 
 ## Publications
+
+1. [Weighted Distillation with Unlabeled Examples]
+    w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
+    [NeurIPS 2022](https://nips.cc)
+
+1. [Linear Label Ranking with Bounded Noise]
+    w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
+    [NeurIPS 2022](https://nips.cc)
+
+1. [Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent](https://proceedings.mlr.press/v162/diakonikolas22b.html)
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
+    [ICML 2022](https://icml.cc)
+
+1. [Learning a Single Neuron with Adversarial Label Noise via Gradient Descent](https://arxiv.org/abs/2206.08918)
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
+    [COLT 2022](http://learningtheory.org/colt2022/)
+
 1. [Learning General Halfspaces with General Massart Noise under the Gaussian Distribution](https://arxiv.org/abs/2108.08767) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
     [STOC 2022](http://acm-stoc.org/stoc2022/)
@@ -36,7 +53,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
 1. [Efficient Algorithms for Learning from Coarse Labels](http://proceedings.mlr.press/v134/fotakis21a.html) <br/>
-    w/ [D. Fotakis][fotakis], [A. Kalavasis][kane], [C. Tzamos][tzamos] <br/>
+    w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
     [COLT 2021](http://www.learningtheory.org/colt2021/)
 
 1. [Learning Online Algorithms with Distributional Advice](http://proceedings.mlr.press/v139/diakonikolas21a.html) <br/>
@@ -94,6 +111,10 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [skoulakis]:http://www.corelab.ntua.gr/~sskoul/
 [idiakonikolas]:http://www.iliasdiakonikolas.org/
 [vakilian]:http://www.mit.edu/~vakilian/
+[vee]:https://scholar.google.com/citations?user=1u8drP0AAAAJ&hl=en
+[trinh]:https://scholar.google.com/citations?user=pVTeodYAAAAJ&hl=en
+[baykal]:https://people.csail.mit.edu/baykal/
+[menghani]:http://www.gaurav.ai
 
 
 ## Service
