@@ -1,0 +1,420 @@
+Machine learning methods are now used more than ever in a wide range of
+applications: from product recommendation and image recognition to traffic
+prediction and fraud detection.  The training datasets used in practise are
+usually huge - datasets consisting of millions of examples are common - and
+therefore require efficient algorithms to process them.  Moreover, datasets are
+almost always imperfect: they contain corrupted data, examples with wrong
+labels, hidden biases, etc.  It is known that standard machine learning and
+statistical methods, which ignore the presence of noise, produce unreliable
+results when the underlying datasets are noisy.  The main goal of my research
+is to \emph{design machine learning algorithms} that are
+\textbf{computationally efficient} and at the same time \textbf{provably
+reliable} even when used on noisy datasets. In this direction, I have published
+results in the top machine learning (COLT, ICML, NeurIPS) and theoretical
+computer science conferences (FOCS, STOC).
+  
+
+\paragraph{Classification with Noisy Data} A main part of my research focuses
+on dealing with noise in supervised learning settings: labeled examples are
+given to an algorithm whose goal is to learn a classifier that achieves low
+classification error.  In the adversarial label noise setting an adversary
+changes the labels of specific examples in order to mislead the learning
+algorithm after inspecting both the training dataset and the learning
+algorithm.  Inspired by practise, milder, semi-random, noise models have been
+introduced.  My research studies the computational complexity of classification
+with noisy labels, focusing both on semi-random and adversarial noise models.
+
+The most well-known semi-random noise model is the (bounded) Massart Noise
+model \cite{Massart2006}, where the true label of each datapoint is flipped
+with probability strictly below 50\%.  Our work \cite{DKTZ20}, obtained an
+efficient algorithm for linear classification with Massart noise requiring only
+minimal structural assumptions on the feature distribution.  This significantly
+improved over the prior state-of-the-art which either required much stronger
+distributional assumptions (e.g., uniform features) or could only handle tiny
+amounts of noise.  The Tsybakov \cite{MT99} and Benign (or general Massart)
+\cite{Massart2006,Hanneke2011} noise models are generalizations of the
+(bounded) Massart noise model that allow for points to have random or
+approximately random labels.  In a sequence of works, \cite{DKTZ20b, DKKTZ21,
+DKKTZ22}, we obtained the first efficient algorithms in these settings assuming
+distributional assumptions similar to those of \cite{DKTZ20}.
+
+Apart from understanding the complexity of learning from noisy labels, my
+research also focuses in (i) designing novel practical learning algorithms that
+come with provable guarantees and (ii) investigating the performance of
+existing machine learning algorithms and providing evidence of both their
+strengths and potential shortcomings.  In particular, our works \cite{DKTZ20,
+DKTZ20c, DKTZ22a, DKTZ22b} consider non-convex objectives and show that
+stochastic gradient descent on these robust objectives converges to
+near-optimal linear classifiers both under Massart and adversarial label noise.
+In contrast,  our work \cite{DKTZ20c} shows that commonly used convex
+objectives (e.g., cross-entropy) lead to sub-optimal classifiers in the
+presence of noise.  I am also interested in exploring the connections of
+learning from noisy labels with other deep learning tasks in order to provide
+useful insights for designing better algorithms.  In particular, in
+\cite{IBKTV22} we improved the algorithms for knowledge distillation with
+unlabeled examples inspired by the techniques used to learn from noisy labels.
+The weighted distillation method proposed in \cite{IBKTV22} improves
+empirically over the prior work and, at the same time, comes with strong
+theoretical guarantees.
+
+\paragraph{Learning from Truncated or Coarse Data} In truncated statistics, the
+learner does not observe a representative set of samples from the whole
+population but only samples from a subset of the support of the underlying
+population distribution (truncated samples).  Using the truncated samples, the
+goal is to estimate a statistic of interest (e.g., the mean) of the underlying
+(untruncated) population distribution.  Truncated statistics is a well-studied
+problem from a statistical perspective, i.e., minimizing the number of required
+samples without focusing on providing efficient algorithms.  My work in
+truncated statistics focuses mostly on non-parametric inference and, in
+particular, in removing the parametric assumptions (i) from the truncation set
+\cite{KTZ19}, (ii) from the underlying population model \cite{DKTZ21a}.
+
+A fundamental problem in truncated statistics is mean and covariance estimation
+of a multivariate Gaussian distribution.  In my work \cite{KTZ19} we provided
+the first efficient algorithms for learning Gaussian distributions with unknown
+truncation sets.  This work identified the Gaussian surface area of the
+truncation set as the crucial complexity measure that essentially characterizes
+the sample complexity of the problem and provided the first efficient
+algorithms for learning truncated normal distributions with unknown truncation
+sets.  Prior to \cite{KTZ19} efficient algorithms for learning truncated
+Gaussians were known only when the truncation set is known (via a membership
+oracle) \cite{DGTZ18} or when the truncation set has simple parametric forms,
+e.g., axis aligned rectangles or ellipsoids.
+
+Inspired by the fact that data in practice often have complicated structure
+that is not captured by simple parametric models (e.g., Gaussians) in
+\cite{DKTZ21a} we focused on learning non-parametric classes of densities from
+truncated samples.  Even in single dimensional settings this work was the first
+to provide efficient learning algorithms for learning truncated densities under
+non-parametric smoothness assumptions.  Moreover, to handle the multivariate
+setting, we established technical tools for bounding the extrapolation error of
+multivariate interpolating polynomials: a challenging task in a research area
+(multivariate polynomial interpolation) which is still active.
+
+A corruption closely related to truncation is data coarsening where the learner
+obtains partial information about a data point: instead of observing the
+datapoint and/or label, they observe a superset that is guaranteed to contain
+it.  In supervised settings we may also have label coarsening where instead of
+observing the class of an example we observe a set of potential classes one of
+which is guaranteed to be the true class.  Since data coarsening is very common
+in practice, it is a well-studied problem for which several heuristics have
+been developed; however, none of them came with theoretical guarantees.  Our
+work \cite{FKKT21} initiated the theoretical study of the problem, established
+natural generative models for data coarsening, and developed the first
+efficient learning algorithms for learning from coarse data.
+
+\paragraph{Future Work} In my future research, I plan to investigate
+\textbf{noisy classification tasks beyond binary classification}.  All known
+algorithms that can learn under Massart noise are tailored to the binary
+classification setting and is unclear whether they can be adapted to
+multi-class settings with Massart noise. Since most practical settings contain
+large number of classes (see, e.g., Imagenet), I believe that designing
+efficient and robust algorithms for noisy multi-class settings is an important
+direction that has theoretical interest and will potentially provide useful
+insights for the design of practical algorithms for deep learning with In my
+future research, I plan to investigate noisy classification tasks beyond binary
+classification.  All known algorithms that can learn under Massart noise are
+tailored to the binary classification setting and is unclear whether they can
+be adapted to multi-class settings with Massart noise. Since most practical
+settings contain large number of classes (see, e.g., Imagenet), I believe that
+designing efficient and \textbf{robust algorithms for noisy multi-class
+settings} is an important direction that has theoretical interest and will
+potentially provide useful insights for the design of practical algorithms for
+deep learning with noisy labels.  My work \cite{FKKT22} is a first step in this
+direction where we provide efficient algorithms for learning noisy linear
+label-ranking functions.  In my future research, I plan to investigate further
+noisy multiclass settings such as classification, multi-label learning.
+
+Dropping the assumption that the data are i.i.d.\ and considering noisy online
+classification settings is also an important direction that I plan to
+investigate.  Works on online classification either consider the realizable
+setting or provide weak guarantees for adversarial label noise.  I aim to
+investigate the regime between these two ``extreme'' settings and consider
+\textbf{online classification with semi-random label noise}.  Obtaining online
+learning linear classifiers with Massart noise is a first step towards
+obtaining algorithms for contextual bandits with weaker, classification-based
+realizability assumptions (the standard realizability assumptions are
+regression-based, i.e., the true expected reward model belongs to a known
+class, such as linear functions).
+
+Learning Halfspaces with adversarial noise from i.i.d.\ examples is known to
+require superpolynomial time even when the feature distribution is the standard
+Gaussian.  Moreover, in \cite{DKKTZ22} we gave strong evidence that when the
+labels of an (even tiny) fraction of points are purely random or when the
+underlying optimal linear classifier is not homogeneous (origin-centered) then
+super-polynomial time is required for linear classification under Gaussian
+marginals.  Therefore, seemingly small changes to the standard linear
+classification setting significantly worsen its computational complexity even
+when the noise is semi-random (Massart).  I plan to investigate ways to
+circumvent those hardness results and focus on learning models that allow for
+efficient and practical algorithms, by either \textbf{introducing more
+structured semi-random noise models or using more powerful queries}, such as
+membership queries \cite{Angluin:88,feldman2009power,awasthi2013learning} or
+comparison queries \cite{kane2017active}.
+
+Following our work \cite{IBKTV22}, I plan to further investigate applying and
+adapting robust methods for learning from noisy labels to \textbf{knowledge
+distillation}.  The noise in the labels provided by the teacher network in
+distillation settings has structure and we can design algorithms that exploit
+this structure to improve the accuracy of the student model by trying to filter
+or correct the teacher labels.
+
+In \cite{FKKT21} we obtained the first efficient algorithms for learning from
+coarse labels assuming that the label coarsening process does not depend on the
+features but only on the label, e.g., all ``bengal cats'' are equally likely to
+be labeled with the coarse label ``cat''.  While these initial results are very
+encouraging their applicability is somewhat limited as the underlying
+assumptions of label-distribution-preservation and feature-independence are too
+strong for most practical settings. My goal is to gradually weaken these
+assumptions and allow for \textbf{data-dependent coarsening mechanisms}.  In
+\cite{cour2011learning} several convex objectives for learning with coarse
+labels are provided and the authors show that they lead to good solutions in
+special cases of the problem.  However, in the same work the authors notice
+that simple non-convex objectives empirically outperform the convex
+relaxations.  I plan to further investigating using \textbf{non-convex
+objectives for learning coarse labels} and show that, at least under some
+structural assumptions on the instance and the coarsening mechanism,
+gradient-based methods on those solutions converge to optimal classifiers.
+
+Apart from studying supervised and unsupervised inference tasks, I am also
+interesting in \textbf{learning policies (algorithms) that can solve more
+complex combinatorial tasks}.  In this setup, the goal is to learn an efficient
+algorithm that performs well under instances drawn from a specific distribution
+$D$: during the training phase the learning algorithm observes sampled
+instances from $D$, e.g., instances of the travelling salesman problem, and
+then returns a policy that solves the combinatorial task.  In our work
+\cite{DKTVZ21}, we focused on ski-rental and prophet inequalities, showing that
+one can learn near-optimal policies for instances drawn from the distribution
+and, at the same time, be competitive in arbitrary (worst-case) instances.
+Learning policies given distributional information is a main challenge of
+machine learning frequently associated with Reinforcement Learning (RL)
+\cite{bengio2020machine}.  There are many RL results showing that standard
+methods (e.g., policy gradient \cite{agarwal2021theory}) converge to the
+optimal solution, with convergence rates that are polynomial in the number of
+states and actions of the underlying Markov Decision Process (MDP).  However,
+in most challenging combinatorial tasks the number of states and actions is
+prohibitively (exponentially) large.  In contrast, for such problems, e.g., for
+Min Sum Set Cover, there are simple greedy policies that achieve good (constant
+factor) approximations of the optimal solution.  I plan to investigate whether
+it is possible to show that practical RL methods (or adaptations thereof) will
+(i) quickly, i.e., in polynomial time, learn a policy with is competitive with
+the constant factor approximation guarantees of the corresponding greedy
+solutions and (ii) eventually, i.e., in exponential time, converge to an
+optimal solution.  Apart from its theoretical interest, I believe that
+obtaining RL methods with provable approximation guarantees for well-studied
+(from an algorithmic viewpoint) combinatorial problems will provide important
+insights for their practical applicability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Machine learning methods are now used more than ever in a wide range of
+applications: from product recommendation and image recognition to traffic
+prediction and fraud detection. The training datasets used in practice are
+usually huge - datasets consisting of millions of examples are common - and
+therefore require efficient algorithms to process them. Moreover, datasets are
+almost always imperfect: they contain corrupted data, examples with wrong
+labels, hidden biases, etc. It is known that standard machine learning and
+statistical methods, which ignore the presence of noise, produce unreliable
+results when the underlying datasets are noisy. The main goal of my research is
+to \emph{design machine learning algorithms} that are \textbf{computationally
+efficient} and at the same time \textbf{provably reliable} even when used on
+noisy datasets. In this direction, I have published results in the top machine
+learning (COLT, ICML, NeurIPS) and theoretical computer science conferences
+(FOCS, STOC). 
+
+
+\paragraph{Classification with Noisy Data} A central part of my
+research focuses on dealing with noise in supervised learning settings: labeled
+examples are given to an algorithm whose goal is to learn a classifier that
+achieves low classification error. In the adversarial label noise setting an
+adversary changes the labels of specific examples in order to mislead the
+learning algorithm after inspecting both the training dataset and the learning
+algorithm.  Inspired by practice, milder, semi-random, noise models have been
+introduced.  My research studies the computational complexity of classification
+with noisy labels, focusing both on semi-random and adversarial noise models.
+The most well-known semi-random noise model is the (bounded) Massart Noise
+model \cite{Massart2006}, where the true label of each datapoint is flipped
+with probability strictly below 50\%.  Our work \cite{DKTZ20}, obtained an
+efficient algorithm for linear classification with Massart noise requiring only
+minimal structural assumptions on the feature distribution.  This significantly
+improved over the prior state-of-the-art which either required much stronger
+distributional assumptions (e.g., uniform features) or could only handle tiny
+amounts of noise.  The Tsybakov \cite{MT99} and Benign (or general Massart)
+\cite{Massart2006,Hanneke2011} noise models are generalizations of the
+(bounded) Massart noise model that allow for points to have random or
+approximately random labels.  In a sequence of works, \cite{DKTZ20b, DKKTZ21,
+DKKTZ22}, we obtained the first efficient algorithms in these settings assuming
+distributional assumptions similar to those of \cite{DKTZ20}.  
+
+
+Apart from understanding the complexity of learning from noisy labels, my
+research also focuses on (i) designing novel practical learning algorithms that
+come with provable guarantees and (ii) investigating the performance of
+existing machine learning algorithms and providing evidence of both their
+strengths and potential shortcomings.  In particular, our works \cite{DKTZ20,
+DKTZ20c, DKTZ22a, DKTZ22b} consider non-convex objectives and show that simple
+gradient-based methods on these robust objectives converge to near-optimal
+linear classifiers both under Massart and adversarial label noise.  In
+contrast, our work \cite{DKTZ20c} shows that commonly used convex objectives
+(e.g., cross-entropy) lead to sub-optimal classifiers in the presence of noise.
+Apart from designing practical methods for learning with noise, I am also
+interested in exploring the connections of learning from noisy labels with
+other deep learning tasks to provide useful insights for designing better
+algorithms.  In particular, in \cite{IBKTV22} we improved the algorithms for
+knowledge distillation with unlabeled examples inspired by the techniques used
+to learn from noisy labels.  The weighted distillation method proposed in
+\cite{IBKTV22} improves empirically over the prior work and, at the same time,
+comes with strong theoretical guarantees. 
+
+
+\paragraph{Learning from Truncated or Coarse Data} In truncated statistics, the
+learner does not observe a representative set of samples from the whole
+population but only samples from a subset of the support of the underlying
+population distribution (truncated samples). Using the truncated samples, the
+goal is to estimate a statistic of interest (e.g., the mean) of the underlying
+(untruncated) population distribution.  Truncated statistics is a well-studied
+problem from a statistical perspective, i.e., minimizing the number of required
+samples without focusing on providing efficient algorithms. My work in
+truncated statistics focuses mostly on non-parametric inference and, in
+particular, on removing the parametric assumptions (i) from the truncation set
+\cite{KTZ19}, (ii) from the underlying population model \cite{DKTZ21a}. A
+fundamental problem in truncated statistics is mean and covariance estimation
+of a multivariate Gaussian distribution. In my work \cite{KTZ19} we provided
+the first efficient algorithms for learning Gaussian distributions with unknown
+truncation sets.  This work identified the Gaussian surface area of the
+truncation set as the crucial complexity measure that essentially characterizes
+the sample complexity of the problem and provided the first efficient
+algorithms for learning truncated normal distributions with unknown truncation
+sets. Prior to \cite{KTZ19} efficient algorithms for learning truncated
+Gaussians were known only when the truncation set is known (via a membership
+oracle) \cite{DGTZ18} or when the truncation set has simple parametric forms,
+e.g., axis-aligned rectangles or ellipsoids. 
+
+
+Inspired by the fact that data in practice often have complicated structure
+that is not captured by simple parametric models (e.g., Gaussians) in
+\cite{DKTZ21a} we focused on learning non-parametric classes of densities from
+truncated samples. Even in single-dimensional settings, this work was the first
+to provide efficient learning algorithms for learning truncated densities under
+non-parametric smoothness assumptions. Moreover, to handle the multivariate
+setting, we established technical tools for bounding the extrapolation error of
+multivariate interpolating polynomials: a challenging task in a research area
+(multivariate polynomial interpolation) that is still active. A corruption
+closely related to truncation is data coarsening where the learner obtains
+partial information about a data point: instead of observing the datapoint
+and/or label, they observe a superset that is guaranteed to contain it. In
+supervised settings, we may also have label coarsening where instead of
+observing the class of an example we observe a set of potential classes one of
+which is guaranteed to be the true class. Since data coarsening is very common
+in practice, it is a well-studied problem for which several heuristics have
+been developed; however, none of them came with theoretical guarantees. Our
+work \cite{FKKT21} initiated the theoretical study of the problem, established
+natural generative models for data coarsening, and developed the first
+efficient learning algorithms for learning from coarse data. 
+
+
+\paragraph{Future Work} In my future research, I plan to investigate
+\textbf{noisy classification tasks beyond binary classification}.  All known
+algorithms that can learn under Massart noise are tailored to the binary
+classification setting and is unclear whether they can be adapted to
+multi-class settings with Massart noise. Since most practical settings contain
+many classes (even thousands, see, e.g., Imagenet), I believe that designing efficient and
+robust algorithms for noisy multi-class settings is an important direction that
+has theoretical interest and will potentially provide useful insights for the
+design of practical algorithms for deep learning with In my future research, I
+plan to investigate noisy classification tasks beyond binary classification.
+All known algorithms that can learn under Massart noise are tailored to the
+binary classification setting and is unclear whether they can be adapted to
+multi-class settings with Massart noise. Since most practical settings contain
+large number of classes (see, e.g., Imagenet), I believe that designing
+efficient and \textbf{robust algorithms for noisy multi-class settings} is an
+important direction that has theoretical interest and will potentially provide
+useful insights for the design of practical algorithms for deep learning with
+noisy labels. My work \cite{FKKT22} is a first step in this direction where we
+provide efficient algorithms for learning noisy linear label-ranking functions.
+In my future research, I plan to investigate further noisy multiclass settings
+such as classification and multi-label learning. Dropping the assumption that
+the data are i.i.d.\ and considering noisy online classification settings is
+also an important direction that I plan to investigate. Works on online
+classification either consider the realizable setting or provide weak
+guarantees for adversarial label noise. I aim to investigate the regime between
+these two ``extreme'' settings and consider \textbf{online classification with
+semi-random label noise}. Obtaining online learning linear classifiers with
+Massart noise is a first step towards obtaining algorithms for contextual
+bandits with weaker, classification-based realizability assumptions (the
+standard realizability assumptions are regression-based, i.e., the true
+expected reward model belongs to a known class, such as linear functions).
+Learning Halfspaces with adversarial noise from i.i.d.\ examples is known to
+require superpolynomial time even when the feature distribution is the standard
+Gaussian. Moreover, in \cite{DKKTZ22} we gave strong evidence that when the
+labels of an (even tiny) fraction of points are purely random or when the
+underlying optimal linear classifier is not homogeneous (origin-centered) then
+super-polynomial time is required for linear classification under Gaussian
+marginals. Therefore, seemingly small changes to the standard linear
+classification setting significantly worsen its computational complexity even
+when the noise is semi-random (Massart). I plan to investigate ways to
+circumvent those hardness results and focus on learning models that allow for
+efficient and practical algorithms, by either \textbf{introducing more
+structured semi-random noise models or using more powerful queries}, such as
+membership queries \cite{Angluin:88,feldman2009power,awasthi2013learning} or
+comparison queries \cite{kane2017active}. Following our work \cite{IBKTV22}, I
+plan to further investigate applying and adapting robust methods for learning
+from noisy labels to \textbf{knowledge distillation}. The noise in the labels
+provided by the teacher network in distillation settings has structure and we
+can design algorithms that exploit this structure to improve the accuracy of
+the student model by trying to filter or correct the teacher labels. In
+\cite{FKKT21} we obtained the first efficient algorithms for learning from
+coarse labels assuming that the label coarsening process does not depend on the
+features but only on the label, e.g., all ``Bengal cats'' are equally likely to
+be labeled with the coarse label ``cat''. While these initial results are very
+encouraging their applicability is somewhat limited as the underlying
+assumptions of label-distribution-preservation and feature-independence are too
+strong for most practical settings. My goal is to gradually weaken these
+assumptions and allow for \textbf{data-dependent coarsening mechanisms}. In
+\cite{cour2011learning} several convex objectives for learning with coarse
+labels are provided and the authors show that they lead to good solutions in
+special cases of the problem. However, in the same work, the authors notice
+that simple non-convex objectives empirically outperform the convex
+relaxations. I plan to further investigate using \textbf{non-convex objectives
+for learning coarse labels} and show that, at least under some structural
+assumptions on the instance and the coarsening mechanism, gradient-based
+methods on those solutions converge to optimal classifiers. Apart from studying
+supervised and unsupervised inference tasks, I am also interested in
+\textbf{learning policies (algorithms) that can solve more complex
+combinatorial tasks}. In this setup, the goal is to learn an efficient
+algorithm that performs well under instances drawn from a specific distribution
+$D$: during the training phase, the learning algorithm observes sampled
+instances from $D$, e.g., instances of the traveling salesman problem, and then
+returns a policy that solves the combinatorial task. In our work
+\cite{DKTVZ21}, we focused on ski-rental and prophet inequalities, showing that
+one can learn near-optimal policies for instances drawn from the distribution
+and, at the same time, be competitive in arbitrary (worst-case) instances.
+Learning policies given distributional information is a main challenge of
+machine learning frequently associated with Reinforcement Learning (RL)
+\cite{bengio2020machine}. There are many RL results showing that standard
+methods (e.g., policy gradient \cite{agarwal2021theory}) converge to the
+optimal solution, with convergence rates that are polynomial in the number of
+states and actions of the underlying Markov Decision Process (MDP). However, in
+most challenging combinatorial tasks the number of states and actions is
+prohibitively (exponentially) large. In contrast, for such problems, e.g., for
+Min Sum Set Cover, there are simple greedy policies that achieve good (constant
+factor) approximations of the optimal solution. I plan to investigate whether
+it is possible to show that practical RL methods (or adaptations thereof) will
+(i) quickly, i.e., in polynomial time, learn a policy with is competitive with
+the constant factor approximation guarantees of the corresponding greedy
+solutions and (ii) eventually, i.e., in exponential time, converge to an
+optimal solution. Apart from its theoretical interest, I believe that obtaining
+RL methods with provable approximation guarantees for well-studied (from an
+algorithmic viewpoint) combinatorial problems will provide important insights
+into their practical applicability.

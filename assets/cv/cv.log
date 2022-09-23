@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  8 JUL 2022 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  23 SEP 2022 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -336,49 +336,34 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 38.
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 50--81
+Overfull \hbox (76.42273pt too wide) in alignment at lines 50--81
  [] [] 
  []
 
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 81--107
+Overfull \hbox (76.42273pt too wide) in alignment at lines 81--105
  [] [] 
  []
 
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 107--131
+Overfull \hbox (76.42273pt too wide) in alignment at lines 105--131
  [] [] 
  []
 
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 131--158
+Overfull \hbox (76.42273pt too wide) in alignment at lines 131--154
  [] [] 
  []
 
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (51.42625pt too wide) in alignment at lines 158--182
+Overfull \hbox (76.42273pt too wide) in alignment at lines 154--182
  [] [] 
  []
 
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 182--209
- [] [] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.209   &
-          Instructors: Mouna Ayari Ben Hadj Kacem, Laura Legault \\ [2]
-Overfull \hbox (51.42625pt too wide) in alignment at lines 209--234
- [] [] 
- []
-
-
-Overfull \hbox (51.42625pt too wide) in alignment at lines 234--262
+Overfull \hbox (76.42273pt too wide) in alignment at lines 182--208
  [] [] 
  []
 
@@ -386,24 +371,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.262  &
-         \\ [3]
-Overfull \hbox (51.42625pt too wide) in alignment at lines 262--287
+l.208   &
+          \\ [2]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 208--233
  [] [] 
  []
 
 
-Overfull \hbox (51.42625pt too wide) in alignment at lines 287--319
- [] [] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.319 \Large
-            {and Skills}    & Mathematica, Python, \LaTeX, GNU/Linux\\ [4]
-Overfull \hbox (51.42625pt too wide) in alignment at lines 319--332
+Overfull \hbox (76.42273pt too wide) in alignment at lines 233--259
  [] [] 
  []
 
@@ -411,8 +386,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.334 \end{document}
-                     [5] (./cv.aux)
+l.259 
+       [3]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 259--287
+ [] [] 
+ []
+
+
+Overfull \hbox (76.42273pt too wide) in alignment at lines 287--314
+ [] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.314   &
+         \emph{2017, Convex Optimization Minicourse, Corelab, NTUA.}\\ [4]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 314--346
+ [] [] 
+ []
+
+
+Overfull \hbox (76.42273pt too wide) in alignment at lines 346--349
+ [] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.349 \end{longtable}
+                      [5]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.351 \end{document}
+                     [6] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -431,10 +441,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (5 pages, 113806 bytes).
+Output written on cv.pdf (6 pages, 114365 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 68 PDF objects out of 1000 (max. 8388607)
+ 52 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

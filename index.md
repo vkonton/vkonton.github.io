@@ -122,8 +122,16 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 ## Service
 **Reviewer:** STOC, SODA, WINE, ICML, EC, MFCS, TCS, ALT
 
+
 ## Talks
 
+* Learning General Halfspaces with General Massart Noise, STOC 2022
+
+* A Statistical Taylor's Theorem and Extrapolationof Truncated Densities, COLT 2021
+
+* Agnostic Proper Learning of Halfspaces under Gaussian Marginals COLT 2021
+
+* Efficient Algorithms for Learning Halfspaces with Tsybakov Noise, STOC 2021
 
 * Non-Convex SGD Learns Halfspaces with Adversarial Label Noise, NeurIPS 2020
 
