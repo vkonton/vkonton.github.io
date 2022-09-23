@@ -127,7 +127,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 * Learning General Halfspaces with General Massart Noise, STOC 2022
 
-* A Statistical Taylor's Theorem and Extrapolationof Truncated Densities, COLT 2021
+* A Statistical Taylor's Theorem and Extrapolation of Truncated Densities, COLT 2021
 
 * Agnostic Proper Learning of Halfspaces under Gaussian Marginals COLT 2021
 
