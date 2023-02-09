@@ -24,15 +24,15 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
-1. [SLaM: Student-Label Mixing for Semi-Supervised Knowledge Distillation][https://arxiv.org/abs/2302.03806]<br/>
+1. [SLaM: Student-Label Mixing for Semi-Supervised Knowledge Distillation](https://arxiv.org/abs/2302.03806) <br/>
     w/ [F. Iliopoulos][iliopoulos], [K. Trinh][trinh], [C. Baykal][baykal], [G. Menghani][menghani],  [V. Erik][vee] <br/> 
     [Manuscript]
 
-1. [Weighted Distillation with Unlabeled Examples][https://arxiv.org/abs/2210.06711] <br/>
+1. [Weighted Distillation with Unlabeled Examples](https://arxiv.org/abs/2210.06711) <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
     [NeurIPS 2022](https://nips.cc)
 
-1. [Linear Label Ranking with Bounded Noise][https://openreview.net/pdf?id=dgWo-UyVEsa] <br/>
+1. [Linear Label Ranking with Bounded Noise](https://openreview.net/pdf?id=dgWo-UyVEsa) <br/>
     w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
     [NeurIPS 2022](https://nips.cc)
 
