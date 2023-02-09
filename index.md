@@ -24,6 +24,10 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
+1. SLaM: Student-Label Mixing for Semi-Supervised Knowledge Distillation<br/>
+    w/ [F. Iliopoulos][iliopoulos], [K. Trinh][trinh], [C. Baykal][baykal], [G. Menghani][menghani],  [V. Erik][vee] <br/> 
+    [Manuscript](https://arxiv.org/abs/2302.03806)
+
 1. Weighted Distillation with Unlabeled Examples <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
     [NeurIPS 2022](https://nips.cc)
