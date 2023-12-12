@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I am an IFML Postdoctoral Fellow at UT Austin. I received my PhD from Computer Science Department of University of
+I am an IFML Postdoctoral Fellow at UT Austin working with [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD from Computer Science Department of University of
 [Wisconsin-Madison][uwm], where I wsa very fortunate to be advised by Professor
 [Christos Tzamos][tzamos-page].  Before coming to UW-Madison, I studied Electrical and Computer Engineering at
 the [National Technical University of Athens][ece-ntua] where I was very lucky
@@ -39,7 +39,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 1. [Self Directed Linear Classification](https://arxiv.org/abs/2308.03142) <br/> 
    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
-   [COLT 2022](http://learningtheory.org/colt2023/)
+   [COLT 2023](http://learningtheory.org/colt2023/)
 
 1. [Weighted Distillation with Unlabeled Examples](https://arxiv.org/abs/2210.06711) <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
@@ -136,6 +136,8 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [baykal]:https://people.csail.mit.edu/baykal/
 [menghani]:http://www.gaurav.ai
 [iliopoulos]:https://filiop.org
+[meka]:https://hackmd.io/@raghum/index
+[klivans]:https://www.cs.utexas.edu/users/klivans/
 
 
 ## Service
