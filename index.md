@@ -33,7 +33,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
    w/ M. Ma, [C. Tzamos][tzamos] <br/>
    [NeurIPS 2023](https://nips.cc) 
 
-1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise](https://arxiv.org/abs/2303.05485)
+1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise](https://arxiv.org/abs/2303.05485) <br/>
    w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
    [NeurIPS 2023](https://nips.cc) 
 
