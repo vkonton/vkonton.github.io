@@ -2,14 +2,9 @@
 layout: default
 ---
 
-Hi! I am a PhD student at the Computer Science Department of University of
-[Wisconsin-Madison][uwm], where I am very fortunate to be advised by Professor
-[Christos Tzamos][tzamos-page].  I am particularly interested in algorithms and
-theoretical machine learning.  Currently, I am working on problems related to
-efficient robust inference in high dimensions.
-
-
-Before coming to UW-Madison, I studied Electrical and Computer Engineering at
+I am an IFML Postdoctoral Fellow at UT Austin. I received my PhD from Computer Science Department of University of
+[Wisconsin-Madison][uwm], where I wsa very fortunate to be advised by Professor
+[Christos Tzamos][tzamos-page].  Before coming to UW-Madison, I studied Electrical and Computer Engineering at
 the [National Technical University of Athens][ece-ntua] where I was very lucky
 to be advised by Professor [Dimitris Fotakis][fotakis-page].
 
@@ -24,16 +19,35 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
-1. [SLaM: Student-Label Mixing for Semi-Supervised Knowledge Distillation](https://arxiv.org/abs/2302.03806) <br/>
+1. [Optimizing Solution-Samplers for Combinatorial Problems:] <br/>
+   [The Landscape of Policy Gradient Methods] <br/>
+   [C. Caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
+   Selected for Oral Presentation <br/>
+   [NeurIPS 2023](https://nips.cc) 
+
+1. [The Gain from Ordering in Online Learning] <br/>
+   w/ [M. Ma], [C. Tzamos][tzamos] </br>
+   [NeurIPS 2023](https://nips.cc) 
+
+1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise]
+   w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
+   [NeurIPS 2023](https://nips.cc) 
+
+ 1. [Self Directed Linear Classification] <br/> 
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
+    [COLT 2022](http://learningtheory.org/colt2023/)
+
+1. [SLaM: Student-Label Mixing for Distillation with Unlabeled Examples](https://arxiv.org/abs/2302.03806) <br/>
     w/ [F. Iliopoulos][iliopoulos], [K. Trinh][trinh], [C. Baykal][baykal], [G. Menghani][menghani],  [V. Erik][vee] <br/> 
-    [Manuscript]
+    [NeurIPS 2023](https://nips.cc)
 
 1. [Weighted Distillation with Unlabeled Examples](https://arxiv.org/abs/2210.06711) <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
     [NeurIPS 2022](https://nips.cc)
 
-1. [Linear Label Ranking with Bounded Noise](https://openreview.net/pdf?id=dgWo-UyVEsa) <br/>
+1.  [Linear Label Ranking with Bounded Noise](https://openreview.net/pdf?id=dgWo-UyVEsa) <br/>
     w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
+    Selected for Oral Presentation <br/>
     [NeurIPS 2022](https://nips.cc)
 
 1. [Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent](https://proceedings.mlr.press/v162/diakonikolas22b.html) <br/>
