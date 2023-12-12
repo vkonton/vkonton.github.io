@@ -19,27 +19,27 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
-1. [Optimizing Solution-Samplers for Combinatorial Problems:] <br/>
-   [The Landscape of Policy Gradient Methods] <br/>
+1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
+   [The Landscape of Policy Gradient Methods](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    [C. Caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
    Selected for Oral Presentation <br/>
    [NeurIPS 2023](https://nips.cc) 
 
-1. [The Gain from Ordering in Online Learning] <br/>
-   w/ [M. Ma], [C. Tzamos][tzamos] <br/>
-   [NeurIPS 2023](https://nips.cc) 
-
-1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise]
-   w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
-   [NeurIPS 2023](https://nips.cc) 
-
- 1. [Self Directed Linear Classification] <br/> 
-    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
-    [COLT 2022](http://learningtheory.org/colt2023/)
-
 1. [SLaM: Student-Label Mixing for Distillation with Unlabeled Examples](https://arxiv.org/abs/2302.03806) <br/>
     w/ [F. Iliopoulos][iliopoulos], [K. Trinh][trinh], [C. Baykal][baykal], [G. Menghani][menghani],  [V. Erik][vee] <br/> 
     [NeurIPS 2023](https://nips.cc)
+
+1. The Gain from Ordering in Online Learning <br/>
+   w/ M. Ma, [C. Tzamos][tzamos] <br/>
+   [NeurIPS 2023](https://nips.cc) 
+
+1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise](https://arxiv.org/abs/2303.05485)
+   w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
+   [NeurIPS 2023](https://nips.cc) 
+
+1. [Self Directed Linear Classification](https://arxiv.org/abs/2308.03142) <br/> 
+   w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
+   [COLT 2022](http://learningtheory.org/colt2023/)
 
 1. [Weighted Distillation with Unlabeled Examples](https://arxiv.org/abs/2210.06711) <br/>
     w/ [F. Iliopoulos][iliopoulos], [C. Baykal][baykal], [G. Menghani][menghani], [K. Trinh][trinh], [V. Erik][vee] <br/> 
