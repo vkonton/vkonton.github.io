@@ -26,7 +26,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
    [NeurIPS 2023](https://nips.cc) 
 
 1. [The Gain from Ordering in Online Learning] <br/>
-   w/ [M. Ma], [C. Tzamos][tzamos] </br>
+   w/ [M. Ma], [C. Tzamos][tzamos] <br/>
    [NeurIPS 2023](https://nips.cc) 
 
 1. [Efficient Testable Learning of Halfspaces with Adversarial Label Noise]
