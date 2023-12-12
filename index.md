@@ -21,7 +21,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    [The Landscape of Policy Gradient Methods](https://arxiv.org/pdf/2310.05309.pdf) <br/>
-   [C. Caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
+   [C. Caramanis][caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
    Selected for Oral Presentation <br/>
    [NeurIPS 2023](https://nips.cc) 
 
@@ -119,6 +119,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [OpinionDynamics]:https://github.com/vkonton/opinion_dynamics/blob/master/clean.pdf
 [PBDpowers]:http://arxiv.org/abs/1707.05662
 [zarifis]:https://nikoszarifis.github.io
+[caramanis]:https://caramanis.github.io
 [fotakis]:https://www.softlab.ntua.gr/~fotakis/
 [krysta]:http://cgi.csc.liv.ac.uk/~piotr/
 [kane]:https://cseweb.ucsd.edu/~dakane/
