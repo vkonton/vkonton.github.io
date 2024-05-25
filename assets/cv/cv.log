@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  11 DEC 2023 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  25 MAY 2024 17:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,44 +341,29 @@ Overfull \hbox (76.42273pt too wide) in alignment at lines 50--82
  []
 
 
-Overfull \hbox (76.42273pt too wide) in alignment at lines 82--107
+Overfull \hbox (76.42273pt too wide) in alignment at lines 82--108
  [] [] 
  []
 
 
-Overfull \hbox (76.42273pt too wide) in alignment at lines 107--132
+Overfull \hbox (76.42273pt too wide) in alignment at lines 108--131
  [] [] 
  []
 
 
-Overfull \hbox (76.42273pt too wide) in alignment at lines 132--157
+Overfull \hbox (76.42273pt too wide) in alignment at lines 131--155
  [] [] 
  []
 
 [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (76.42273pt too wide) in alignment at lines 157--182
+Overfull \hbox (76.42273pt too wide) in alignment at lines 155--180
  [] [] 
  []
 
 
-Overfull \hbox (76.42273pt too wide) in alignment at lines 182--209
- [] [] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.209      &
-             \emph{\textbf{NeurIPS 2020}} \\ [2]
-Overfull \hbox (76.42273pt too wide) in alignment at lines 209--238
- [] [] 
- []
-
-
-Overfull \hbox (76.42273pt too wide) in alignment at lines 238--269
+Overfull \hbox (76.42273pt too wide) in alignment at lines 180--205
  [] [] 
  []
 
@@ -386,30 +371,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.269 
-       [3]
-Overfull \hbox (76.42273pt too wide) in alignment at lines 269--294
+l.205      &
+             \emph{Proceedings of the 38th International Conference on Machi...
+[2]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 205--232
  [] [] 
  []
 
 
-Overfull \hbox (76.42273pt too wide) in alignment at lines 294--322
- [] [] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.322  &
-         \emph{2021, 34th Annual Conference on Learning Theory (COLT 2021)} \\
-[4]
-Overfull \hbox (76.42273pt too wide) in alignment at lines 322--347
- [] [] 
- []
-
-
-Overfull \hbox (76.42273pt too wide) in alignment at lines 347--380
+Overfull \hbox (76.42273pt too wide) in alignment at lines 232--261
  [] [] 
  []
 
@@ -417,10 +387,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.380  &
-         high school graduates of the cities of Ilioupolis and Ymittos. \\
-[5]
-Overfull \hbox (76.42273pt too wide) in alignment at lines 380--400
+l.261      &
+             \emph{\textbf{WINE 2018}} \\ [3]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 261--293
+ [] [] 
+ []
+
+
+Overfull \hbox (76.42273pt too wide) in alignment at lines 293--319
  [] [] 
  []
 
@@ -428,8 +402,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.402 \end{document}
-                     [6] (./cv.aux)
+l.319     &
+            ICML 2019, EC 2019, WINE 2019, MFCS 2018 \\ [4]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 319--345
+ [] [] 
+ []
+
+
+Overfull \hbox (76.42273pt too wide) in alignment at lines 345--372
+ [] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372  &
+        \emph{2017, ECCO Research Seminar, University of Liverpool} \\ [5]
+Overfull \hbox (76.42273pt too wide) in alignment at lines 372--403
+ [] [] 
+ []
+
+
+Overfull \hbox (76.42273pt too wide) in alignment at lines 403--421
+ [] [] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.421 \end{longtable}
+                      [6]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.423 \end{document}
+                     [7] (./cv.aux)
 Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -448,10 +457,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (6 pages, 117353 bytes).
+Output written on cv.pdf (7 pages, 118301 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 74 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
