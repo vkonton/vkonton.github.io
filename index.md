@@ -43,7 +43,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
     w/ [F. Iliopoulos][iliopoulos], [K. Trinh][trinh], [C. Baykal][baykal], [G. Menghani][menghani],  [V. Erik][vee] <br/> 
     [NeurIPS 2023](https://nips.cc)
 
-1. The Gain from Ordering in Online Learning <br/>
+1. [The Gain from Ordering in Online Learning](https://openreview.net/pdf?id=OaUT4hX40s) <br/>
    w/ M. Ma, [C. Tzamos][tzamos] <br/>
    [NeurIPS 2023](https://nips.cc) 
 
