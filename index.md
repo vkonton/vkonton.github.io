@@ -14,14 +14,28 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 [ece-ntua]: https://www.ece.ntua.gr/en
 [email-me]: mailto:vkonton@gmail.com
 [tzamos-page]: https://tzamos.com/
+[klivans]: https://www.cs.utexas.edu/users/klivans/
+[meka]: https://raghumeka.github.io
 [fotakis-page]: https://www.softlab.ntua.gr/~fotakis/
 [thesis-link]: http://artemis.cslab.ntua.gr/Dienst/UI/1.0/Display/artemis.ntua.ece/DT2017-0274?abstract=%EA%EF%ED%F4%EF%ED%DE%F2
 
 ## Publications
 
+1. [Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension] <br/>
+   w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
+   [COLT 2024](http://learningtheory.org/colt2024/)
+
+1. [Active Learning with Simple Questions] <br/>
+   w/ M. Ma, [C. Tzamos][tzamos] </br>
+   [COLT 2024](http://learningtheory.org/colt2024/)
+
+1. [Super Non-singular Decompositions of Polynomials and their Application to Robustly Learning Low-degree PTFs](https://arxiv.org/html/2404.00529v1)
+   w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
+   [STOC 2024](http://acm-stoc.org/stoc2024/)
+
 1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    [The Landscape of Policy Gradient Methods](https://arxiv.org/pdf/2310.05309.pdf) <br/>
-   [C. Caramanis][caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
+   w/ [C. Caramanis][caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
    Selected for Oral Presentation <br/>
    [NeurIPS 2023](https://nips.cc) 
 
