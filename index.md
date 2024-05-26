@@ -26,10 +26,11 @@ Here is a more complete [CV](assets/cv/cv.pdf).
    [COLT 2024](http://learningtheory.org/colt2024/)
 
 1. Active Learning with Simple Questions <br/>
-   w/ M. Ma, [C. Tzamos][tzamos] </br>
+   w/ M. Ma, [C. Tzamos][tzamos] <br/>
    [COLT 2024](http://learningtheory.org/colt2024/)
 
-1. [Super Non-singular Decompositions of Polynomials and their Application to Robustly Learning Low-degree PTFs](https://arxiv.org/html/2404.00529v1)
+1. [Super Non-singular Decompositions of Polynomials and their](https://arxiv.org/html/2404.00529v1) <br/>
+   [Application to Robustly Learning Low-degree PTFs](https://arxiv.org/html/2404.00529v1) <br/>
    w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu], [N. Zarifis][zarifis] <br/>
    [STOC 2024](http://acm-stoc.org/stoc2024/)
 
