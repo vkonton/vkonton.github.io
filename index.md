@@ -161,7 +161,13 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Talks
 
-* Learning General Halfspaces with General Massart Noise, STOC 2022
+* Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension, [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY)
+
+* Optimizing Solution-Samplers for Combinatorial Problems, [NeurIPS 2023 Oral](https://nips.cc/virtual/2023/oral/73826)
+
+* SLaM: Student-Label Mixing for Distillation with Unlabeled Examples, [NeurIPS 2023](https://nips.cc/virtual/2023/poster/71876)
+
+* Learning General Halfspaces with General Massart Noise, [STOC 2022](https://www.youtube.com/watch?v=jm8K7_7HjZE)
 
 * A Statistical Taylor's Theorem and Extrapolation of Truncated Densities, COLT 2021
 
