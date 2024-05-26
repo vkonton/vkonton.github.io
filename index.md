@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I am an [IFML](https://www.ifml.institute)  Postdoctoral Fellow based at [UT Austin working](https://www.cs.utexas.edu) 
+I am an [IFML](https://www.ifml.institute)  Postdoctoral Fellow based at [UT Austin](https://www.cs.utexas.edu) 
 working with [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD from Computer Science Department of University of
 [Wisconsin-Madison][uwm], where I was fortunate to be advised by Professor
 [Christos Tzamos][tzamos-page].  Before coming to UW-Madison, I studied Electrical and Computer Engineering at
