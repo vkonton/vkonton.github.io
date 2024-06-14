@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Change the font size of your document - 10pt, 12.1pt, etc.
+\documentclass[letterpaper,11pt,oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks
+}
+\usepackage{longtable}
+
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+%Change the margins to fit your CV/resume content
+\usepackage[left=1in, right=1in, bottom=0.7in, top=0.7in]{geometry}
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}}
+\newcommand{\Absender}[1][\normalsize]{\Skype}
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
+
+\noindent  \LARGE{\textbf{Vasilis Kontonis}}  \\
+\vspace{-2ex}
+%\hline
+\normalsize
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+
+\begin{center}
+\begin{tabular}{l l}
+ University of Texas at Austin& \hspace{1in} \href{mailto:vkonton@gmail.com}{vkonton@gmail.com} \\
+ Department of Computer Sciences & \hspace{1in}  \href{https://vkonton.github.io}{https://vkonton.github.io}\\ 
+ 2317 Speedway, Austin, TX, USA & \hspace{1in} Cell: +1 (608) 982-4267 
+\end{tabular}
+\end{center}
+
+
+%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
+
+\noindent \begin{longtable}{@{} l l}
+
+\href{https://www.ifml.institute}{\emph{\textbf{University of}}} 
+  & \textbf{IFML Postdoctoral Fellow} \\
+
+\href{https://www.ifml.institute}
+{\textbf{\emph{Texas Austin}}}  & \emph{2023 -- present, University of Texas at Austin} \\
+& Working on the foundations of reliable and efficient ML.
+ My research aims at \\ 
+& designing algorithms to 
+learn from  imperfect or corrupted datasets such
+ as learning \\
+ & from noisy labels or from biased or censored data. I am particularly interested in \\
+ & developing principled, efficient, and practical algorithms. \\
+  & \\
+
+\href{https://research.google}{\emph{\textbf{Google}}}
+  &\textbf{Research Intern} \\
+  & \emph{2022, Google Research, Mountain View}\\
+  & Worked on semi-supervised distillation.  Developed a new practical distillation \\ 
+  & method called Student Label Mixing Distillation (SLaM) that improved the SOTA \\
+  & (published at NeurIPS 2023) and used it to improve distillation in Google products. \\
+  & \\
+
+  \href{https://grnet.gr/}{\emph{\textbf{Grnet}}}
+  &\textbf{Systems and Services Engineer} \\
+  & \emph{2016, Greek Research and Technology Network, Athens}\\
+  & Monitoring services, network, and servers, automation of procedures, development \\ 
+  & and maintenance of administration tools. \\
+  &\\
+
+ \Large{Education}
+
+     & \textbf{Ph.D., Computer Science}, 2018 -- 2023 \\
+      \emph{\textbf{University of}}
+     & Thesis: Learning From Imperfect Data: 
+      Noisy Labels, Truncation, and Coarsening \\
+      \emph{\textbf{Wisconsin-Madison} }
+     & Advisor: Christos Tzamos\\
+     & \\
+
+      \emph{\textbf{National Technical}}
+     & \textbf{MEng, Electrical \& Computer Engineering}, 2011 -- 2017\\
+     \emph{\textbf{Uni. of Athens} }
+     & Thesis: Learning Powers of Poisson Binomial Distributions\\
+     & Advisor: Dimitris Fotakis \\
+     & \\
+
+% \Large{Research Interests} & \textbf{Machine Learning, Statistics, 
+% Theoretical Computer Science}
+% & \\
+
+ \Large{Selected}  
+ &\textbf{Smoothed Analysis for Learning Concepts with
+ Low Intrinsic Dimension} \\
+\Large{Publications \footnote{ 
+See \href{https://vkonton.github.io}{vkonton.github.io} and
+my \href{https://scholar.google.com/citations?user=7_44KWAAAAAJ&hl=el}{Google scholar} 
+for the complete list.  
+Alphabetical author order unless otherwise.
+}}
+ & Gautam Chandrasekaran, Adam Klivans, Vasilis Kontonis, \\
+  \emph{\textbf{COLT 2024}}
+ & Raghu Meka, Konstantinos Stavropoulos \\
+ & \emph{37th Annual Conference on Learning Theory} \\
+ & \\
+
+  \emph{\textbf{NeurIPS 2023}}
+ &\textbf{Optimizing Solution-Samplers for Combinatorial Problems:}\\
+  \emph{\textbf{Oral Presentation}} 
+ &\textbf{The Landscape of Policy Gradient Methods}\\
+ & Constantinos Caramanis, Dimitris Fotakis, Alkis Kalavasis\\
+ & Vasilis Kontonis, Christos Tzamos\\
+ & \emph{37th Conference on Neural Information Processing Systems} \\
+ & \\
+
+ \emph{\textbf{NeurIPS 2023}}
+ &\textbf{SLaM: Student Label Mixing for Distillation with Unlabeled Examples} \\
+ & Vasilis Kontonis, Fotis Iliopoulos, Khoa Trinh \\
+ & Cenk Baykal, Gaurav Menghani, Erik Vee\\ 
+ & \emph{37th Conference on Neural Information Processing Systems} \\
+ & \\
+
+
+  \emph{\textbf{NeurIPS 2022}} &\textbf{Linear Label Ranking with Bounded Noise}\\
+  \emph{\textbf{Oral Presentation}} 
+ &  Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos \\
+ & \emph{36th Conference on Neural Information Processing Systems} \\
+ & \\
+
+\emph{\textbf{STOC 2022}}
+ &\textbf{Learning General Halfspaces with General Massart Noise}\\
+ & \textbf{under the Gaussian Distribution}\\
+ & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,
+  Christos Tzamos, Nikos Zarifis \\
+ & \emph{54th Annual ACM Symposium on Theory of Computing} \\
+ & \\
+
+
+\emph{\textbf{COLT 2021}}
+ &\textbf{A Statistical Taylor's Theorem and Extrapolation of Truncated Densities}\\
+ & Costis Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis \\
+ & \emph{34th Annual Conference on Learning Theory, } \\
+ & \\
+
+\emph{\textbf{COLT 2021}}
+ &\textbf{Efficient Algorithms for Learning from Coarse Labels}\\
+ &  Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos \\
+ & \emph{34th Annual Conference on Learning Theory } \\
+ & \\
+
+\emph{\textbf{STOC 2021}}
+     &\textbf{Learning Halfspaces with Tsybakov Noise}\\
+     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
+     & \emph{53rd Annual ACM Symposium on Theory of Computing } \\
+     & \\
+
+\emph{\textbf{NeurIPS 2020}}
+     &\textbf{Non-Convex SGD Learns Halfspaces with Adversarial Label Noise} \\
+     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
+     & \emph{34th Conference on Neural Information Processing Systems} \\
+     & \\
+
+\emph{\textbf{COLT 2020}}
+     &\textbf{Learning Halfspaces with Massart Noise}\\
+     &\textbf{Under Structured Distributions}\\
+     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
+     & \emph{33th Annual Conference on Learning Theory} \\
+     & \\
+
+\emph{\textbf{FOCS 2019}}
+     & \textbf{Truncated Statitistics with Unknown Truncation} \\
+     & Vasilis Kontonis, Christos Tzamos, Manolis Zambetakis\\
+     & \emph{60th Annual IEEE Symposium on Foundations of Computer Science} \\
+     & \\
+
+
+  \Large{Teaching}
+
+  & Spring 2022, TA \emph{Introduction to Artificial Intelligence} \\
+  \emph{\textbf{University of}}
+  & Fall 2021, TA  Introduction to Numerical Methods \\
+  \emph{\textbf{Wisconsin-Madison}}
+  & Spring 2021, Spring 2020 Spring 2019, Fall 2018, TA \emph{Introduction to Algorithms}\\
+  & Fall 2020, TA \emph{Programming II}\\
+   & \\
+   \emph{\textbf{National Technical }}
+  & Fall 2017, TA  \emph{Algorithms and Complexity}  \\
+  \emph{\textbf{Uni. of Athens} }
+  & Fall 2016, TA \emph{Operating Systems}  \\
+  & \\
+
+
+\Large{Awards}
+
+ & Recipient of the Bodossakis Fellowship 2022 \\
+
+ & Recipient of the Gerondellis Fellowship 2020 \\
+
+ & Recipient of the Eurobank Grant "The great moment for Education" in 2010\\
+ & for graduating first in my high-school. \\
+
+ & Recipient of the Touramanoglou Grant in 2010 for ranking among the top \\
+ & high school graduates of the cities of Ilioupolis and Ymittos. \\
+ &\\
+
+  \Large{Languages}   & English, Greek (native), German \\
+\Large{and Skills}    & Python, Pytorch, Tensorflow, \LaTeX, GNU/Linux\\
+
+\end{longtable}
+
+
+\end{document}
