@@ -23,7 +23,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 1. Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension <br/>
    w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
-   Best Paper Award <br/>
+   <b style='color:red;'> Best Paper Award </b> <br/>
    [COLT 2024](http://learningtheory.org/colt2024/)
 
 1. Active Learning with Simple Questions <br/>
