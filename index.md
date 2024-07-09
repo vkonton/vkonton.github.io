@@ -23,11 +23,16 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 1. Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension <br/>
    w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
+   Best Paper Award <br/>
    [COLT 2024](http://learningtheory.org/colt2024/)
 
 1. Active Learning with Simple Questions <br/>
    w/ M. Ma, [C. Tzamos][tzamos] <br/>
    [COLT 2024](http://learningtheory.org/colt2024/)
+
+1. Agnostically Learning Multi-index Models with Queries <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
+    [FOCS 2024](https://focs.computer.org/2024/)
 
 1. [Super Non-singular Decompositions of Polynomials and their](https://arxiv.org/html/2404.00529v1) <br/>
    [Application to Robustly Learning Low-degree PTFs](https://arxiv.org/html/2404.00529v1) <br/>
