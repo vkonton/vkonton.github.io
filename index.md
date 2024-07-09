@@ -167,10 +167,10 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Talks
 
-* Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension, </br> 
-  <b> Best Paper Award Talk, COLT 2024 </b> </br>
-  [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY) </br>
-  Theory Seminar, 2024, University of Southern California </br>
+* Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension
+  1. <b> Best Paper Award Talk, COLT 2024 </b> 
+  2. [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY) 
+  3. Theory Seminar, 2024, University of Southern California 
 
 * Optimizing Solution-Samplers for Combinatorial Problems, [NeurIPS 2023 Oral](https://nips.cc/virtual/2023/oral/73826)
 
