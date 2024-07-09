@@ -169,7 +169,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 * Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension
   1. <b> Best Paper Award Talk, COLT 2024 </b> 
-  2. [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY) 
+  2.  EnCORE Workshop on Computational vs Statistical Gaps in Learning and Optimization, 2024 UCLA [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY) 
   3. Theory Seminar, 2024, University of Southern California 
 
 * Optimizing Solution-Samplers for Combinatorial Problems, [NeurIPS 2023 Oral](https://nips.cc/virtual/2023/oral/73826)
