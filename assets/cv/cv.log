@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  8 JUL 2024 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.8.5)  8 JUL 2024 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -336,7 +336,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 38.
 
-Overfull \hbox (56.16527pt too wide) in alignment at lines 50--83
+Overfull \hbox (60.89201pt too wide) in alignment at lines 50--83
  [] [] 
  []
 
@@ -437,16 +437,8 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.453 \end{longtable}
-                      [6]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1 on input line 453.
-
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+                      [6]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.455 \end{document}
@@ -457,7 +449,7 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 Here is how much of TeX's memory you used:
  8337 strings out of 478994
  123947 string characters out of 5858185
- 436562 words of memory out of 5000000
+ 436561 words of memory out of 5000000
  25730 multiletter control sequences out of 15000+600000
  408086 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -469,7 +461,7 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (7 pages, 119976 bytes).
+Output written on cv.pdf (7 pages, 119985 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
