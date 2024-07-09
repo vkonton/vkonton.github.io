@@ -24,7 +24,8 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 1. Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension <br/>
    w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
    <b style='color:red;'> Best Paper Award </b> <br/>
-   [COLT 2024](http://learningtheory.org/colt2024/)
+   [COLT 2024](http://learningtheory.org/colt2024/) <br/>
+   [IPAM 2024 Long Talk Video](https://www.youtube.com/watch?v=XJSz3XoNdlY)
 
 1. Active Learning with Simple Questions <br/>
    w/ M. Ma, [C. Tzamos][tzamos] <br/>
@@ -42,7 +43,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    [The Landscape of Policy Gradient Methods](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    w/ [C. Caramanis][caramanis], [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
-   Selected for Oral Presentation <br/>
+   <b Selected for Oral Presentation </b> <br/>
    [NeurIPS 2023](https://nips.cc) 
 
 1. [SLaM: Student-Label Mixing for Distillation with Unlabeled Examples](https://arxiv.org/abs/2302.03806) <br/>
@@ -67,7 +68,7 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 1.  [Linear Label Ranking with Bounded Noise](https://openreview.net/pdf?id=dgWo-UyVEsa) <br/>
     w/ [D. Fotakis][fotakis], [A. Kalavasis][kalavasis], [C. Tzamos][tzamos] <br/>
-    Selected for Oral Presentation <br/>
+    <b Selected for Oral Presentation </b> <br/>
     [NeurIPS 2022](https://nips.cc)
 
 1. [Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent](https://proceedings.mlr.press/v162/diakonikolas22b.html) <br/>
@@ -166,7 +167,10 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Talks
 
-* Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension, [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY)
+* Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension, </br> 
+  <b Best Paper Award Talk, COLT 2024 </b> </br>
+  [IPAM 2024](https://www.youtube.com/watch?v=XJSz3XoNdlY) </br>
+  Theory Seminar University of Southern California </br>
 
 * Optimizing Solution-Samplers for Combinatorial Problems, [NeurIPS 2023 Oral](https://nips.cc/virtual/2023/oral/73826)
 
