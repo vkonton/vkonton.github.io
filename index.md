@@ -4,9 +4,7 @@ layout: default
 
 I am an [IFML](https://www.ifml.institute) Postdoctoral Fellow based at [UT Austin](https://www.cs.utexas.edu) 
 hosted by [Adam Klivans][klivans] and [Raghu Meka][meka].  I received my PhD in Computer Science from the University of
-[Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page].  
-Prior to UW-Madison, I studied Electrical and Computer Engineering at
-the [National Technical University of Athens][ece-ntua] where I was advised by [Dimitris Fotakis][fotakis-page].
+[Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page].  Prior to UW-Madison, I studied Electrical and Computer Engineering at the [National Technical University of Athens][ece-ntua] where I was advised by [Dimitris Fotakis][fotakis-page].  Here is a copy of my [CV](assets/cv/cv.pdf).
 
 I work on designing efficient algorithms with provable guarantees for machine learning problems 
 with a focus on dealing with imperfect data (e.g., classification with noisy labels and 
@@ -24,7 +22,6 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
 
 
 
-Here is a more complete [CV](assets/cv/cv.pdf).
 
 [uwm]: https://www.wisc.edu/
 [ece-ntua]: https://www.ece.ntua.gr/en
