@@ -175,8 +175,10 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
 
 
 ## Service
-**Program Committees:** [ITCS-2025](http://itcs-conf.org)
-**Reviewer:** FOCS, STOC, SODA, WINE, ICML, EC, MFCS, TCS, ALT
+ * **Program Committees:** [ITCS-2025](http://itcs-conf.org)
+
+ * **Reviewer:** FOCS (2020, 2021, 2023) , STOC (2020, 2024), COLT (2023), SODA (2019), NeurIPS (2021, 2023), WINE(2018), ICML(2023, 2021, 2020), 
+EC (2022, 2020), MFCS (2018), TCS (2018, 2021), ALT (2021)
 
 
 ## Talks
