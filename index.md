@@ -2,11 +2,27 @@
 layout: default
 ---
 
-I am an [IFML](https://www.ifml.institute)  Postdoctoral Fellow based at [UT Austin](https://www.cs.utexas.edu) 
-working with [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD from Computer Science Department of University of
-[Wisconsin-Madison][uwm], where I was fortunate to be advised by Professor
-[Christos Tzamos][tzamos-page].  Before coming to UW-Madison, I studied Electrical and Computer Engineering at
-the [National Technical University of Athens][ece-ntua] where I was advised by Professor [Dimitris Fotakis][fotakis-page].
+I am an [IFML](https://www.ifml.institute) Postdoctoral Fellow based at [UT Austin](https://www.cs.utexas.edu) 
+hosted by [Adam Klivans][klivans] and [Raghu Meka][meka].  I received my PhD in Computer Science from the University of
+[Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page].  
+Prior to UW-Madison, I studied Electrical and Computer Engineering at
+the [National Technical University of Athens][ece-ntua] where I was advised by [Dimitris Fotakis][fotakis-page].
+
+I work on designing efficient algorithms with provable guarantees for machine learning problems 
+with a focus on dealing with imperfect data (e.g., classification with noisy labels and 
+statistical inference from biased or censored data).  I am also interested in analyzing and providing formal guarantees
+for popular machine learning algorithms (e.g., diffusion models).
+
+## News 
+
+* Aug, 22, 2024: I am visiting [Simons Institute](https://simons.berkeley.edu/homepage) for the [generalization](https://simons.berkeley.edu/workshops/emerging-generalization-settings) and [LLM](https://simons.berkeley.edu/programs/special-year-large-language-models-transformers-part-1) programs.
+
+* Jul, 3, 2024: Our work [Smoothed Analysis for Learning Concepts of Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966)
+got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awards.html)!!
+
+* May, 1, 2024: [New paper](https://arxiv.org/abs/2404.18893) on learning mixtures of Gaussians using diffusion models!
+
+
 
 Here is a more complete [CV](assets/cv/cv.pdf).
 
