@@ -175,7 +175,8 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
 
 
 ## Service
-**Reviewer:** STOC, SODA, WINE, ICML, EC, MFCS, TCS, ALT
+**Program Committees:** [ITCS-2025](http://itcs-conf.org)
+**Reviewer:** FOCS, STOC, SODA, WINE, ICML, EC, MFCS, TCS, ALT
 
 
 ## Talks
