@@ -13,7 +13,7 @@ for popular machine learning algorithms (e.g., diffusion models).
 
 ## News 
 
-* Aug, 22, 2024: I am visiting [Simons Institute](https://simons.berkeley.edu/homepage) for the [generalization](https://simons.berkeley.edu/workshops/emerging-generalization-settings) and [LLM](https://simons.berkeley.edu/programs/special-year-large-language-models-transformers-part-1) programs.
+* Aug, 22, 2024: I am visiting [Simons Institute](https://simons.berkeley.edu/homepage) at Berkeley for the [generalization](https://simons.berkeley.edu/workshops/emerging-generalization-settings) and [LLM](https://simons.berkeley.edu/programs/special-year-large-language-models-transformers-part-1) programs.
 
 * Jul, 3, 2024: Our work [Smoothed Analysis for Learning Concepts of Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966)
 got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awards.html)!!
