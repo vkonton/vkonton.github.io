@@ -22,16 +22,16 @@ Here is a more complete [CV](assets/cv/cv.pdf).
 
 ## Publications
 
-1. Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension <br/>
+1. [Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966) <br/>
    w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
    <b style='color:red;'> Best Paper Award </b> [COLT 2024](http://learningtheory.org/colt2024/) <br/>
    [IPAM 2024 Long Talk Video](https://www.youtube.com/watch?v=XJSz3XoNdlY)
 
-1. Active Learning with Simple Questions <br/>
+1. [Active Learning with Simple Questions](https://arxiv.org/abs/2405.07937) <br/>
    w/ M. Ma, [C. Tzamos][tzamos] <br/>
    [COLT 2024](http://learningtheory.org/colt2024/)
 
-1. Agnostically Learning Multi-index Models with Queries <br/>
+1. [Agnostically Learning Multi-index Models with Queries](https://arxiv.org/abs/2312.16616) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
     [FOCS 2024](https://focs.computer.org/2024/)
 
