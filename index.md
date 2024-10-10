@@ -61,7 +61,7 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
     w/ G. Chandrasekaran, [A. Klivans][klivans], K. Stavropoulos, [A. Vasilyan][vasilyan] <br/> 
     [NeurIPS 2024](https://nips.cc)
 
-1. [Active Classification with Few Queries under Misspecification] <br/>
+1. Active Classification with Few Queries under Misspecification <br/>
     w/ [C. Tzamos][tzamos], M. Ma <br/> 
     [NeurIPS 2024](https://nips.cc)
 
