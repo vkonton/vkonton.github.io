@@ -57,22 +57,17 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
    w/ [I. Diakonikolas][idiakonikolas], [D M. Kane][kane], [S. Liu][sliu], [N. Zarifis][zarifis] <br/>
    [STOC 2024](http://acm-stoc.org/stoc2024/)
 
-1. [Efficient Discrepancy Testing for Learning with Distribution Shift](https://arxiv.org/abs/2406.09373)
+1. [Efficient Discrepancy Testing for Learning with Distribution Shift](https://arxiv.org/abs/2406.09373) <br/>
     w/ [G. Chandrasekaran], [A. Klivans][klivans], K. Stavropoulos, [A. Vasilyan][vasilyan] <br/> 
     [NeurIPS 2024](https://nips.cc)
 
-1. [Active Classification with Few Queries under Misspecification]
+1. [Active Classification with Few Queries under Misspecification] <br/>
     w/ [C. Tzamos][tzamos], M. Ma <br/> 
     [NeurIPS 2024](https://nips.cc)
 
-1. Learning Noisy Halfspaces with a Margin: Massart is no Harder than Random
-    w/ [G. Chandrasekaran], K. Stavropoulos, [K. Tian][ktian] <br/> 
+1. Learning Noisy Halfspaces with a Margin: Massart is no Harder than Random <br/>
+    w/ G. Chandrasekaran, K. Stavropoulos, [K. Tian][ktian] <br/> 
     [NeurIPS 2024](https://nips.cc)
-
-1. [SLaM: Student-Label Mixing for Distillation with Unlabeled Examples](https://arxiv.org/abs/2302.03806) <br/>
-    w/ [G. Chandrasekaran], K. Stavropoulos, [K. Tian][ktian] <br/> 
-    [NeurIPS 2024](https://nips.cc)
-
 
 1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
    [The Landscape of Policy Gradient Methods](https://arxiv.org/pdf/2310.05309.pdf) <br/>
