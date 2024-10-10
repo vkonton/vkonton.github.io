@@ -49,7 +49,7 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
    [COLT 2024](http://learningtheory.org/colt2024/)
 
 1. [Agnostically Learning Multi-index Models with Queries](https://arxiv.org/abs/2312.16616) <br/>
-    w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/> 
+    w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
     [FOCS 2024](https://focs.computer.org/2024/)
 
 1. [Super Non-singular Decompositions of Polynomials and their](https://arxiv.org/html/2404.00529v1) <br/>
@@ -58,7 +58,7 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
    [STOC 2024](http://acm-stoc.org/stoc2024/)
 
 1. [Efficient Discrepancy Testing for Learning with Distribution Shift](https://arxiv.org/abs/2406.09373) <br/>
-    w/ [G. Chandrasekaran], [A. Klivans][klivans], K. Stavropoulos, [A. Vasilyan][vasilyan] <br/> 
+    w/ G. Chandrasekaran, [A. Klivans][klivans], K. Stavropoulos, [A. Vasilyan][vasilyan] <br/> 
     [NeurIPS 2024](https://nips.cc)
 
 1. [Active Classification with Few Queries under Misspecification] <br/>
