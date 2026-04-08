@@ -2,12 +2,7 @@
 layout: default
 ---
 
-I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/) in New York City. Previously, I was an [IFML](https://www.ifml.institute) Postdoctoral Fellow at [UT Austin](https://www.cs.utexas.edu), hosted by [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD in Computer Science from the University of [Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page]. Prior to UW-Madison, I studied Electrical and Computer Engineering at the [National Technical University of Athens][ece-ntua], where I was advised by [Dimitris Fotakis][fotakis-page].
-
-I work on designing efficient algorithms with provable guarantees for machine learning problems 
-with a focus on dealing with imperfect data (e.g., classification with noisy labels and 
-statistical inference from biased or censored data).  I am also interested in analyzing and providing formal guarantees
-for popular machine learning algorithms (e.g., diffusion models).
+I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/) in New York City, working on AI as part of [AI Frontiers](https://www.microsoft.com/en-us/research/lab/ai-frontiers/). Previously, I was an [IFML](https://www.ifml.institute) Postdoctoral Fellow at [UT Austin](https://www.cs.utexas.edu), hosted by [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD in Computer Science from the University of [Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page]. Prior to UW-Madison, I studied Electrical and Computer Engineering at the [National Technical University of Athens][ece-ntua], where I was advised by [Dimitris Fotakis][fotakis-page].
 
 <b>Here is my [CV](assets/cv/cv.pdf).</b>
 
