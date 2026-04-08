@@ -8,7 +8,7 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 
 ## News 
 
-* Apr, 2026: Excited to release **Memento** — we extend the effective output length of LLMs by splitting chain-of-thought into blocks and summaries, then evicting old blocks from the KV cache so the model can reason longer within a fixed context window. Check out the [code](https://github.com/microsoft/memento), the [paper](https://github.com/microsoft/memento/blob/main/docs/memento.pdf), and the [OpenMementos dataset](https://huggingface.co/datasets/microsoft/OpenMementos)!
+* Apr, 2026: Excited to release **Memento** — we extend the effective output length of LLMs by splitting chain-of-thought into blocks and summaries, then evicting old blocks from the KV cache so the model can reason longer within a fixed context window. Check out the [blogpost](blog/memento/), the [code](https://github.com/microsoft/memento), the [paper](https://github.com/microsoft/memento/blob/main/docs/memento.pdf), and the [OpenMementos dataset](https://huggingface.co/datasets/microsoft/OpenMementos)!
 
 * Jul, 2025: I joined Microsoft Research in New York City as a Senior Researcher.
 
