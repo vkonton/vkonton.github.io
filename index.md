@@ -2,25 +2,24 @@
 layout: default
 ---
 
-I am an [IFML](https://www.ifml.institute) Postdoctoral Fellow based at [UT Austin](https://www.cs.utexas.edu) 
-hosted by [Adam Klivans][klivans] and [Raghu Meka][meka].  I received my PhD in Computer Science from the University of
-[Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page].  Prior to UW-Madison, I studied Electrical and Computer Engineering at the [National Technical University of Athens][ece-ntua] where I was advised by [Dimitris Fotakis][fotakis-page].  
+I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us/research/lab/microsoft-research-new-york/) in New York City. Previously, I was an [IFML](https://www.ifml.institute) Postdoctoral Fellow at [UT Austin](https://www.cs.utexas.edu), hosted by [Adam Klivans][klivans] and [Raghu Meka][meka]. I received my PhD in Computer Science from the University of [Wisconsin-Madison][uwm], where I was advised by [Christos Tzamos][tzamos-page]. Prior to UW-Madison, I studied Electrical and Computer Engineering at the [National Technical University of Athens][ece-ntua], where I was advised by [Dimitris Fotakis][fotakis-page].
 
 I work on designing efficient algorithms with provable guarantees for machine learning problems 
 with a focus on dealing with imperfect data (e.g., classification with noisy labels and 
 statistical inference from biased or censored data).  I am also interested in analyzing and providing formal guarantees
 for popular machine learning algorithms (e.g., diffusion models).
 
-<b> I am on the 2024/25 job market. Here is my [CV](assets/cv/cv.pdf). </b>
+<b>Here is my [CV](assets/cv/cv.pdf).</b>
 
 ## News 
 
-* Aug, 22, 2024: I am visiting [Simons Institute](https://simons.berkeley.edu/homepage) at Berkeley for the [generalization](https://simons.berkeley.edu/workshops/emerging-generalization-settings) and [LLM](https://simons.berkeley.edu/programs/special-year-large-language-models-transformers-part-1) programs.
+* Jul, 2025: I joined Microsoft Research in New York City as a Senior Researcher.
 
-* Jul, 3, 2024: Our work [Smoothed Analysis for Learning Concepts of Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966)
-got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awards.html)!!
+* Jul, 2025: Our work Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions received an Outstanding Paper Award at [ICML 2025](https://icml.cc/virtual/2025/awards_detail).
 
-* May, 1, 2024: [New paper](https://arxiv.org/abs/2404.18893) on learning mixtures of Gaussians using diffusion models!
+* May, 2025: New papers accepted to ICML 2025, COLT 2025, and ICLR 2025.
+
+* Jul, 2024: Our work [Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966) received the Best Paper Award at [COLT 2024](https://learningtheory.org/colt2024/awards.html).
 
 
 
@@ -38,6 +37,23 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
 [vasilyan]: https://www.vasilyan.net
 
 ## Publications
+
+1. Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions <br/>
+    w/ J. Kim, K. Shah, S. M. Kakade, S. Chen <br/>
+    <b style='color:red;'> Outstanding Paper Award </b> <br/>
+    [ICML 2025](https://icml.cc)
+
+1. Learning General Gaussian Mixtures with Efficient Score Matching <br/>
+    w/ S. Chen, K. Shah <br/>
+    [COLT 2025](https://learningtheory.org/colt2025/)
+
+1. Online Linear Classification with Massart Noise <br/>
+    w/ [I. Diakonikolas][idiakonikolas], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
+    [ICML 2025](https://icml.cc)
+
+1. Oracle-Efficient Truncated Statistics <br/>
+    w/ K. Karatapanis, [C. Tzamos][tzamos] <br/>
+    [ICLR 2025](https://iclr.cc)
 
 1. [Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension](https://arxiv.org/abs/2407.00966) <br/>
    w/ G. Chandrasekaran, [A. Klivans][klivans], [R. Meka][meka], K. Stavropoulos <br/>
@@ -63,10 +79,12 @@ got the best paper award at [COLT 2024](https://learningtheory.org/colt2024/awar
 
 1. Active Classification with Few Queries under Misspecification <br/>
     w/ [C. Tzamos][tzamos], M. Ma <br/> 
+    <b> Spotlight Presentation </b> <br/>
     [NeurIPS 2024](https://nips.cc)
 
 1. Learning Noisy Halfspaces with a Margin: Massart is no Harder than Random <br/>
     w/ G. Chandrasekaran, K. Stavropoulos, [K. Tian][ktian] <br/> 
+    <b> Spotlight Presentation </b> <br/>
     [NeurIPS 2024](https://nips.cc)
 
 1. [Optimizing Solution-Samplers for Combinatorial Problems:](https://arxiv.org/pdf/2310.05309.pdf) <br/>
