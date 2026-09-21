@@ -16,13 +16,9 @@ function span(className,text){
 function renderScore(key){
   const fragment=document.createDocumentFragment();
   const shift=pitch(key)-pitch(BASE_KEY);
-  song.verses.forEach((verse,index)=>{
+  song.verses.forEach(verse=>{
     const section=document.createElement('section');
     section.className='verse';
-    const heading=document.createElement('h2');
-    heading.className='verse-title';
-    heading.textContent='ΣΤΡΟΦΗ '+String(index+1).padStart(2,'0');
-    section.append(heading);
     for(const line of verse){
       const paragraph=document.createElement('p');
       paragraph.className='song-line';
@@ -47,8 +43,6 @@ function applyKey(value,{persist=true}={}){
   if(!next)throw new Error('Invalid key');
   currentKey=next;
   selector.value=next;
-  byId('current-key').textContent=`Στίχοι & συγχορδίες · Βάση ${GREEK[next]} (${next})`;
-  byId('copy-link').textContent=`Αντιγραφή συνδέσμου · ${next}`;
   byId('copy-status').textContent='';
   byId('manual-link').hidden=true;
   renderScore(next);
