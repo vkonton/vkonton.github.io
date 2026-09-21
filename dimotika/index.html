@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Στίχοι και συγχορδίες για την παρέα, με αλλαγή τόνου.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Πάνω σε ψηλή ραχούλα · Dimotika</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./songbook.css">
+  <script type="module" src="./songbook.mjs"></script>
+</head>
+<body>
+<main class="shell">
+  <nav class="topbar" aria-label="Τραγούδια παρέας"><span class="brand">DIMOTIKA</span><span>Τραγούδια παρέας</span></nav>
+  <header class="song-heading"><p class="eyebrow">Στερεά Ελλάδα · Παραδοσιακό</p><h1>Πάνω σε ψηλή ραχούλα</h1><p class="subtitle" id="current-key">Στίχοι & συγχορδίες · Βάση Ρε (D)</p></header>
+  <p id="unknown-song" role="status" hidden>Το τραγούδι δεν έχει προστεθεί ακόμη. Εμφανίζεται η πιλοτική σελίδα.</p>
+  <section class="controls" aria-label="Αλλαγή τόνου">
+    <div class="key-controls"><label class="control-label" for="song-key">Τόνος</label>
+      <button type="button" id="key-down" class="step" aria-label="Ένα ημιτόνιο κάτω" disabled>−</button>
+      <select id="song-key" disabled><option value="D">D · Ρε</option></select>
+      <button type="button" id="key-up" class="step" aria-label="Ένα ημιτόνιο πάνω" disabled>+</button>
+    </div>
+    <button type="button" class="reset" id="reset-key" disabled>↺ Επαναφορά σε D</button>
+  </section>
+  <p class="chart-note"><strong>Προσχέδιο συνοδείας.</strong> Οι αλλαγές θέλουν επιβεβαίωση στην πρόβα με την εκτέλεση αναφοράς.</p>
+  <noscript>Για τις συγχορδίες και την αλλαγή τόνου χρειάζεται ενεργοποιημένη JavaScript στον browser σου.</noscript>
+  <article class="score" id="score" aria-label="Στίχοι με συγχορδίες"></article>
+  <div class="resources"><a id="youtube" href="https://www.youtube.com/watch?v=h8uxA1S2mBk" target="_blank" rel="noopener noreferrer">♫ YouTube · Κουτσώλης / Άρης Ντίνας ↗</a><button type="button" class="copy-button" id="copy-link" disabled>Αντιγραφή συνδέσμου · D</button></div>
+  <p role="status" class="copy-status" id="copy-status"></p>
+  <label class="manual-link" id="manual-link" hidden>Σύνδεσμος με τον επιλεγμένο τόνο<input id="share-url" readonly></label>
+  <details><summary>Εκδοχή & πηγές</summary><div class="sources">
+    <p>Παραδοσιακοί <a href="https://el.wikisource.org/wiki/Πάνω_σε_ψηλή_ραχούλα" target="_blank" rel="noopener noreferrer">στίχοι</a>. Απλοποιημένη, δοκιμαστική συνοδεία για την παρέα. Η αρχική φράση βασίζεται στο <a href="https://www.nakas.gr/el/proionta/partitoures-online/gia-ola-ta-organa/dimotika-tragoudia/filippos-nakas-pano-se-psili-rachoula_570432/" target="_blank" rel="noopener noreferrer">δημοσιευμένο δείγμα του Νάκα</a> (Gm–A–Gm), μεταφερμένο σε D. Οι καταλήξεις και η τοποθέτηση των επόμενων αλλαγών είναι προτάσεις προς έλεγχο.</p>
+    <p>Υπάρχουν διαφορετικές ρυθμικές εκδοχές. Η <a href="https://kanellatou.gr/el/paradosiako/sterea-ellada/aitoloakarnania/pano-se-psili-rachoula.html" target="_blank" rel="noopener noreferrer">Κανελλάτου</a> καταγράφει συρτό 8/8, Νιγκρίζ με μετατροπία σε Ραστ. Η παρούσα συνοδεία δεν αποτελεί πιστή μεταγραφή της ηχογράφησης Κουτσώλη. Το YouTube ανοίγει την αρχική ηχογράφηση· ο τόνος του ήχου δεν αλλάζει.</p>
+  </div></details>
+  <footer><span>Η αλλαγή τόνου ισχύει μόνο στη συσκευή σου.</span><span>01 τραγούδι</span></footer>
+</main>
+</body>
+</html>
