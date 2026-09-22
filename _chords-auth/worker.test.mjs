@@ -95,6 +95,26 @@ test('worker accepts only authenticated JSON chart writes with allowed origin',a
   const invalid=await handler(new Request('https://auth.example/chart',{method:'PUT',headers,body:JSON.stringify({song:id,text:'[H]bad',base})}),env);
   assert.equal(invalid.status,400);
 });
+test('a new song can save its first lyrics and source key without weakening path or conflict checks',async()=>{
+  const song='song-06',base='{key: unknown}\n',text='{key: A}\n\n[Am]Δοκιμή\n';
+  let writes=0;
+  const handler=createHandler(async(url,options)=>{
+    assert.ok(url.includes('/chords/charts/song-06.txt'));
+    if(options.method!=='PUT')return response({...file(base),path:repositoryPath(song)});
+    writes++;
+    const body=JSON.parse(options.body);
+    assert.equal(Buffer.from(body.content,'base64').toString('utf8'),text);
+    assert.equal(body.sha,'a'.repeat(40));
+    return response({content:{path:repositoryPath(song),sha:'b'.repeat(40)},commit:{sha:'c'.repeat(40)}});
+  });
+  const headers={Origin:SITE,Authorization:'Bearer '+await auth(),'Content-Type':'application/json'};
+  const send=body=>handler(new Request('https://auth.example/chart',{method:'PUT',headers,body:JSON.stringify(body)}),env);
+  assert.equal((await send({song,base,text})).status,200);
+  assert.equal(writes,1);
+  assert.equal((await send({song:'song-53',base,text})).status,400);
+  assert.equal((await send({song,base,text:base})).status,400);
+  assert.equal(writes,1);
+});
 
 test('OAuth rejects other users or missing repository write permission',async()=>{
   for(const login of ['another-user','vkonton']){

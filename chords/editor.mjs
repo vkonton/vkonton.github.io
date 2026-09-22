@@ -1,15 +1,23 @@
-import {parseChart,normalizeChart,readGithubChart} from './chart.mjs?v=7';
-import {currentUser,initialAuthError,isConfigured,didReturnFromLogin,signIn,signOut,request} from './auth.mjs?v=7';
+import {parseChart,normalizeChart,readGithubChart,chartParts,withChartKey} from './chart.mjs?v=8';
+import {currentUser,initialAuthError,isConfigured,didReturnFromLogin,signIn,signOut,request} from './auth.mjs?v=8';
 
 export function setupEditor({song,getPublished,setPublished,preview,restore}){
-  const el=id=>document.getElementById(id),input=el('chart-editor');
+  const el=id=>document.getElementById(id),input=el('chart-editor'),sourceKey=el('source-key');
   const storageKey='chords:draft:'+song.id,legacyKey='dimotika:draft:'+song.id;
   let base=getPublished(),busy=false,user=null;
+  function draftText(){
+    // Keep legacy charts byte-for-byte unchanged until the user changes them.
+    if(!base.startsWith('{key:')&&(sourceKey.value||null)===song.baseKey)return normalizeChart(input.value);
+    return withChartKey(input.value,sourceKey.value||null);
+  }
+  function displayDraft(text){
+    const parts=chartParts(text,song.baseKey);input.value=parts.body;sourceKey.value=parts.baseKey||'';
+  }
   const message=(text,error=false)=>{
     el('editor-status').textContent=text;el('editor-status').classList.toggle('error',error);
   };
   function remember(){
-    try{localStorage.setItem(storageKey,JSON.stringify({text:input.value,base}));return true;}catch{return false;}
+    try{localStorage.setItem(storageKey,JSON.stringify({text:draftText(),base}));return true;}catch{return false;}
   }
   function forget(){try{localStorage.removeItem(storageKey);localStorage.removeItem(legacyKey);}catch{}}
   function authControls(){
@@ -20,16 +28,16 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
   function setBusy(value){
     busy=value;
     for(const id of ['preview-chart','reload-chart','cancel-edit','sign-out'])el(id).disabled=value;
-    input.readOnly=value;el('editor-panel').setAttribute('aria-busy',String(value));authControls();
+    input.readOnly=value;sourceKey.disabled=value;el('editor-panel').setAttribute('aria-busy',String(value));authControls();
   }
   function usePublished(latest){base=latest.text;setPublished(latest.text);}
   async function openEditor(){
     if(!el('editor-panel').hidden){input.focus();return;}
     el('editor-panel').hidden=false;el('edit-song').setAttribute('aria-expanded','true');
-    input.value=getPublished();base=getPublished();
+    base=getPublished();displayDraft(base);
     let draft=null;
     try{draft=JSON.parse(localStorage.getItem(storageKey)??localStorage.getItem(legacyKey));}catch{}
-    if(draft&&typeof draft.text==='string'&&typeof draft.base==='string'){input.value=draft.text;base=draft.base;}
+    if(draft&&typeof draft.text==='string'&&typeof draft.base==='string'){base=draft.base;displayDraft(draft.text);}
     else draft=null;
     message('Loading from GitHub…');setBusy(true);
     const [latestResult,userResult]=await Promise.allSettled([readGithubChart(song.id),currentUser()]);
@@ -38,7 +46,7 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
       const latest=latestResult.value;setPublished(latest.text);
       if(draft&&normalizeChart(draft.text)!==latest.text){
         status=base===latest.text?'Your local draft was restored.':'There is a newer version on GitHub. Your local draft is preserved.';
-      }else{usePublished(latest);input.value=latest.text;forget();}
+      }else{usePublished(latest);displayDraft(latest.text);forget();}
     }else status=latestResult.reason.message;
     user=userResult.status==='fulfilled'?userResult.value:null;
     const error=initialAuthError()||(userResult.status==='rejected'?userResult.reason.message:'');
@@ -46,20 +54,22 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
     setBusy(false);input.focus();
   }
   el('edit-song').addEventListener('click',()=>void openEditor());
-  input.addEventListener('input',()=>{
+  function onDraftChange(){
     const retained=remember();message(retained?'Local draft · not published.':'Draft is only in this tab. Browser storage is unavailable.',!retained);
-  });
+  }
+  input.addEventListener('input',onDraftChange);
+  sourceKey.addEventListener('change',onDraftChange);
   el('preview-chart').addEventListener('click',()=>{
-    try{preview(parseChart(input.value));remember();message('Preview · not published.');}catch(error){message(error.message,true);}
+    try{preview(parseChart(draftText()),draftText());remember();message('Preview · not published.');}catch(error){message(error.message,true);}
   });
   el('cancel-edit').addEventListener('click',()=>{
-    if(!remember()&&normalizeChart(input.value)!==base){message('Browser storage is unavailable. Copy your draft before closing.',true);return;}
+    if(!remember()&&draftText()!==base){message('Browser storage is unavailable. Copy your draft before closing.',true);return;}
     restore();el('editor-panel').hidden=true;el('edit-song').setAttribute('aria-expanded','false');el('edit-song').focus();
   });
   el('reload-chart').addEventListener('click',async()=>{
-    if(normalizeChart(input.value)!==base&&!confirm('Replace your local draft with the latest version from GitHub?'))return;
+    if(draftText()!==base&&!confirm('Replace your local draft with the latest version from GitHub?'))return;
     setBusy(true);
-    try{const latest=await readGithubChart(song.id);usePublished(latest);input.value=latest.text;forget();restore();message('Latest version loaded.');}
+    try{const latest=await readGithubChart(song.id);usePublished(latest);displayDraft(latest.text);forget();restore();message('Latest version loaded.');}
     catch(error){message(error.message,true);}finally{setBusy(false);}
   });
   el('sign-in').addEventListener('click',()=>{
@@ -76,13 +86,13 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
       message(isConfigured()?'Sign in with GitHub, then save your changes.':'GitHub sign-in is not connected yet. Your draft is preserved.',true);
       el('sign-in').focus();return;
     }
-    try{parseChart(input.value);}catch(error){message(error.message,true);return;}
+    try{parseChart(draftText());}catch(error){message(error.message,true);return;}
     remember();setBusy(true);message('Saving to GitHub…');
     try{
-      const saved=await request('/chart',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({song:song.id,text:input.value,base})});
+      const saved=await request('/chart',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({song:song.id,text:draftText(),base})});
       parseChart(saved.text);
-      if(normalizeChart(input.value)!==saved.text)throw new Error('GitHub did not confirm this draft. It has been preserved.');
-      usePublished(saved);input.value=saved.text;forget();preview(parseChart(saved.text));
+      if(draftText()!==saved.text)throw new Error('GitHub did not confirm this draft. It has been preserved.');
+      usePublished(saved);displayDraft(saved.text);forget();preview(parseChart(saved.text),saved.text);
       message(saved.alreadySaved?'Already saved on GitHub.':'Saved on GitHub. The public page will update after publishing.');
     }catch(error){
       message(error.message||'Could not confirm the save. Your draft is preserved.',true);
@@ -90,7 +100,7 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
     }finally{setBusy(false);}
   });
   addEventListener('beforeunload',event=>{
-    if(!el('editor-panel').hidden&&normalizeChart(input.value)!==base&&!remember()){event.preventDefault();event.returnValue='';}
+    if(!el('editor-panel').hidden&&draftText()!==base&&!remember()){event.preventDefault();event.returnValue='';}
   });
   el('edit-song').disabled=false;authControls();
   if(didReturnFromLogin())void openEditor();

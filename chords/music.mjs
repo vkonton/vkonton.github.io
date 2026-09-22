@@ -45,9 +45,10 @@ export function parseLine(line) {
         segments.push({ chord, text: line.slice(last) });
     return segments;
 }
-export function songUrl(origin, key) {
+export function songUrl(origin, key, songId='pano-se-psili-rachoula') {
     const url = new URL(origin);
-    url.searchParams.set('song', 'pano-se-psili-rachoula');
-    url.searchParams.set('key', normalizeKey(key) ?? BASE_KEY);
+    url.searchParams.set('song', songId);
+    if(key===null)url.searchParams.delete('key');
+    else url.searchParams.set('key', normalizeKey(key) ?? BASE_KEY);
     return url.toString();
 }

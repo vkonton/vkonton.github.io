@@ -44,3 +44,10 @@ test('key links survive reserved characters and select the pilot song', () => {
     assert.equal(u.searchParams.get('song'), song.id);
     assert.equal(u.searchParams.get('other'), '1');
 });
+test('collection links preserve the Pages path and omit unverified keys for lyrics',()=>{
+    const url=new URL(songUrl('https://vkonton.github.io/chords/?song=old&key=D',null,'song-02'));
+    assert.equal(url.pathname,'/chords/');
+    assert.equal(url.searchParams.get('song'),'song-02');
+    assert.equal(url.searchParams.has('key'),false);
+    assert.equal(new URL(songUrl(url.href,'F#','song-02')).searchParams.get('key'),'F#');
+});

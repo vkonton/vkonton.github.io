@@ -6,29 +6,41 @@
   <meta name="description" content="Lyrics and chords with transposition.">
   <meta name="referrer" content="no-referrer">
   <meta name="robots" content="noindex, nofollow">
-  <title>Πάνω σε ψηλή ραχούλα</title>
+  <title>Chords · Songbook</title>
   <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="./songbook.css?v=7">
-  <script type="module" src="./songbook.mjs?v=7"></script>
+  <link rel="stylesheet" href="./songbook.css?v=8">
+  <script type="module" src="./songbook.mjs?v=8"></script>
 </head>
 <body>
 <main class="shell">
-  <header class="song-heading"><h1 lang="el">Πάνω σε ψηλή ραχούλα</h1></header>
-  <audio class="song-audio" controls preload="metadata" aria-label="Recording · Πάνω σε ψηλή ραχούλα" src="./audio/pano-se-psili-rachoula.m4a">
-    <a href="./audio/pano-se-psili-rachoula.m4a">Listen to the recording</a>
+  <details class="collection" id="collection">
+    <summary>Songbook · 52 songs</summary>
+    <div class="collection-controls">
+      <label for="song-search">Find a song<input type="search" id="song-search" placeholder="Title or performer" autocomplete="off"></label>
+      <label for="song-filter">Show<select id="song-filter"><option value="all">All songs</option><option value="lyrics">With lyrics</option><option value="needed">Lyrics needed</option><option value="instrumental">Instrumental</option></select></label>
+    </div>
+    <p id="collection-count" class="collection-count" role="status"></p>
+    <nav id="song-list" class="song-list" aria-label="Song collection"></nav>
+  </details>
+  <nav class="song-navigation" aria-label="Song order"><a id="previous-song">← Previous</a><span id="song-number"></span><a id="next-song">Next →</a></nav>
+  <header class="song-heading"><h1 id="song-title" lang="el">Songbook</h1><p id="song-status" class="song-status"></p></header>
+  <audio id="song-audio" class="song-audio" controls preload="metadata" hidden>
+    <a id="audio-download">Listen to the recording</a>
   </audio>
   <p id="unknown-song" role="status" hidden>This song has not been added yet. Showing the first song.</p>
-  <section class="controls" aria-label="Transpose">
-    <div class="key-controls"><label class="control-label" for="song-key">Key</label>
+  <section class="controls" aria-label="Song controls">
+    <div class="key-controls" id="transpose-controls" hidden><label class="control-label" for="song-key">Key</label>
       <button type="button" id="key-down" class="step" aria-label="Down one semitone" disabled>−</button>
       <select id="song-key" disabled><option value="D">D</option></select>
       <button type="button" id="key-up" class="step" aria-label="Up one semitone" disabled>+</button>
     </div>
-    <button type="button" class="reset" id="reset-key" aria-label="Reset to D" title="Reset to D" disabled>↺ D</button>
+    <button type="button" class="reset" id="reset-key" aria-label="Reset source key" disabled hidden>↺ D</button>
     <button type="button" class="edit-toggle" id="edit-song" aria-expanded="false" aria-controls="editor-panel" disabled>Edit</button>
   </section>
   <section class="editor-panel" id="editor-panel" aria-label="Edit song" hidden>
-    <label for="chart-editor">Lyrics & chords in D</label>
+    <label for="source-key">Source key</label>
+    <select id="source-key"><option value="">Unknown / lyrics only</option></select>
+    <label for="chart-editor" class="chart-label">Lyrics & chords</label>
     <p class="editor-hint" id="editor-hint">Put chords in brackets, e.g. [Dm]. Preview follows the selected key.</p>
     <textarea id="chart-editor" rows="16" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="editor-hint" maxlength="32000"></textarea>
     <div class="editor-actions">
@@ -46,9 +58,10 @@
   </section>
   <noscript>Enable JavaScript to view and transpose the chords.</noscript>
   <article lang="el" class="score" id="score" aria-label="Lyrics with chords"></article>
-  <div class="resources"><a id="youtube" href="https://www.youtube.com/watch?v=h8uxA1S2mBk" target="_blank" rel="noopener noreferrer" aria-label="YouTube · Κουτσώλης / Άρης Ντίνας">YouTube ↗</a><button type="button" class="copy-button" id="copy-link" disabled>Copy link</button></div>
+  <div class="resources"><a id="youtube" target="_blank" rel="noopener noreferrer">YouTube ↗</a><button type="button" class="copy-button" id="copy-link" disabled>Copy link</button></div>
   <p role="status" class="copy-status" id="copy-status"></p>
   <label class="manual-link" id="manual-link" hidden>Link with selected key<input id="share-url" readonly></label>
+  <details class="research"><summary>Sources & version notes</summary><p id="version-note"></p><p id="chord-evidence"></p><ul id="song-sources"></ul><p><a href="./research/CHORD-AND-LYRIC-RESEARCH.md" target="_blank" rel="noopener noreferrer">Full research report ↗</a></p></details>
 </main>
 </body>
 </html>

@@ -1,6 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeChart,parseChart,repositoryPath,readGithubChart,checkSave} from './chart.mjs';
+import {normalizeChart,parseChart,repositoryPath,readGithubChart,checkSave,chartParts,withChartKey} from './chart.mjs';
+import {songs} from './songs.mjs';
+import {readFile} from 'node:fs/promises';
 import {parseLine,transposeChord} from './music.mjs';
 
 const id='pano-se-psili-rachoula';
@@ -21,9 +23,35 @@ test('edited chords transpose without changing their lyrics or qualities',()=>{
   assert.equal(transposeChord(segments[0].chord,2,'E'),'Bm');
   assert.equal(segments.map(s=>s.text).join(''),'Πάνω σε ψηλή ραχούλα');
 });
-test('chart paths are restricted to the expected song',()=>{
+test('chart paths are restricted to the 52 catalogued songs',()=>{
   assert.equal(repositoryPath(id),'chords/charts/pano-se-psili-rachoula.txt');
-  assert.throws(()=>repositoryPath('../../other-repository'));
+  assert.equal(songs.length,52);
+  for(const song of songs)assert.equal(repositoryPath(song.id),`chords/charts/${song.id}.txt`);
+  for(const invalid of ['../../other-repository','song-00','song-53','song-21','song-01.txt','song-01/../README'])assert.throws(()=>repositoryPath(invalid));
+});
+test('source key metadata keeps unknown lyrics untransposed and separates metadata from verses',()=>{
+  assert.deepEqual(chartParts(original,'D'),{body:original.trim(),baseKey:'D'});
+  const unknown=withChartKey('Πάνω\n\nκάθεται',null);
+  assert.equal(chartParts(unknown,'D').baseKey,null);
+  assert.deepEqual(parseChart(unknown),[['Πάνω'],['κάθεται']]);
+  const edited=withChartKey('[Am]Πάνω','A');
+  assert.equal(chartParts(edited).baseKey,'A');
+  assert.deepEqual(parseChart(edited),[['[Am]Πάνω']]);
+  assert.throws(()=>parseChart('{key: H}\ntext'));
+  assert.deepEqual(parseChart('{key: unknown}\n',{allowEmpty:true}),[]);
+  assert.throws(()=>parseChart('{key: unknown}\n'));
+});
+test('all catalogued chart files exist, parse, and match the research coverage',async()=>{
+  let lyrics=0,empty=0;
+  for(const song of songs){
+    const text=await readFile(new URL(song.chart,import.meta.url),'utf8');
+    const verses=parseChart(text,{allowEmpty:true});
+    if(song.id===id)continue;
+    assert.equal(chartParts(text).baseKey,null);
+    assert.ok(!text.includes('['),'No inferred chord symbols in imported lyrics');
+    if(verses.length)lyrics++;else empty++;
+  }
+  assert.equal(lyrics,30);assert.equal(empty,21);
 });
 test('save detects remote conflicts but recognises a completed commit',()=>{
   assert.deepEqual(checkSave(changed,original,{text:original}),{text:changed,alreadySaved:false});

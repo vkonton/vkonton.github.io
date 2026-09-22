@@ -1,0 +1,474 @@
+{
+  "sheet": "https://docs.google.com/spreadsheets/d/1-KgxH8uTU-lV9M3upvR8ysVk-TwdzFQ6Jp9EqC41nXw/edit?gid=1095523562#gid=1095523562",
+  "checked": "2026-09-22",
+  "songs": [
+    {
+      "id": 1,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": false,
+      "title": "Σκάρος / Πήγαινα το δρόμο δρόμο",
+      "recording": "https://www.youtube.com/watch?v=3gazi5ey9vU",
+      "performer": "Γκιντίκι · Βοσκαρίδης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 2,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": false,
+      "title": "Γιάννη μου το μαντήλι σου",
+      "recording": "https://www.youtube.com/watch?v=I9ziNNj5AQw",
+      "performer": "Μαρινάκης / Κωτσίνης · live",
+      "existing_chart": null
+    },
+    {
+      "id": 3,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": true,
+      "title": "Ένα βράδυ βγήκε ο Χάρος",
+      "recording": "https://www.youtube.com/watch?v=sb_b0EMo4ZQ",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 4,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": true,
+      "title": "Παιδιά της Σαμαρίνας",
+      "recording": "https://www.youtube.com/watch?v=KvK9G5wg5d0",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 5,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": false,
+      "title": "Στης Πάργας τον ανήφορο",
+      "recording": "https://www.youtube.com/watch?v=sG_b9C2St4M",
+      "performer": "Κουτσώλης / Άρης Ντίνας",
+      "existing_chart": null
+    },
+    {
+      "id": 6,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": false,
+      "title": "Βασίλη μ’ τα ματάκια σου",
+      "recording": "https://www.youtube.com/watch?v=2R5-ELl1Nts",
+      "performer": "Κουτσώλης / Άρης Ντίνας",
+      "existing_chart": null
+    },
+    {
+      "id": 7,
+      "section": "Ηπειρώτικα · πωγωνίσια · στρωτά",
+      "optional": false,
+      "title": "Ο ήλιος βασιλεύει",
+      "recording": "https://www.youtube.com/watch?v=ZXQccrCGix0",
+      "performer": "Κουτσώλης / Β. Νταλάρας",
+      "existing_chart": null
+    },
+    {
+      "id": 8,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": false,
+      "title": "Ιτιά",
+      "recording": "https://www.youtube.com/watch?v=2NNBEAG34Ck",
+      "performer": "Ζαρίας / Κοπανιτσάνος · Τρίο",
+      "existing_chart": null
+    },
+    {
+      "id": 9,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": true,
+      "title": "Ήλιος (οργανικό)",
+      "recording": "https://www.youtube.com/watch?v=TJgFhrOfC-4",
+      "performer": "Τάσος Κουτσώλης · κλαρίνο",
+      "existing_chart": null
+    },
+    {
+      "id": 10,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": false,
+      "title": "Μαργιόλικο",
+      "recording": "https://www.youtube.com/watch?v=yba3lulousc",
+      "performer": "Κουτσώλης / Ξ. Τσιούνης",
+      "existing_chart": null
+    },
+    {
+      "id": 11,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": false,
+      "title": "Παιδιά μ’ γιατί ’στε ανάλαγα",
+      "recording": "https://www.youtube.com/watch?v=3yjMbYmsP2o",
+      "performer": "Κουτσώλης / Ξ. Τσιούνης",
+      "existing_chart": null
+    },
+    {
+      "id": 12,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": true,
+      "title": "Πέταξε περδικούλα μου",
+      "recording": "https://www.youtube.com/watch?v=5pT6XFo0NsA",
+      "performer": "Κιντέρια · Ποντικοπούλου, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 13,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": false,
+      "title": "Στα Σάλωνα σφάζουν αρνιά",
+      "recording": "https://www.youtube.com/watch?v=cHISZSMGces",
+      "performer": "Λάμπρος Παπαθανασίου",
+      "existing_chart": null
+    },
+    {
+      "id": 14,
+      "section": "Τσάμικα · Στερεά & Μοριάς · σταθερά",
+      "optional": false,
+      "title": "Κάτω στου Βάλτου τα χωριά",
+      "recording": "https://www.youtube.com/watch?v=2OD881Lv8pw",
+      "performer": "Παναγιώτης Λάλεζας",
+      "existing_chart": null
+    },
+    {
+      "id": 15,
+      "section": "Θεσσαλικά · μπεράτια · σταθερά",
+      "optional": false,
+      "title": "Μπαίνω μες στ’ αμπέλι",
+      "recording": "https://www.youtube.com/watch?v=D7aB922txqg",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 16,
+      "section": "Θεσσαλικά · μπεράτια · σταθερά",
+      "optional": false,
+      "title": "Διαμάντω",
+      "recording": "https://www.youtube.com/watch?v=D7aB922txqg",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 17,
+      "section": "Θεσσαλικά · μπεράτια · σταθερά",
+      "optional": false,
+      "title": "Κοντούλα βλάχα",
+      "recording": "https://www.youtube.com/watch?v=D7aB922txqg",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 18,
+      "section": "Θεσσαλικά · μπεράτια · σταθερά",
+      "optional": true,
+      "title": "Λαφίνα",
+      "recording": "https://www.youtube.com/watch?v=_WhPfraCHuA",
+      "performer": "Κιντέρια · Ποντικοπούλου, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 19,
+      "section": "Θεσσαλικά · μπεράτια · σταθερά",
+      "optional": true,
+      "title": "Σαν περπατάς παραπατάς",
+      "recording": "https://www.youtube.com/watch?v=cbN-4Rloj0A",
+      "performer": "Πυργάκη · Γιώργος Κόρος, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 20,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": true,
+      "title": "Αριστείδης",
+      "recording": "https://www.youtube.com/watch?v=q0I8he8Cxw8",
+      "performer": "Τάσος Κουτσώλης · κλαρίνο",
+      "existing_chart": null
+    },
+    {
+      "id": 21,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Πάνω σε ψηλή ραχούλα",
+      "recording": "https://www.youtube.com/watch?v=h8uxA1S2mBk",
+      "performer": "Κουτσώλης / Άρης Ντίνας",
+      "existing_chart": "https://vkonton.github.io/dimotika/?song=pano-se-psili-rachoula"
+    },
+    {
+      "id": 22,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Μου παρήγγειλε τ’ αηδόνι",
+      "recording": "https://www.youtube.com/watch?v=iwm99LlLqDI",
+      "performer": "Γκιντίκι · Σιούτης · πρώτο τραγούδι",
+      "existing_chart": null
+    },
+    {
+      "id": 23,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Περδικούλα ημέρευα",
+      "recording": "https://www.youtube.com/watch?v=eR4J5nau20I",
+      "performer": "Κιντέρια · Ποντικοπούλου, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 24,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Παναγιωτίτσα λυγερή",
+      "recording": "https://www.youtube.com/watch?v=By2p8Wxljbg",
+      "performer": "Παπαδοπούλου / Οικονομίδης",
+      "existing_chart": null
+    },
+    {
+      "id": 25,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": true,
+      "title": "Δίστιχα της θάλασσας",
+      "recording": "https://www.youtube.com/watch?v=s3cwsdbarhk",
+      "performer": "Κιντέρια · Ποντικοπούλου, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 26,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Βρύση μου μαλαματένια",
+      "recording": "https://www.youtube.com/watch?v=EUjRvv5jDP4",
+      "performer": "Κουτσώλης / Β. Νταλάρας",
+      "existing_chart": null
+    },
+    {
+      "id": 27,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Στα ρίτσια · καγκέλι",
+      "recording": "https://www.youtube.com/watch?v=RmOLUSPN3-I",
+      "performer": "Κουτσώλης / Ι. Γκουζιώτης",
+      "existing_chart": null
+    },
+    {
+      "id": 28,
+      "section": "Καλαματιανά · καγκέλι",
+      "optional": false,
+      "title": "Μαντήλι καλαματιανό",
+      "recording": "https://www.youtube.com/watch?v=JAdIDMmojdQ",
+      "performer": "Τάσος Κουτσώλης · CD",
+      "existing_chart": null
+    },
+    {
+      "id": 29,
+      "section": "Σμυρναίικα · Ερηνάκι · αλλαγή αγωγής",
+      "optional": false,
+      "title": "Ερηνάκι",
+      "recording": "https://www.youtube.com/watch?v=KpzAGv1O91s",
+      "performer": "Ζαρίας · Σκούτας / Μηταράκης",
+      "existing_chart": null
+    },
+    {
+      "id": 30,
+      "section": "Μικρά Ασία · ζεϊμπέκικα",
+      "optional": false,
+      "title": "Πέργαμος",
+      "recording": "https://www.youtube.com/watch?v=LDUgnRpXy58",
+      "performer": "Γιώργος Κόρος · Επτά ψυχές",
+      "existing_chart": null
+    },
+    {
+      "id": 31,
+      "section": "Μικρά Ασία · ζεϊμπέκικα",
+      "optional": true,
+      "title": "Αϊδίνικο ζεϊμπέκικο",
+      "recording": "https://www.youtube.com/watch?v=wqlQs-UztoQ",
+      "performer": "Ζαρίας / Κοπανιτσάνος · Τρίο",
+      "existing_chart": null
+    },
+    {
+      "id": 32,
+      "section": "Μικρά Ασία · ζεϊμπέκικα",
+      "optional": false,
+      "title": "Νέοι χασικλήδες",
+      "recording": "https://www.youtube.com/watch?v=9KHMVFq93Bo",
+      "performer": "Ζαρίας · Σκούτας / Μηταράκης · αρχή",
+      "existing_chart": null
+    },
+    {
+      "id": 33,
+      "section": "Πολίτικα · συρτά · νέο πάτημα",
+      "optional": false,
+      "title": "Πολίτικο συρτό",
+      "recording": "https://www.youtube.com/watch?v=9KHMVFq93Bo",
+      "performer": "Ζαρίας · Σκούτας / Μηταράκης · τέλος",
+      "existing_chart": null
+    },
+    {
+      "id": 34,
+      "section": "Πολίτικα · συρτά · νέο πάτημα",
+      "optional": true,
+      "title": "Σηλυβριανός",
+      "recording": "https://www.youtube.com/watch?v=3S-6Fs8OKtI",
+      "performer": "Οικονομίδης / Σπανού · live",
+      "existing_chart": null
+    },
+    {
+      "id": 35,
+      "section": "Κυκλάδες · συρτά · στρωτά",
+      "optional": false,
+      "title": "Μες στου Αιγαίου τα νησιά",
+      "recording": "https://www.youtube.com/watch?v=aNUBuDPAk_I",
+      "performer": "Λέτα Κορρέ",
+      "existing_chart": null
+    },
+    {
+      "id": 36,
+      "section": "Κυκλάδες · συρτά · στρωτά",
+      "optional": true,
+      "title": "Στον Άγιο Κωσταντίνο",
+      "recording": "https://www.youtube.com/watch?v=c81rDfgUST4",
+      "performer": "Οικονομίδης / Σπανού · live",
+      "existing_chart": null
+    },
+    {
+      "id": 37,
+      "section": "Κυκλάδες · συρτά · στρωτά",
+      "optional": true,
+      "title": "Περγαντής (συρτός Σερίφου)",
+      "recording": "https://www.youtube.com/watch?v=2fFS4WCH7jw",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 38,
+      "section": "Κυκλάδες · συρτά · στρωτά",
+      "optional": false,
+      "title": "Θερμιώτικος",
+      "recording": "https://www.youtube.com/watch?v=gjoZJMrDmCk",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 39,
+      "section": "Κυκλάδες · συρτά · στρωτά",
+      "optional": false,
+      "title": "Συριανός",
+      "recording": "https://www.youtube.com/watch?v=qSgcOn429yg",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 40,
+      "section": "Κυκλάδες & Εύβοια · μπάλος / καβοντορίτικος",
+      "optional": false,
+      "title": "Μπάλος",
+      "recording": "https://www.youtube.com/watch?v=bUERbM-Iz_g",
+      "performer": "Ζαρίας / Κοπανιτσάνος · Τρίο",
+      "existing_chart": null
+    },
+    {
+      "id": 41,
+      "section": "Κυκλάδες & Εύβοια · μπάλος / καβοντορίτικος",
+      "optional": false,
+      "title": "Καβοντορίτικος",
+      "recording": "https://www.youtube.com/watch?v=-KFmLxciv6U",
+      "performer": "Νίκος Οικονομίδης",
+      "existing_chart": null
+    },
+    {
+      "id": 42,
+      "section": "Νησιώτικα · συρτά · σταθερά",
+      "optional": false,
+      "title": "Γιάντα – Ιντάκαμα",
+      "recording": "https://www.youtube.com/watch?v=zvzyk6ii6Mc",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 43,
+      "section": "Νησιώτικα · συρτά · σταθερά",
+      "optional": false,
+      "title": "Στο Κουφονήσι",
+      "recording": "https://www.youtube.com/watch?v=Ja1MmHGZpeI",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 44,
+      "section": "Νησιώτικα · συρτά · σταθερά",
+      "optional": true,
+      "title": "Πράσινος / Του γάμου",
+      "recording": "https://www.youtube.com/watch?v=8XGeOy-FwJI",
+      "performer": "Οικονομίδης / Σπανού · live",
+      "existing_chart": null
+    },
+    {
+      "id": 45,
+      "section": "Νησιώτικα · συρτά · σταθερά",
+      "optional": false,
+      "title": "Το γλέντι",
+      "recording": "https://www.youtube.com/watch?v=M-nBdLkzdMw",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 46,
+      "section": "Νησιώτικα · συρτά · σταθερά",
+      "optional": false,
+      "title": "Χαίρομαι να σε θορώ",
+      "recording": "https://www.youtube.com/watch?v=CiGeNc9iM2g",
+      "performer": "Οικονομίδης / Σπανού · live",
+      "existing_chart": null
+    },
+    {
+      "id": 47,
+      "section": "Νησιώτικα · σούστα / φούρλες",
+      "optional": false,
+      "title": "Σούστα Κιμώλου",
+      "recording": "https://www.youtube.com/watch?v=ubyVR2DnPUU",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    },
+    {
+      "id": 48,
+      "section": "Νησιώτικα · σούστα / φούρλες",
+      "optional": true,
+      "title": "Φούρλες",
+      "recording": "https://www.youtube.com/watch?v=-GIk1A7Aqk0",
+      "performer": "Οικονομίδης / Σπανού · live",
+      "existing_chart": null
+    },
+    {
+      "id": 49,
+      "section": "Κάσος · Αφούσης",
+      "optional": false,
+      "title": "Αφούσης (Ένα παπόρι έρχεται)",
+      "recording": "https://www.youtube.com/watch?v=EW-oEOeKM40",
+      "performer": "Γκιντίκι · Σιούτης, βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 50,
+      "section": "Ικαρία · από τον παλιό στη Συμπεθέρα",
+      "optional": true,
+      "title": "Ικαριώτικος παλιός",
+      "recording": "https://www.youtube.com/watch?v=dP6Drswo8EM",
+      "performer": "Νίκος Οικονομίδης · βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 51,
+      "section": "Ικαρία · από τον παλιό στη Συμπεθέρα",
+      "optional": true,
+      "title": "Τσαμούρικος",
+      "recording": "https://www.youtube.com/watch?v=kDaTr9IUbGE",
+      "performer": "Νίκος Μήλας · βιολί",
+      "existing_chart": null
+    },
+    {
+      "id": 52,
+      "section": "Ικαρία · από τον παλιό στη Συμπεθέρα",
+      "optional": false,
+      "title": "Ικαριώτικος / Συμπεθέρα",
+      "recording": "https://www.youtube.com/watch?v=FhbvbPQ9G_s",
+      "performer": "Οικονομίδης / Σπανού",
+      "existing_chart": null
+    }
+  ]
+}

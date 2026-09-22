@@ -27,7 +27,8 @@ test('Cloudflare runtime completes OAuth and sends an authenticated chart commit
     });
     export default {fetch(request,env){return new URL(request.url).pathname==='/test-writes'?Response.json(writes):handler(request,env);}};
   `},bundle:true,write:false,format:'esm',platform:'browser'});
-  const mf=new Miniflare(convertV4MiniflareOptions({modules:true,compatibilityDate:'2026-09-01',script:built.outputFiles[0].text,bindings:{GITHUB_CLIENT_ID:'test',GITHUB_CLIENT_SECRET:'test',SESSION_SECRET:'s'.repeat(64)}}));
+  const convertOptions=convertV4MiniflareOptions??(options=>options);
+  const mf=new Miniflare(convertOptions({modules:true,compatibilityDate:'2026-09-01',script:built.outputFiles[0].text,bindings:{GITHUB_CLIENT_ID:'test',GITHUB_CLIENT_SECRET:'test',SESSION_SECRET:'s'.repeat(64)}}));
   try{
     const start=await mf.dispatchFetch('https://auth.example/login?state='+'a'.repeat(64),{redirect:'manual'});
     assert.equal(start.status,302);

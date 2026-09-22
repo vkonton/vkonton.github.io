@@ -51,3 +51,26 @@ noscript { display:block; margin-bottom:24px; }
 
 .auth-actions { margin-top:16px; color:var(--muted); }
 .auth-actions button { border-color:transparent; padding-left:0; text-decoration:underline; text-underline-offset:4px; }
+
+.collection { border-bottom:1px solid var(--border); padding-bottom:20px; margin-bottom:24px; }
+.collection summary,.research summary { cursor:pointer; padding:8px 0; font-size:.875rem; }
+.collection-controls { display:flex; flex-wrap:wrap; gap:12px; margin-top:16px; }
+.collection-controls label { flex:1; min-width:180px; font-size:.8rem; color:var(--muted); }
+.collection-controls input,.collection-controls select { display:block; width:100%; margin-top:6px; padding:10px; border:1px solid var(--border); border-radius:4px; background:var(--background); color:var(--foreground); }
+.collection-count { color:var(--muted); font-size:.8rem; }
+.song-list { max-height:360px; overflow:auto; }
+.song-list a { display:flex; flex-direction:column; gap:5px; padding:12px 8px; border-top:1px solid #eee; text-decoration:none; }
+.song-list a:hover,.song-list a[aria-current] { background:#f5f5f5; }
+.catalog-title { font-size:.95rem; }
+.catalog-status { color:var(--muted); font-size:.75rem; }
+.song-navigation { display:flex; gap:12px; align-items:center; justify-content:space-between; margin-bottom:20px; font-size:.8rem; color:var(--muted); }
+.song-navigation a { padding:8px 0; }
+.song-navigation span { margin-inline:auto; }
+.song-status { font-size:.8rem; color:var(--muted); margin:12px 0 0; }
+.lyrics-only .chord { display:none; }
+.empty-chart { color:var(--muted); font-size:.95rem; line-height:1.7; }
+.research { margin-top:24px; padding-top:16px; border-top:1px solid var(--border); font-size:.85rem; line-height:1.7; color:var(--muted); overflow-wrap:anywhere; }
+.research li { margin-bottom:8px; }
+.editor-panel .chart-label { display:block; margin-top:18px; }
+#source-key { margin-left:12px; max-width:100%; }
+@media print { .collection,.song-navigation,.research,.song-status { display:none; } }

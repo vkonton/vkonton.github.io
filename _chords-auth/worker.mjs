@@ -111,7 +111,7 @@ export function createHandler(fetcher=globalThis.fetch.bind(globalThis),now=()=>
         while(true){const {done,value}=await reader.read();if(done)break;length+=value.length;if(length>200000){await reader.cancel();throw new ApiError('Chart too large.',413);}chunks.push(value);}
         const bytes=new Uint8Array(length);let offset=0;for(const part of chunks){bytes.set(part,offset);offset+=part.length;}
         let body;
-        try{body=JSON.parse(new TextDecoder().decode(bytes));repositoryPath(body.song);parseChart(body.text);parseChart(body.base);}catch(error){throw new ApiError(error.message||'Invalid chart.',400);}
+        try{body=JSON.parse(new TextDecoder().decode(bytes));repositoryPath(body.song);parseChart(body.text);parseChart(body.base,{allowEmpty:true});}catch(error){throw new ApiError(error.message||'Invalid chart.',400);}
         const saved=await saveChart(body,session.token,fetcher);
         return json(saved,200,origin);
       }

@@ -15,8 +15,8 @@ A Cloudflare Worker handles GitHub App sign-in and chart commits for https://vko
 - Sign-in uses OAuth state, a Secure/HttpOnly/SameSite=Lax cookie and PKCE S256.
 - The browser gets an AES-GCM encrypted session, not the GitHub token. The login return is bound to the initiating browser tab's random state; the fragment is removed immediately.
 - The session expires within eight hours and is saved in `sessionStorage`, never persistent local storage. Logout revokes the underlying GitHub user token.
-- API calls allow only the exact Pages origin and require a bearer session. The server allows only the owner `vkonton` and the explicit song chart path, validates notation, reads the current blob, checks the draft base and writes with that blob SHA.
-- The app installation restricts GitHub permissions to the selected repository. The server additionally restricts writes to the known chart file. No repository workflows, permissions or settings can be changed by these routes.
+- API calls allow only the exact Pages origin and require a bearer session. The server allows only the owner `vkonton` and the 52 explicit song chart paths, validates notation, reads the current blob, checks the draft base and writes with that blob SHA.
+- The app installation restricts GitHub permissions to the selected repository. The server additionally restricts writes to the known chart files. No repository workflows, permissions or settings can be changed by these routes.
 - No request logging is enabled; do not log authorization headers, callback codes or session fragments.
 - An ambiguous PUT failure is reconciled by reading the file, not by blindly repeating the write.
 
