@@ -1,5 +1,5 @@
 import {KEYS,mod12,normalizeKey,parseLine,pitch,songUrl,transposeChord} from './music.mjs?v=8';
-import {songs,song as defaultSong,getSong,statusLabels} from './songs.mjs?v=8';
+import {songs,song as defaultSong,getSong,statusLabels} from './songs.mjs?v=9';
 import {parseChart,normalizeChart,chartParts} from './chart.mjs?v=8';
 import {setupEditor} from './editor.mjs?v=8';
 
@@ -110,6 +110,8 @@ for(const [id,entry] of [['previous-song',songs[index-1]],['next-song',songs[ind
 byId('song-number').textContent=String(song.number).padStart(2,'0')+' / '+songs.length;
 byId('song-title').textContent=song.title;document.title=song.title+' · Chords';
 setSongStatus(song.status==='draft'?'':statusLabels[song.status]);
+byId('arrangement-note').textContent=song.arrangementNote||'';
+byId('arrangement-note').hidden=!song.arrangementNote;
 byId('youtube').href=song.youtube;byId('youtube').setAttribute('aria-label','YouTube · '+song.youtubeLabel);
 byId('unknown-song').hidden=!params.get('song')||Boolean(getSong(params.get('song')));
 byId('version-note').textContent=song.notes;

@@ -1,14 +1,20 @@
 # Dimotika: lyrics and chord investigation
 
+**Latest follow-up:** [Kithara chart comparison](KITHARA-FOLLOWUP.md) records six chart inspections, the new Γιάννη score arrangement, the Σηλυβριανός vocal text and additional source comparisons. Current coverage: 31 source texts (one with a score arrangement), 7 instrumental entries, 4 external lyric links (one partial medley), 9 unresolved entries, plus the existing Rachoula chart. It supersedes the initial research snapshot below for entries 2, 4, 6, 16, 34, 35, 42, 46, 49 and 52.
+
 Checked 22 September 2026 against the **Dimotika** tab of [the original Google Sheet](https://docs.google.com/spreadsheets/d/1-KgxH8uTU-lV9M3upvR8ysVk-TwdzFQ6Jp9EqC41nXw/edit?gid=1095523562#gid=1095523562).
 
-All 52 list entries are now in the songbook. Of the 51 previously empty entries, **30 have sourced traditional lyric texts**, **7 are marked instrumental**, **3 link to external lyric sources**, and **11 still need reliable text or version identification**. The existing Rachoula rehearsal chart remains unchanged, preserving the user’s corrected accompaniment and latest edits on GitHub. “Lyrics added” does not mean the exact words, repetitions, or order have been transcribed from the user's chosen recording: every source variant has a visible note. Entry 12 has only a short documented excerpt; entries 20 and 30 supply alternative vocal versions of the listed clarinet/violin selections.
+At the initial import, all 52 list entries were included. Of the 51 previously empty entries, **30 have sourced traditional lyric texts**, **7 are marked instrumental**, **3 link to external lyric sources**, and **11 still need reliable text or version identification**. The existing Rachoula rehearsal chart remains unchanged, preserving the user’s corrected accompaniment and latest edits on GitHub. “Lyrics added” does not mean the exact words, repetitions, or order have been transcribed from the user's chosen recording: every source variant has a visible note. Entry 12 has only a short documented excerpt; entries 20 and 30 supply alternative vocal versions of the listed clarinet/violin selections.
+
+## Initial investigation snapshot
+
+The historical findings below describe the first import. Use the follow-up above for the current additions and access status.
 
 ## How chord evidence was assessed
 
 - Searched Kithara for each missing title and relevant spelling variants. Saved 18 direct candidate links. Kithara search labels and an indicated tonic are **not** verification of a chart. The chart bodies were blocked by its CAPTCHA and were not inspected.
 - Compared catalogue identities, performers, regional variants, specialist archives, publisher samples, teaching material, and academic sources. Multiple websites reproducing the same arrangement do not count as independent confirmation.
-- Examined actual notation where publicly available. A melody-only score, mode label, chord vocabulary, or opening sample is not a full accompaniment chart. No new chord changes were placed over lyrics unless their placement could be established for the intended version. Consequently **none of the new entries is presented as a verified recording transcription**; chord fields remain empty as requested.
+- Examined actual notation where publicly available. A melody-only score, mode label, chord vocabulary, or opening sample is not a full accompaniment chart. No new chord changes were placed over lyrics unless their placement could be established for the intended version. Consequently **none of the new entries is presented as a verified recording transcription**; chord fields were initially left empty.
 - Chordify / ChordU search results were treated as unverified automated suggestions. No inference of chord order was made from a list of detected chords. Different reported keys may be transpositions or mistakes; they cannot be adjudicated by majority vote.
 - Traditional texts are reproduced with source links and minor punctuation/orthographic normalization. Modern protected texts, or texts whose authorship is uncertain, are linked rather than reproduced. Full modern score arrangements and downloaded research PDFs are not included in the published songbook.
 

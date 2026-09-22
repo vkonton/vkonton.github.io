@@ -27,9 +27,9 @@ export const songs = [
     "optional": false,
     "youtube": "https://www.youtube.com/watch?v=I9ziNNj5AQw",
     "youtubeLabel": "Μαρινάκης / Κωτσίνης · live",
-    "status": "lyrics",
-    "baseKey": null,
-    "notes": "Παραδοσιακό κείμενο από την παρτιτούρα του helmiaut, με συμπτυγμένες επαναλήψεις. Η συνοδεία της παρτιτούρας δεν έχει επιβεβαιωθεί για το live Μαρινάκη / Κωτσίνη.",
+    "status": "draft",
+    "baseKey": "E",
+    "notes": "Εκδοχή πρόβας από την παρτιτούρα του helmiaut σε Em. Αποκαταστάθηκαν οι φωνητικές επαναλήψεις που σημειώνει η παρτιτούρα και προστέθηκαν οι τυπωμένες αλλαγές Em, G και Am. Η συνοδεία και η τονικότητα δεν έχουν αντιπαραβληθεί με το live Μαρινάκη / Κωτσίνη.",
     "sources": [
       {
         "label": "Greeklyrics.de · στίχοι και παρτιτούρα",
@@ -40,12 +40,13 @@ export const songs = [
         "url": "https://olympias.lib.uoi.gr/jspui/bitstream/teiep/512/1/lpm_000146.pdf"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/rcAov60NL8YZ56uvqICKjDMbdGQ2NvEhP6qR68hxAEApRy6ZDkRItBbkdKHY11zoptwoRdgJXEA6lFCiP5t-lqqK94FGtvVnYQYxTZfkBrDo4pnrbU1aphrqiXCF5XXb5AJEqPMTXqUVcg8MhOiQEg=="
       }
     ],
-    "chordEvidence": "Ελέγχθηκε η παρτιτούρα Greeklyrics.de: Em, G και Am, με επιστροφή στο Em. Πρόκειται για εναρμόνιση του helmiaut, όχι την εκτέλεση Μαρινάκη / Κωτσίνη. Η μελέτη Ζώτου κατατάσσει τον σκοπό στο πωγωνίσιο πεντατονικό μινόρε· οι βαθμίδες μιας κλίμακας δεν ορίζουν αυτομάτως τις αλλαγές της συγκεκριμένης συνοδείας. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
-    "chart": "./charts/song-02.txt"
+    "chordEvidence": "Διαβάστηκε η πλήρης καταγραφή Kithara για τη Μαρίζα Κωχ μετά την ολοκλήρωση του CAPTCHA. Χρησιμοποιεί Fm, Ab (γραμμένο G#) και Bbm (A#m), καθώς και σύντομα περάσματα στην αρχή. Με μεταφορά ένα ημιτόνιο κάτω, η βασική κίνηση Fm / Ab–Bbm–Fm γίνεται Em / G–Am–Em, όπως στην ανεξάρτητη παρτιτούρα του helmiaut. Η εκδοχή πρόβας ακολουθεί τις θέσεις της παρτιτούρας, χωρίς να προσθέτει τα περάσματα του Kithara. Αυτό επιβεβαιώνει τη βασική εναρμόνιση των δύο γραπτών πηγών, όχι την εκτέλεση της λίστας.",
+    "chart": "./charts/song-02.txt",
+    "arrangementNote": "Score arrangement in E minor (helmiaut). Not checked against the Marinakis / Kotsinis live recording."
   },
   {
     "id": "song-03",
@@ -96,11 +97,11 @@ export const songs = [
         "url": "https://domnasamiou.gr/song/samarina/"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/SJax771ZjvfwwuArE_zWJP9fdVRVEq580_9A4oU_Gf7QnqA5LOILEd1h6NI7d1-fkhpfLNHI9DGLQtOs7ThhcMZTiWYeeIKGfyfGAz44S6aLTpQtBke1Pxpo2-_k1PoMiAYREPL4XEdCmcPsEsklPA=="
       }
     ],
-    "chordEvidence": "Ελέγχθηκε η παρτιτούρα Greeklyrics.de: βάση D, 2/4, κινήσεις D–G–D και A–D. Δεν επιβεβαιώθηκαν η τονικότητα και η εναρμόνιση της εκτέλεσης Γκιντίκι. Οι αλλαγές μένουν εκτός στίχων. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
+    "chordEvidence": "Read the Alexiou chart and its reader corrections on 22 September 2026. The main chart gives D–G–A–D, then Em–D–G–A–D–Bm / Em–D–G–A–D. The independent helmiaut score uses a simpler D/G/A setting with different chord placement. The reader correction in G also changes the harmonization, beyond transposition. These are different arrangements; none verifies the selected Gidiki performance. No changes were inserted over the existing lyrics.",
     "chart": "./charts/song-04.txt"
   },
   {
@@ -141,7 +142,7 @@ export const songs = [
     "youtubeLabel": "Κουτσώλης / Άρης Ντίνας",
     "status": "pending",
     "baseKey": null,
-    "notes": "Η εκτέλεση Κουτσώλη / Ντίνα ταυτοποιείται δισκογραφικά. Βρέθηκαν νεότερες διασκευές με πρόσθετους στίχους και ασαφή πατρότητα· δεν μεταφέρθηκαν ως αυθεντικό κείμενο της λίστας.",
+    "notes": "Η εκτέλεση Κουτσώλη / Ντίνα ταυτοποιείται δισκογραφικά. Βρέθηκαν νεότερες διασκευές με πρόσθετους στίχους και ασαφή πατρότητα· δεν μεταφέρθηκαν ως αυθεντικό κείμενο της λίστας. A fresh Kithara search returned no matching title. The Papazó release information attributes the source song to Vasilis Batzis and Chrysoula Giatra Batzi; its modern text was not assumed to be an anonymous public-domain transcription of the selected Koutsoulis/Ntinas recording.",
     "sources": [
       {
         "label": "Δισκογραφική ταυτοποίηση Κουτσώλη / Ντίνα",
@@ -377,7 +378,7 @@ export const songs = [
     "youtubeLabel": "Γκιντίκι · Σιούτης, βιολί",
     "status": "pending",
     "baseKey": null,
-    "notes": "Ο τίτλος «Διαμάντω» αντιστοιχεί σε διαφορετικά τραγούδια. Βρέθηκε «Σήκω Διαμάντω» σε τσάμικο 6/8, ενώ η λίστα το τοποθετεί σε θεσσαλικό ποτ πουρί. Το κείμενο δεν προστέθηκε χωρίς ασφαλή ταύτιση.",
+    "notes": "Ο τίτλος «Διαμάντω» αντιστοιχεί σε διαφορετικά τραγούδια. Βρέθηκε «Σήκω Διαμάντω» σε τσάμικο 6/8, ενώ η λίστα το τοποθετεί σε θεσσαλικό ποτ πουρί. Το κείμενο δεν προστέθηκε χωρίς ασφαλή ταύτιση. A fresh Kithara search for Διαμάντω returned three other titles, with no identified match for this Gidiki medley.",
     "sources": [
       {
         "label": "Κανελλάτου · Σήκω Διαμάντω, άλλη ρυθμική εκδοχή",
@@ -812,17 +813,30 @@ export const songs = [
     "optional": true,
     "youtube": "https://www.youtube.com/watch?v=3S-6Fs8OKtI",
     "youtubeLabel": "Οικονομίδης / Σπανού · live",
-    "status": "pending",
+    "status": "lyrics",
     "baseKey": null,
-    "notes": "Δεν βρέθηκε ασφαλής φωνητική ή αρμονική μεταγραφή της συγκεκριμένης ζωντανής εκτέλεσης. Οι γραφές Σηλυβριανός / Σιλιβριανός εξετάστηκαν.",
+    "notes": "Προστέθηκε η παραδοσιακή φωνητική εκδοχή «Έχεις δυο μαύρα μάτια και μεγάλα» από το αρχείο της Παρασκευής Κανελλάτου, με μικρή ορθογραφική και στικτική εξομάλυνση. Υπάρχουν και οργανικές εκδοχές του σκοπού. Οι στίχοι δεν αποτελούν μεταγραφή του σύντομου live Οικονομίδη / Σπανού· η αντιστοίχιση της εκτέλεσης εκκρεμεί.",
     "sources": [
       {
         "label": "Δισκογραφική ταυτοποίηση · Νησιωτικά Χορευτικά (Live)",
         "url": "https://open.spotify.com/album/5ddnN25d6WUqnjVcJfznyf"
+      },
+      {
+        "label": "Kanellatou · documented vocal variant, recording match unresolved",
+        "url": "https://kanellatou.gr/el/paradosiako/thrace/east-thrace/silivrianos-syrtos.html"
+      },
+      {
+        "label": "University of the Aegean · historical versions",
+        "url": "https://vmrebetiko.aegean.gr/item/?id=4934"
+      },
+      {
+        "label": "Cyclades field archive · instrumental tune context",
+        "url": "https://cycladesfolkmusic.com/"
       }
     ],
     "chordEvidence": "Δεν έχει επιβεβαιωθεί συνοδεία για την εκτέλεση της λίστας.",
-    "chart": "./charts/song-34.txt"
+    "chart": "./charts/song-34.txt",
+    "arrangementNote": "Traditional vocal variant from Kanellatou’s archive. The selected live recording has not been matched."
   },
   {
     "id": "song-35",
@@ -845,11 +859,15 @@ export const songs = [
         "url": "https://tabsy.gr/kithara/sygxordies/kwx-mariza-mes-stou-aigaiou-ta-nhsia-ver1"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/stg0SHZWWc_sb3tpKPXP4XgEbZIq3xAC0MS4VfXBkncFU25HtLohoihotcXM88xje4AaNSDL8PxEj51xijA8fjCSkmte3rislE0VF-Qp0oTrGbeNTGAujNAhfWjebyHgS2Uk2ZajqCgtigCW4e9G1w=="
+      },
+      {
+        "label": "Νάκας · εκδοτική παρτιτούρα, πλήρες αρχείο μη ελεγμένο",
+        "url": "https://www.nakas.gr/el/proionta/partitoures-online/real-books/real-book-paradosiaka-tragoudia/filippos-nakas-mes-stou-aigaiou-ta-nera-stichoi-mousiki-paradosiako-partitoura-gia-download_568398/"
       }
     ],
-    "chordEvidence": "Η εκδοχή Κωχ στο Tabsy εμφανίζει Em–Am–D–G και E–Am–D–G–D–Em στην πρώτη στροφή. Δεν είναι η εκτέλεση Κορρέ. Παρόμοιες αναδημοσιεύσεις δεν υπολογίζονται ως ανεξάρτητη επιβεβαίωση. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
+    "chordEvidence": "Διαβάστηκε η καταγραφή Κωχ στο Kithara: Em–Am–D–G στην αρχή και E–Am–D–G–D–Em στη συνέχεια. Αναγνώστες αμφισβητούν το E ματζόρε και προτείνουν διαφορετικές λύσεις, άρα δεν υπάρχει συμφωνία για το σημείο. Το Tabsy αναπαράγει την ίδια καταγραφή και δεν είναι ανεξάρτητη επιβεβαίωση. Εντοπίστηκε επίσης έκδοση Νάκα με μελωδία / συγχορδίες, αλλά το πλήρες αγοραζόμενο αρχείο δεν ελέγχθηκε. Δεν τεκμηριώνεται η συνοδεία της Λέτας Κορρέ από τις παραπάνω πηγές.",
     "chart": "./charts/song-35.txt"
   },
   {
@@ -979,20 +997,32 @@ export const songs = [
     "optional": false,
     "youtube": "https://www.youtube.com/watch?v=zvzyk6ii6Mc",
     "youtubeLabel": "Οικονομίδης / Σπανού",
-    "status": "pending",
+    "status": "linked",
     "baseKey": null,
-    "notes": "Ποτ πουρί δύο τραγουδιών. Βρέθηκε καταχώριση Kithara μόνο για «Γιάντα», χωρίς ασφαλή ταύτιση όλου του ποτ πουρί. Δεν συμπληρώθηκε με άσχετες μαντινάδες.",
+    "notes": "Ποτ πουρί δύο τραγουδιών. Οι στίχοι του «Γιάντα», με δημιουργό τον Νίκο Οικονομίδη, είναι διαθέσιμοι στον εξωτερικό σύνδεσμο. Το μέρος «Ηντάκαμα / Ιντάκαμα» παραμένει ανεξακρίβωτο. Η καταγραφή Kithara και η συγκριτική εκτέλεση του 2014 δεν τεκμηριώνουν όλο το live του 2025.",
     "sources": [
       {
         "label": "Δισκογραφική ταυτοποίηση · Νησιωτικά Χορευτικά (Live)",
         "url": "https://open.spotify.com/album/5ddnN25d6WUqnjVcJfznyf"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/VzeE-uNIR-YAeA9_pH2-nMgp8U5SoWePRPdcdNkeFiQx-hGEKlSijnf2QNmulko9nN4krq9b_OlnL1h3pXC5j9srUF9DKlgf-YPcintlf55FM7wsCQWDo0oZg918xhBQJIuBULU7QkZi8rTopkp_Ow=="
+      },
+      {
+        "label": "Γιάντα · external lyrics and songwriter credit",
+        "url": "https://www.greeklyrics.gr/stixoi-parios-giannis-giada"
+      },
+      {
+        "label": "Record label · Γιάντα credits",
+        "url": "https://victorymedia.gr/?product=%CE%B5%CE%BB%CE%B5%CE%BD%CE%B7-%CE%BB%CE%B5%CE%B3%CE%B1%CE%BA%CE%B7-%CE%B3%CE%B9%CE%B1%CE%BD%CF%84%CE%B1-%CE%BD%CE%B1-%CE%BC%CE%B7-%CE%B8%CE%B5%CE%BB%CE%B5%CE%B9%CF%83-%CE%B3%CE%B9%CE%B1%CE%BD"
+      },
+      {
+        "label": "Automated chord comparison · different 2014 medley",
+        "url": "https://chordify.net/chords/nikos-oikonomides-songs/gianta-entakama-feat-kyriake-spanou-chords"
       }
     ],
-    "chordEvidence": "Δεν έχει επιβεβαιωθεί συνοδεία για την εκτέλεση της λίστας. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
+    "chordEvidence": "Read the Kithara Γιάντα chart on 22 September 2026: F#m–Bm–G–Em in the verse; B–E–F#m and G–Em–F#m in the refrain. Chordify’s different, 2014 Oikonomidis/Spanou medley reports Dm–Gm–Eb–Cm, which matches the opening chord pattern when transposed up four semitones. This supports a lead, not a verified transcription of the selected 2025 live medley. The Ηντάκαμα / Ιντάκαμα half remains unresolved. Kithara and the record label credit Nikos Oikonomidis for Γιάντα; full lyrics are linked at source.",
     "chart": "./charts/song-42.txt"
   },
   {
@@ -1073,7 +1103,7 @@ export const songs = [
     "youtubeLabel": "Οικονομίδης / Σπανού · live",
     "status": "pending",
     "baseKey": null,
-    "notes": "Βρέθηκαν η εκτέλεση με τη Γιωργούλα και το live με τη Σπανού, καθώς και αυτόματες προτάσεις συγχορδιών. Δεν βρέθηκε επαρκώς τεκμηριωμένη πλήρης μεταγραφή και δεν επιβεβαιώθηκε ελεύθερο παραδοσιακό κείμενο.",
+    "notes": "Βρέθηκαν η εκτέλεση με τη Γιωργούλα και το live με τη Σπανού, καθώς και αυτόματες προτάσεις συγχορδιών. Δεν βρέθηκε επαρκώς τεκμηριωμένη πλήρης μεταγραφή και δεν επιβεβαιώθηκε ελεύθερο παραδοσιακό κείμενο. Τα στοιχεία της έκδοσης του 2025 αποδίδουν τη σύνθεση και τους στίχους στον Νίκο Οικονομίδη. Δεν αντιμετωπίζεται ως ανώνυμο παραδοσιακό κείμενο.",
     "sources": [
       {
         "label": "Δισκογραφική ταυτοποίηση · Νησιωτικά Χορευτικά (Live)",
@@ -1082,6 +1112,10 @@ export const songs = [
       {
         "label": "Δισκογραφία · Χαίρομαι να σε θορώ, Γιωργούλα",
         "url": "https://music.apple.com/gr/song/1446159872"
+      },
+      {
+        "label": "Shazam · συντελεστές συγκεκριμένης έκδοσης 2025",
+        "url": "https://www.shazam.com/song/1889620936/%CF%87%CE%B1%CE%AF%CF%81%CE%BF%CE%BC%CE%B1%CE%B9-%CE%BD%CE%B1-%CF%83%CE%B5-%CE%B8%CE%BF%CF%81%CF%8E-live"
       }
     ],
     "chordEvidence": "Δεν έχει επιβεβαιωθεί συνοδεία για την εκτέλεση της λίστας.",
@@ -1143,11 +1177,15 @@ export const songs = [
         "url": "https://lyricstranslate.com/el/gkintiki-afousis-lyrics"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/9MeJDh8iOjF5Pdp_C7MB-B5cm6fMaHi3HYUgsQoaseBmiKXvbo15_VdSTpTp_5eYZ2xTzZeRvMrcZA3Fn3CCwF5g8ph1ugj7iBb6-VX0OVb7MrsTuPUfdtU-O-7SHXfnnzshFu4O56-jaXpqFyHtIg=="
+      },
+      {
+        "label": "Separate Gampierakis version · automated comparison only",
+        "url": "https://chordify.net/chords/egerasa-kai-den-mporo-na-to-po-na-men-to-po-afousis-aphouses-gampierakis-kasos-antonis-gampierakis"
       }
     ],
-    "chordEvidence": "Η καταχώριση Γκιντίκι στο Kithara δείχνει Gm στην επικεφαλίδα, αλλά το σώμα της παρτιτούρας δεν ελέγχθηκε. Αυτόματα εργαλεία δίνουν διαφορετικές τονικότητες· αυτό μπορεί να είναι μεταφορά ή σφάλμα και δεν λύθηκε. Δεν τοποθετήθηκαν εικαστικές αλλαγές. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
+    "chordEvidence": "Read the Gidiki Kithara chart by Θάνος Παρπάλης (4 September 2024). Its displayed key is G minor: opening Gm–F–Gm; continuation F–Gm–Cm–F–Gm; refrain F–Eb / F–Gm (Eb is printed as D#). Only the first stanza has aligned chords; later stanzas do not. A separate Gampierakis performance has the same reported chord family in automated analysis, while Papadakis and other Gidiki recordings differ. These comparisons do not verify the listed Gidiki live recording. The chart is a useful unverified lead; chord positions have not been copied into the performance text.",
     "chart": "./charts/song-49.txt"
   },
   {
@@ -1197,11 +1235,15 @@ export const songs = [
         "url": "https://kanellatou.gr/el/paradosiako/east-aegean/ikaria/ik-simpethera.html"
       },
       {
-        "label": "Kithara · υποψήφια καταχώριση, μη επιβεβαιωμένη",
+        "label": "Kithara · chart inspected; selected recording unverified",
         "url": "https://kithara.to/stixoi/2AkO0OkG7-0qOZIK1bb8Ezf6qPih2Q02V2re1DIwIjuj0TlBEzylSuJIR1zj_tAXvXeuVVbGGhrKiN1JS7jBpebZ6CxpZLHbUCU6tma28_lPaAPtBJWUKfVA_5pu4sjImIjvjJQnb0OYDw-7mpx6kA=="
+      },
+      {
+        "label": "Πανεπιστήμιο Μακεδονίας · Μούτσος 2021, παρτιτούρα σ. 54",
+        "url": "https://dspace.lib.uom.gr/bitstream/2159/25677/6/MoutsosKonstantinosPe2021.pdf#page=54"
       }
     ],
-    "chordEvidence": "Δεν έχει επιβεβαιωθεί συνοδεία για την εκτέλεση της λίστας. Στο Kithara ελέγχθηκε η καταχώριση αναζήτησης· η πλήρης παρτιτούρα δεν διαβάστηκε λόγω CAPTCHA.",
+    "chordEvidence": "Διαβάστηκε το Kithara του Marios Kosmas (26/8/2021): στο σώμα υπάρχουν Am και G, ενώ η αυτόματη ένδειξη γράφει G ματζόρε. Η ένδειξη δεν χρησιμοποιήθηκε ως τονικότητα. Η ανεξάρτητη πτυχιακή του Κωνσταντίνου Μούτσου (2021), σ. 54, ελέγχθηκε οπτικά: 2/4, αρχική μελωδική φράση Dm–Gm–Dm–Gm, επόμενη C, πρώτη κατάληξη Dm–G και δεύτερη Dm. Η καταγραφή είναι πιο σύνθετη από το δίχορδο Kithara και δεν ευθυγραμμίζει συλλαβές με νότες. Συμφωνεί με το υπάρχον σύνολο παραδοσιακών διστίχων. Οι αλλαγές δεν τοποθετήθηκαν αυθαίρετα πάνω στις λέξεις ούτε αποδόθηκαν στο live Οικονομίδη / Σπανού.",
     "chart": "./charts/song-52.txt"
   }
 ];

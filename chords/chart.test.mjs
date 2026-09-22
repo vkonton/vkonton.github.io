@@ -42,16 +42,25 @@ test('source key metadata keeps unknown lyrics untransposed and separates metada
   assert.throws(()=>parseChart('{key: unknown}\n'));
 });
 test('all catalogued chart files exist, parse, and match the research coverage',async()=>{
-  let lyrics=0,empty=0;
+  let lyrics=0,empty=0,scored=0;
   for(const song of songs){
     const text=await readFile(new URL(song.chart,import.meta.url),'utf8');
     const verses=parseChart(text,{allowEmpty:true});
     if(song.id===id)continue;
-    assert.equal(chartParts(text).baseKey,null);
-    assert.ok(!text.includes('['),'No inferred chord symbols in imported lyrics');
+    if(song.number===2){
+      assert.equal(chartParts(text).baseKey,'E');
+      const chords=verses.flat().flatMap(line=>parseLine(line).filter(s=>s.chord).map(s=>s.chord));
+      assert.deepEqual([...new Set(chords)].sort(),['Am','Em','G']);
+      assert.equal(song.status,'draft');
+      assert.ok(song.arrangementNote,'Source arrangement must be identified above the chart');
+      scored++;
+    }else{
+      assert.equal(chartParts(text).baseKey,null);
+      assert.ok(!text.includes('['),'No inferred chord symbols in lyrics-only entries');
+    }
     if(verses.length)lyrics++;else empty++;
   }
-  assert.equal(lyrics,30);assert.equal(empty,21);
+  assert.equal(lyrics,31);assert.equal(empty,20);assert.equal(scored,1);
 });
 test('save detects remote conflicts but recognises a completed commit',()=>{
   assert.deepEqual(checkSave(changed,original,{text:original}),{text:changed,alreadySaved:false});

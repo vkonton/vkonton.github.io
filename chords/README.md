@@ -4,7 +4,7 @@ Public URL: https://vkonton.github.io/chords/
 
 The songbook is served by the existing GitHub Pages/Jekyll setup. `/dimotika/` redirects here and preserves song/key parameters. The interface is English; song titles and lyrics remain Greek. Reading, transposing and playing recordings require no account.
 
-The September 2026 research adds 30 sourced traditional lyric texts, 7 instrumental entries, 3 external lyric links and 11 entries still requiring reliable text or version identification, alongside the existing Rachoula chart. No unverified chord changes were added. Notes describe the imported source variant and do not claim an exact transcription of the linked recording. Kithara chart bodies could not be inspected because of its CAPTCHA.
+The September 2026 research supplies 31 traditional lyric texts (including one score-based rehearsal arrangement), 7 instrumental entries, 4 external lyric links (Γιάντα covers only half of its medley), and 9 entries still requiring reliable text or version identification, alongside the existing Rachoula chart. Six Kithara chart bodies were inspected and compared with other sources. Γιάννη uses the identified helmiaut score arrangement; Σηλυβριανός uses an explicitly labelled vocal variant. Neither is presented as an exact transcription of the linked recording. See [the Kithara follow-up](research/KITHARA-FOLLOWUP.md) for agreements, discrepancies and remaining gaps.
 
 Permanent saves use a private GitHub App and a small Cloudflare Worker. The website stays on GitHub Pages. Only the owner, `vkonton`, can save. The GitHub App must be installed on `vkonton/vkonton.github.io` with Contents write permission. There is no manual GitHub editor or clipboard save step.
 

@@ -1,10 +1,16 @@
 {
   "checked": "2026-09-22",
-  "caveat": "Search listings inspected; chord bodies blocked by CAPTCHA. Candidates are not independently verified charts.",
+  "caveat": "After the user approved completing the anti-overload CAPTCHA, the follow-up inspected chart bodies for entries 2, 4, 35, 42, 49 and 52. None is verified against the selected recording. Entry 2 now has a separately identified score arrangement with corroborated basic harmony. See KITHARA-FOLLOWUP.md.",
   "candidates": [
     {
       "number": 2,
-      "url": "https://kithara.to/stixoi/rcAov60NL8YZ56uvqICKjDMbdGQ2NvEhP6qR68hxAEApRy6ZDkRItBbkdKHY11zoptwoRdgJXEA6lFCiP5t-lqqK94FGtvVnYQYxTZfkBrDo4pnrbU1aphrqiXCF5XXb5AJEqPMTXqUVcg8MhOiQEg=="
+      "url": "https://kithara.to/stixoi/rcAov60NL8YZ56uvqICKjDMbdGQ2NvEhP6qR68hxAEApRy6ZDkRItBbkdKHY11zoptwoRdgJXEA6lFCiP5t-lqqK94FGtvVnYQYxTZfkBrDo4pnrbU1aphrqiXCF5XXb5AJEqPMTXqUVcg8MhOiQEg==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Διαβάστηκε η πλήρης καταγραφή Kithara για τη Μαρίζα Κωχ μετά την ολοκλήρωση του CAPTCHA. Χρησιμοποιεί Fm, Ab (γραμμένο G#) και Bbm (A#m), καθώς και σύντομα περάσματα στην αρχή. Με μεταφορά ένα ημιτόνιο κάτω, η βασική κίνηση Fm / Ab–Bbm–Fm γίνεται Em / G–Am–Em, όπως στην ανεξάρτητη παρτιτούρα του helmiaut. Η εκδοχή πρόβας ακολουθεί τις θέσεις της παρτιτούρας, χωρίς να προσθέτει τα περάσματα του Kithara. Αυτό επιβεβαιώνει τη βασική εναρμόνιση των δύο γραπτών πηγών, όχι την εκτέλεση της λίστας."
+      }
     },
     {
       "number": 3,
@@ -12,7 +18,13 @@
     },
     {
       "number": 4,
-      "url": "https://kithara.to/stixoi/SJax771ZjvfwwuArE_zWJP9fdVRVEq580_9A4oU_Gf7QnqA5LOILEd1h6NI7d1-fkhpfLNHI9DGLQtOs7ThhcMZTiWYeeIKGfyfGAz44S6aLTpQtBke1Pxpo2-_k1PoMiAYREPL4XEdCmcPsEsklPA=="
+      "url": "https://kithara.to/stixoi/SJax771ZjvfwwuArE_zWJP9fdVRVEq580_9A4oU_Gf7QnqA5LOILEd1h6NI7d1-fkhpfLNHI9DGLQtOs7ThhcMZTiWYeeIKGfyfGAz44S6aLTpQtBke1Pxpo2-_k1PoMiAYREPL4XEdCmcPsEsklPA==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Read the Alexiou chart and its reader corrections on 22 September 2026. The main chart gives D–G–A–D, then Em–D–G–A–D–Bm / Em–D–G–A–D. The independent helmiaut score uses a simpler D/G/A setting with different chord placement. The reader correction in G also changes the harmonization, beyond transposition. These are different arrangements; none verifies the selected Gidiki performance. No changes were inserted over the existing lyrics."
+      }
     },
     {
       "number": 5,
@@ -56,11 +68,23 @@
     },
     {
       "number": 35,
-      "url": "https://kithara.to/stixoi/stg0SHZWWc_sb3tpKPXP4XgEbZIq3xAC0MS4VfXBkncFU25HtLohoihotcXM88xje4AaNSDL8PxEj51xijA8fjCSkmte3rislE0VF-Qp0oTrGbeNTGAujNAhfWjebyHgS2Uk2ZajqCgtigCW4e9G1w=="
+      "url": "https://kithara.to/stixoi/stg0SHZWWc_sb3tpKPXP4XgEbZIq3xAC0MS4VfXBkncFU25HtLohoihotcXM88xje4AaNSDL8PxEj51xijA8fjCSkmte3rislE0VF-Qp0oTrGbeNTGAujNAhfWjebyHgS2Uk2ZajqCgtigCW4e9G1w==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Διαβάστηκε η καταγραφή Κωχ στο Kithara: Em–Am–D–G στην αρχή και E–Am–D–G–D–Em στη συνέχεια. Αναγνώστες αμφισβητούν το E ματζόρε και προτείνουν διαφορετικές λύσεις, άρα δεν υπάρχει συμφωνία για το σημείο. Το Tabsy αναπαράγει την ίδια καταγραφή και δεν είναι ανεξάρτητη επιβεβαίωση. Εντοπίστηκε επίσης έκδοση Νάκα με μελωδία / συγχορδίες, αλλά το πλήρες αγοραζόμενο αρχείο δεν ελέγχθηκε. Δεν τεκμηριώνεται η συνοδεία της Λέτας Κορρέ από τις παραπάνω πηγές."
+      }
     },
     {
       "number": 42,
-      "url": "https://kithara.to/stixoi/VzeE-uNIR-YAeA9_pH2-nMgp8U5SoWePRPdcdNkeFiQx-hGEKlSijnf2QNmulko9nN4krq9b_OlnL1h3pXC5j9srUF9DKlgf-YPcintlf55FM7wsCQWDo0oZg918xhBQJIuBULU7QkZi8rTopkp_Ow=="
+      "url": "https://kithara.to/stixoi/VzeE-uNIR-YAeA9_pH2-nMgp8U5SoWePRPdcdNkeFiQx-hGEKlSijnf2QNmulko9nN4krq9b_OlnL1h3pXC5j9srUF9DKlgf-YPcintlf55FM7wsCQWDo0oZg918xhBQJIuBULU7QkZi8rTopkp_Ow==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Read the Kithara Γιάντα chart on 22 September 2026: F#m–Bm–G–Em in the verse; B–E–F#m and G–Em–F#m in the refrain. Chordify’s different, 2014 Oikonomidis/Spanou medley reports Dm–Gm–Eb–Cm, which matches the opening chord pattern when transposed up four semitones. This supports a lead, not a verified transcription of the selected 2025 live medley. The Ηντάκαμα / Ιντάκαμα half remains unresolved. Kithara and the record label credit Nikos Oikonomidis for Γιάντα; full lyrics are linked at source."
+      }
     },
     {
       "number": 45,
@@ -68,11 +92,23 @@
     },
     {
       "number": 49,
-      "url": "https://kithara.to/stixoi/9MeJDh8iOjF5Pdp_C7MB-B5cm6fMaHi3HYUgsQoaseBmiKXvbo15_VdSTpTp_5eYZ2xTzZeRvMrcZA3Fn3CCwF5g8ph1ugj7iBb6-VX0OVb7MrsTuPUfdtU-O-7SHXfnnzshFu4O56-jaXpqFyHtIg=="
+      "url": "https://kithara.to/stixoi/9MeJDh8iOjF5Pdp_C7MB-B5cm6fMaHi3HYUgsQoaseBmiKXvbo15_VdSTpTp_5eYZ2xTzZeRvMrcZA3Fn3CCwF5g8ph1ugj7iBb6-VX0OVb7MrsTuPUfdtU-O-7SHXfnnzshFu4O56-jaXpqFyHtIg==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Read the Gidiki Kithara chart by Θάνος Παρπάλης (4 September 2024). Its displayed key is G minor: opening Gm–F–Gm; continuation F–Gm–Cm–F–Gm; refrain F–Eb / F–Gm (Eb is printed as D#). Only the first stanza has aligned chords; later stanzas do not. A separate Gampierakis performance has the same reported chord family in automated analysis, while Papadakis and other Gidiki recordings differ. These comparisons do not verify the listed Gidiki live recording. The chart is a useful unverified lead; chord positions have not been copied into the performance text."
+      }
     },
     {
       "number": 52,
-      "url": "https://kithara.to/stixoi/2AkO0OkG7-0qOZIK1bb8Ezf6qPih2Q02V2re1DIwIjuj0TlBEzylSuJIR1zj_tAXvXeuVVbGGhrKiN1JS7jBpebZ6CxpZLHbUCU6tma28_lPaAPtBJWUKfVA_5pu4sjImIjvjJQnb0OYDw-7mpx6kA=="
+      "url": "https://kithara.to/stixoi/2AkO0OkG7-0qOZIK1bb8Ezf6qPih2Q02V2re1DIwIjuj0TlBEzylSuJIR1zj_tAXvXeuVVbGGhrKiN1JS7jBpebZ6CxpZLHbUCU6tma28_lPaAPtBJWUKfVA_5pu4sjImIjvjJQnb0OYDw-7mpx6kA==",
+      "inspection": {
+        "date": "2026-09-22",
+        "chartBodyRead": true,
+        "selectedRecordingVerified": false,
+        "notes": "Διαβάστηκε το Kithara του Marios Kosmas (26/8/2021): στο σώμα υπάρχουν Am και G, ενώ η αυτόματη ένδειξη γράφει G ματζόρε. Η ένδειξη δεν χρησιμοποιήθηκε ως τονικότητα. Η ανεξάρτητη πτυχιακή του Κωνσταντίνου Μούτσου (2021), σ. 54, ελέγχθηκε οπτικά: 2/4, αρχική μελωδική φράση Dm–Gm–Dm–Gm, επόμενη C, πρώτη κατάληξη Dm–G και δεύτερη Dm. Η καταγραφή είναι πιο σύνθετη από το δίχορδο Kithara και δεν ευθυγραμμίζει συλλαβές με νότες. Συμφωνεί με το υπάρχον σύνολο παραδοσιακών διστίχων. Οι αλλαγές δεν τοποθετήθηκαν αυθαίρετα πάνω στις λέξεις ούτε αποδόθηκαν στο live Οικονομίδη / Σπανού."
+      }
     }
   ]
 }
