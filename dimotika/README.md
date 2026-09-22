@@ -9,6 +9,7 @@ This self-contained folder is served by the existing GitHub Pages/Jekyll setup. 
 - `songs.mjs`: traditional lyrics and the user-corrected accompaniment in inline ChordPro notation, e.g. `[Dm]πάνω σε ψη[E]λή ρα[Dm]χούλα`.
 - `music.mjs`: parsing and transposition.
 - `songbook.mjs`: page rendering, controls, local preferences and share links.
+- `audio/pano-se-psili-rachoula.m4a`: the user's 48-second recording, copied from `Studio Mix.m4a` in its original AAC format (about 949 KB). The native browser player loads metadata initially and plays on request; transposing the chart leaves the recording in its original key.
 
 The chord progression was corrected by the user: hold Dm through the first two lines, then Dm–E–Dm on each of the next two lines. The same pattern is applied to the following verses. Chord-to-syllable placement is an editorial alignment, not a timed transcription. These provenance notes are kept here rather than on the performance page:
 

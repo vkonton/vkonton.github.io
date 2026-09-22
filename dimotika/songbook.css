@@ -12,6 +12,7 @@ button:disabled,select:disabled { cursor:default; opacity:.5; }
 [hidden] { display:none !important; }
 .shell { max-width:760px; margin:auto; padding:48px 32px; }
 .song-heading { margin-bottom:24px; }
+.song-audio { display:block; width:100%; max-width:360px; height:40px; margin:0 0 24px; }
 h1 { margin:0; font-size:clamp(1.5rem,5vw,2rem); line-height:1.3; letter-spacing:-.025em; }
 .controls { display:flex; flex-wrap:wrap; align-items:center; gap:12px; margin-bottom:36px; }
 .key-controls { display:flex; align-items:center; gap:6px; }
@@ -35,4 +36,4 @@ h1 { margin:0; font-size:clamp(1.5rem,5vw,2rem); line-height:1.3; letter-spacing
 .manual-link input { display:block; width:100%; padding:12px; border:1px solid var(--border); border-radius:4px; margin-top:8px; }
 noscript { display:block; margin-bottom:24px; }
 @media(max-width:600px) { .shell { padding:28px 20px 36px; } .controls { margin-bottom:28px; } .song-line { margin-bottom:10px; } }
-@media print { .controls,.resources,.copy-status,.manual-link,#unknown-song,noscript { display:none; } .shell { max-width:none; padding:0; } .verse { break-inside:avoid; } }
+@media print { .song-audio,.controls,.resources,.copy-status,.manual-link,#unknown-song,noscript { display:none; } .shell { max-width:none; padding:0; } .verse { break-inside:avoid; } }
