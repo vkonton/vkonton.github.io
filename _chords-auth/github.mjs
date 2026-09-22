@@ -5,16 +5,16 @@ export const BRANCH='master';
 export class ApiError extends Error {
   constructor(message,status=502){super(message);this.status=status;}
 }
-export function githubFetch(token,fetcher=fetch){
+export function githubFetch(token,fetcher=globalThis.fetch.bind(globalThis)){
   return (url,options={})=>fetcher(url,{
-    ...options,redirect:'error',credentials:'omit',signal:AbortSignal.timeout(15000),
+    ...options,redirect:'manual',credentials:'omit',signal:AbortSignal.timeout(15000),
     headers:{...options.headers,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'vkonton-chords',Authorization:`Bearer ${token}`},
   });
 }
-export async function readChart(song,token,fetcher=fetch){
+export async function readChart(song,token,fetcher=globalThis.fetch.bind(globalThis)){
   return readGithubChart(song,githubFetch(token,fetcher));
 }
-export async function saveChart({song,text,base},token,fetcher=fetch){
+export async function saveChart({song,text,base},token,fetcher=globalThis.fetch.bind(globalThis)){
   const path=repositoryPath(song);
   const latest=await readChart(song,token,fetcher);
   let checked;

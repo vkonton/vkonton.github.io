@@ -1,0 +1,7 @@
+{
+  "name": "vkonton-chords-auth",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test worker.test.mjs runtime.test.mjs"},
+  "devDependencies": {"miniflare": "5.20260921.0-alpha", "esbuild": "0.28.1"}
+}

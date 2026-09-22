@@ -20,4 +20,4 @@ A Cloudflare Worker handles GitHub App sign-in and chart commits for https://vko
 - No request logging is enabled; do not log authorization headers, callback codes or session fragments.
 - An ambiguous PUT failure is reconciled by reading the file, not by blindly repeating the write.
 
-Run the Node tests from the repository root. GitHub and Cloudflare requests are mocked in tests; real credentials are never needed for local tests.
+Run the Node tests from the repository root. For the additional Cloudflare-runtime integration check, run `npm install` and `npm test` in `_chords-auth/`. GitHub responses are mocked; real credentials are never needed for tests. The runtime test covers OAuth, session validation and the exact chart commit payload under Cloudflare's Request implementation. Server requests use `redirect: manual` and check response status; Cloudflare rejects `redirect: error` even though Node accepts it.

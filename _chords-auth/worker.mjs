@@ -47,7 +47,7 @@ async function authorizedUser(token,fetcher){
   if(user.login?.toLowerCase()!=='vkonton')throw new ApiError('Only the website owner can save changes.',403);
   return user.login;
 }
-export function createHandler(fetcher=fetch,now=()=>Date.now()){
+export function createHandler(fetcher=globalThis.fetch.bind(globalThis),now=()=>Date.now()){
   return async function handle(request,env){
     const url=new URL(request.url),origin=request.headers.get('Origin');
     try{
@@ -69,7 +69,7 @@ export function createHandler(fetcher=fetch,now=()=>Date.now()){
           const flow=await unseal(stored,env.SESSION_SECRET,'oauth',now());
           if(url.searchParams.get('state')!==flow.state||!url.searchParams.get('code'))throw new ApiError('GitHub sign-in was cancelled or could not be verified.',400);
           const response=await fetcher('https://github.com/login/oauth/access_token',{
-            method:'POST',redirect:'error',signal:AbortSignal.timeout(15000),headers:{Accept:'application/json','Content-Type':'application/json'},
+            method:'POST',redirect:'manual',signal:AbortSignal.timeout(15000),headers:{Accept:'application/json','Content-Type':'application/json','User-Agent':'vkonton-chords'},
             body:JSON.stringify({client_id:env.GITHUB_CLIENT_ID,client_secret:env.GITHUB_CLIENT_SECRET,code:url.searchParams.get('code'),redirect_uri:url.origin+'/callback',code_verifier:flow.verifier}),
           });
           const auth=await response.json();
@@ -96,7 +96,7 @@ export function createHandler(fetcher=fetch,now=()=>Date.now()){
       }
       if(url.pathname==='/logout'&&request.method==='POST'){
         const response=await fetcher(`https://api.github.com/applications/${env.GITHUB_CLIENT_ID}/token`,{
-          method:'DELETE',redirect:'error',signal:AbortSignal.timeout(15000),
+          method:'DELETE',redirect:'manual',signal:AbortSignal.timeout(15000),
           headers:{Accept:'application/vnd.github+json','Content-Type':'application/json','User-Agent':'vkonton-chords',Authorization:'Basic '+btoa(env.GITHUB_CLIENT_ID+':'+env.GITHUB_CLIENT_SECRET)},
           body:JSON.stringify({access_token:session.token}),
         });
