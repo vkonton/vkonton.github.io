@@ -1,4 +1,4 @@
-import {AUTH_ORIGIN} from './auth-config.mjs?v=6';
+import {AUTH_ORIGIN} from './auth-config.mjs?v=7';
 const SESSION='chords:session',FLOW='chords:login';
 let token='',authError='',returned=false;
 try{token=sessionStorage.getItem(SESSION)||'';}catch{}

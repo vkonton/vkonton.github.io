@@ -1,7 +1,7 @@
 import {BASE_KEY,KEYS,mod12,normalizeKey,parseLine,pitch,songUrl,transposeChord} from './music.mjs';
-import {song} from './songs.mjs?v=6';
-import {parseChart,normalizeChart} from './chart.mjs?v=6';
-import {setupEditor} from './editor.mjs?v=6';
+import {song} from './songs.mjs?v=7';
+import {parseChart,normalizeChart} from './chart.mjs?v=7';
+import {setupEditor} from './editor.mjs?v=7';
 
 const STORAGE='chords:key:'+song.id;
 const byId=id=>document.getElementById(id);

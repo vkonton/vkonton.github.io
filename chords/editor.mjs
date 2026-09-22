@@ -1,5 +1,5 @@
-import {parseChart,normalizeChart,readGithubChart} from './chart.mjs?v=6';
-import {currentUser,initialAuthError,isConfigured,didReturnFromLogin,signIn,signOut,request} from './auth.mjs?v=6';
+import {parseChart,normalizeChart,readGithubChart} from './chart.mjs?v=7';
+import {currentUser,initialAuthError,isConfigured,didReturnFromLogin,signIn,signOut,request} from './auth.mjs?v=7';
 
 export function setupEditor({song,getPublished,setPublished,preview,restore}){
   const el=id=>document.getElementById(id),input=el('chart-editor');
@@ -15,7 +15,7 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
   function authControls(){
     el('auth-user').textContent=user?'Signed in as '+user.login:'';
     el('sign-in').hidden=Boolean(user);el('sign-out').hidden=!user;
-    el('sign-in').disabled=busy||!isConfigured();el('save-chart').disabled=busy||!user;
+    el('sign-in').disabled=busy;el('save-chart').disabled=busy;
   }
   function setBusy(value){
     busy=value;
@@ -71,7 +71,11 @@ export function setupEditor({song,getPublished,setPublished,preview,restore}){
     try{await signOut();user=null;message('Signed out.');}catch(error){message(error.message,true);}finally{setBusy(false);}
   });
   el('save-chart').addEventListener('click',async()=>{
-    if(busy||!user)return;
+    if(busy)return;
+    if(!user){
+      message(isConfigured()?'Sign in with GitHub, then save your changes.':'GitHub sign-in is not connected yet. Your draft is preserved.',true);
+      el('sign-in').focus();return;
+    }
     try{parseChart(input.value);}catch(error){message(error.message,true);return;}
     remember();setBusy(true);message('Saving to GitHub…');
     try{

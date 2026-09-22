@@ -1,2 +1,2 @@
-// Set to the deployed authentication Worker's HTTPS origin.
-export const AUTH_ORIGIN='';
+// Authentication service; GitHub Pages continues to host the songbook.
+export const AUTH_ORIGIN='https://vkonton-chords-auth.vkonton.workers.dev';
