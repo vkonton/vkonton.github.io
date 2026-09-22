@@ -1,11 +1,15 @@
 import {BASE_KEY,KEYS,mod12,normalizeKey,parseLine,pitch,songUrl,transposeChord} from './music.mjs';
-import {song} from './songs.mjs?v=3';
+import {song} from './songs.mjs?v=5';
+import {parseChart,normalizeChart} from './chart.mjs?v=5';
+import {setupEditor} from './editor.mjs?v=5';
 
 const STORAGE='dimotika:key:'+song.id;
 const GREEK={C:'Ντο',Db:'Ρε♭',D:'Ρε',Eb:'Μι♭',E:'Μι',F:'Φα','F#':'Φα♯',G:'Σολ',Ab:'Λα♭',A:'Λα',Bb:'Σι♭',B:'Σι'};
 const byId=id=>document.getElementById(id);
 const selector=byId('song-key');
 let currentKey=BASE_KEY;
+let publishedText='';
+let displayedVerses=[];
 
 function span(className,text){
   const element=document.createElement('span');
@@ -16,7 +20,7 @@ function span(className,text){
 function renderScore(key){
   const fragment=document.createDocumentFragment();
   const shift=pitch(key)-pitch(BASE_KEY);
-  song.verses.forEach(verse=>{
+  displayedVerses.forEach(verse=>{
     const section=document.createElement('section');
     section.className='verse';
     for(const line of verse){
@@ -79,8 +83,23 @@ const requestedSong=params.get('song');
 byId('unknown-song').hidden=!requestedSong||requestedSong===song.id;
 let saved=null;
 try{saved=localStorage.getItem(STORAGE);}catch{/* Device preferences are optional. */}
-applyKey(normalizeKey(params.get('key'))??normalizeKey(saved)??BASE_KEY);
-for(const id of ['song-key','key-down','key-up','reset-key','copy-link'])byId(id).disabled=false;
+try{
+  const response=await fetch(song.chart,{cache:'no-cache',signal:AbortSignal.timeout(12000)});
+  if(!response.ok)throw new Error('Chart unavailable');
+  publishedText=normalizeChart(await response.text());
+  displayedVerses=parseChart(publishedText);
+  applyKey(normalizeKey(params.get('key'))??normalizeKey(saved)??BASE_KEY);
+  for(const id of ['song-key','key-down','key-up','reset-key','copy-link'])byId(id).disabled=false;
+  setupEditor({
+    song,
+    getPublished:()=>publishedText,
+    setPublished:text=>{publishedText=text;displayedVerses=parseChart(text);renderScore(currentKey);},
+    preview:verses=>{displayedVerses=verses;renderScore(currentKey);},
+    restore:()=>{displayedVerses=parseChart(publishedText);renderScore(currentKey);},
+  });
+}catch{
+  byId('score').textContent='Δεν φορτώθηκε το τραγούδι. Δοκίμασε ανανέωση της σελίδας.';
+}
 addEventListener('popstate',()=>applyKey(normalizeKey(new URL(location.href).searchParams.get('key'))??BASE_KEY,{persist:false}));
 
 // Optional browser-agent access uses the same validated action as the controls.

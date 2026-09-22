@@ -2,6 +2,9 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { KEYS, normalizeKey, parseLine, pitch, songUrl, transposeChord } from './music.mjs';
 import { song } from './songs.mjs';
+import {readFile} from 'node:fs/promises';
+import {parseChart} from './chart.mjs';
+const verses=parseChart(await readFile(new URL(song.chart,import.meta.url),'utf8'));
 test('transposes roots, minor qualities, extensions and slash basses', () => {
     assert.equal(transposeChord('Dm', 2, 'E'), 'Em');
     assert.equal(transposeChord('E', 2, 'E'), 'F#');
@@ -13,7 +16,7 @@ test('transposes roots, minor qualities, extensions and slash basses', () => {
     assert.equal(transposeChord('N.C.', 3, 'F'), 'N.C.');
 });
 test('all twelve keys transpose the complete chart and reset without drift', () => {
-    const chords = song.verses.flatMap(v => v.flatMap(l => parseLine(l).flatMap(s => s.chord ? [s.chord] : [])));
+    const chords = verses.flatMap(v => v.flatMap(l => parseLine(l).flatMap(s => s.chord ? [s.chord] : [])));
     for (const key of KEYS)
         for (const chord of chords) {
             const amount = pitch(key) - pitch('D');

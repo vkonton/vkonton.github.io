@@ -7,8 +7,8 @@
   <meta name="robots" content="noindex, nofollow">
   <title>Πάνω σε ψηλή ραχούλα</title>
   <link rel="icon" href="./favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="./songbook.css?v=4">
-  <script type="module" src="./songbook.mjs?v=3"></script>
+  <link rel="stylesheet" href="./songbook.css?v=5">
+  <script type="module" src="./songbook.mjs?v=5"></script>
 </head>
 <body>
 <main class="shell">
@@ -24,6 +24,24 @@
       <button type="button" id="key-up" class="step" aria-label="Ένα ημιτόνιο πάνω" disabled>+</button>
     </div>
     <button type="button" class="reset" id="reset-key" aria-label="Επαναφορά σε D" title="Επαναφορά σε D" disabled>↺ D</button>
+    <button type="button" class="edit-toggle" id="edit-song" aria-expanded="false" aria-controls="editor-panel" disabled>Επεξεργασία</button>
+  </section>
+  <section class="editor-panel" id="editor-panel" aria-label="Επεξεργασία τραγουδιού" hidden>
+    <label for="chart-editor">Στίχοι & συγχορδίες σε D</label>
+    <p class="editor-hint" id="editor-hint">Γράψε τις συγχορδίες σε αγκύλες, π.χ. [Dm]πάνω. Η προεπισκόπηση ακολουθεί τον επιλεγμένο τόνο.</p>
+    <textarea id="chart-editor" rows="16" spellcheck="false" autocapitalize="off" autocomplete="off" aria-describedby="editor-hint" maxlength="32000"></textarea>
+    <div class="editor-actions">
+      <button type="button" id="preview-chart">Προεπισκόπηση</button>
+      <button type="button" class="save-chart" id="save-chart">Αποθήκευση στο GitHub ↗</button>
+      <button type="button" id="cancel-edit">Κλείσιμο</button>
+    </div>
+    <p class="editor-hint">Στο GitHub: αντικατάστησε το περιεχόμενο με επικόλληση και πάτησε Commit changes.</p>
+    <p class="editor-status" id="editor-status" role="status" aria-live="polite"></p>
+    <div id="github-handoff" class="github-handoff" hidden>
+      <a id="github-editor-link" target="_blank" rel="noopener noreferrer">Άνοιγμα στο GitHub ↗</a>
+      <button type="button" id="check-save">Έλεγχος αποθήκευσης</button>
+    </div>
+    <button type="button" class="reload-chart" id="reload-chart">Φόρτωση τελευταίας έκδοσης</button>
   </section>
   <noscript>Για τις συγχορδίες και την αλλαγή τόνου χρειάζεται ενεργοποιημένη JavaScript στον browser σου.</noscript>
   <article class="score" id="score" aria-label="Στίχοι με συγχορδίες"></article>
