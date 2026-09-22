@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {normalizeChart,parseChart,githubEditUrl,repositoryPath,readGithubChart,checkSave} from './chart.mjs';
+import {normalizeChart,parseChart,repositoryPath,readGithubChart,checkSave} from './chart.mjs';
 import {parseLine,transposeChord} from './music.mjs';
 
 const id='pano-se-psili-rachoula';
@@ -21,13 +21,13 @@ test('edited chords transpose without changing their lyrics or qualities',()=>{
   assert.equal(transposeChord(segments[0].chord,2,'E'),'Bm');
   assert.equal(segments.map(s=>s.text).join(''),'Πάνω σε ψηλή ραχούλα');
 });
-test('save handoff is restricted to the expected chart in the existing repository',()=>{
-  assert.equal(githubEditUrl(id),'https://github.com/vkonton/vkonton.github.io/edit/master/dimotika/charts/pano-se-psili-rachoula.txt');
-  assert.throws(()=>githubEditUrl('../../other-repository'));
+test('chart paths are restricted to the expected song',()=>{
+  assert.equal(repositoryPath(id),'chords/charts/pano-se-psili-rachoula.txt');
+  assert.throws(()=>repositoryPath('../../other-repository'));
 });
 test('save detects remote conflicts but recognises a completed commit',()=>{
   assert.deepEqual(checkSave(changed,original,{text:original}),{text:changed,alreadySaved:false});
-  assert.throws(()=>checkSave(changed,original,{text:original.replace('[E]','[F]')}),/άλλαξε/);
+  assert.throws(()=>checkSave(changed,original,{text:original.replace('[E]','[F]')}),/changed/);
   assert.deepEqual(checkSave(changed,original,{text:changed}),{text:changed,alreadySaved:true});
   assert.throws(()=>checkSave('[H]bad',original,{text:original}));
 });
@@ -35,7 +35,7 @@ test('read-only GitHub request decodes Greek and verifies file identity',async()
   const payload={path:repositoryPath(id),type:'file',sha:'a'.repeat(40),encoding:'base64',content:Buffer.from(original).toString('base64')};
   const result=await readGithubChart(id,async(url,options)=>{
     assert.equal(options.credentials,'omit');assert.equal(options.cache,'no-store');
-    assert.ok(url.startsWith('https://api.github.com/repos/vkonton/vkonton.github.io/contents/dimotika/charts/'));
+    assert.ok(url.startsWith('https://api.github.com/repos/vkonton/vkonton.github.io/contents/chords/charts/'));
     return {ok:true,json:async()=>payload};
   });
   assert.deepEqual(result,{text:original,sha:'a'.repeat(40)});

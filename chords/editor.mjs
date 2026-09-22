@@ -1,0 +1,93 @@
+import {parseChart,normalizeChart,readGithubChart} from './chart.mjs?v=6';
+import {currentUser,initialAuthError,isConfigured,didReturnFromLogin,signIn,signOut,request} from './auth.mjs?v=6';
+
+export function setupEditor({song,getPublished,setPublished,preview,restore}){
+  const el=id=>document.getElementById(id),input=el('chart-editor');
+  const storageKey='chords:draft:'+song.id,legacyKey='dimotika:draft:'+song.id;
+  let base=getPublished(),busy=false,user=null;
+  const message=(text,error=false)=>{
+    el('editor-status').textContent=text;el('editor-status').classList.toggle('error',error);
+  };
+  function remember(){
+    try{localStorage.setItem(storageKey,JSON.stringify({text:input.value,base}));return true;}catch{return false;}
+  }
+  function forget(){try{localStorage.removeItem(storageKey);localStorage.removeItem(legacyKey);}catch{}}
+  function authControls(){
+    el('auth-user').textContent=user?'Signed in as '+user.login:'';
+    el('sign-in').hidden=Boolean(user);el('sign-out').hidden=!user;
+    el('sign-in').disabled=busy||!isConfigured();el('save-chart').disabled=busy||!user;
+  }
+  function setBusy(value){
+    busy=value;
+    for(const id of ['preview-chart','reload-chart','cancel-edit','sign-out'])el(id).disabled=value;
+    input.readOnly=value;el('editor-panel').setAttribute('aria-busy',String(value));authControls();
+  }
+  function usePublished(latest){base=latest.text;setPublished(latest.text);}
+  async function openEditor(){
+    if(!el('editor-panel').hidden){input.focus();return;}
+    el('editor-panel').hidden=false;el('edit-song').setAttribute('aria-expanded','true');
+    input.value=getPublished();base=getPublished();
+    let draft=null;
+    try{draft=JSON.parse(localStorage.getItem(storageKey)??localStorage.getItem(legacyKey));}catch{}
+    if(draft&&typeof draft.text==='string'&&typeof draft.base==='string'){input.value=draft.text;base=draft.base;}
+    else draft=null;
+    message('Loading from GitHub…');setBusy(true);
+    const [latestResult,userResult]=await Promise.allSettled([readGithubChart(song.id),currentUser()]);
+    let status='';
+    if(latestResult.status==='fulfilled'){
+      const latest=latestResult.value;setPublished(latest.text);
+      if(draft&&normalizeChart(draft.text)!==latest.text){
+        status=base===latest.text?'Your local draft was restored.':'There is a newer version on GitHub. Your local draft is preserved.';
+      }else{usePublished(latest);input.value=latest.text;forget();}
+    }else status=latestResult.reason.message;
+    user=userResult.status==='fulfilled'?userResult.value:null;
+    const error=initialAuthError()||(userResult.status==='rejected'?userResult.reason.message:'');
+    message(error||status||(!isConfigured()?'GitHub sign-in is being configured. Your draft stays in this browser.':''),Boolean(error)||latestResult.status==='rejected');
+    setBusy(false);input.focus();
+  }
+  el('edit-song').addEventListener('click',()=>void openEditor());
+  input.addEventListener('input',()=>{
+    const retained=remember();message(retained?'Local draft · not published.':'Draft is only in this tab. Browser storage is unavailable.',!retained);
+  });
+  el('preview-chart').addEventListener('click',()=>{
+    try{preview(parseChart(input.value));remember();message('Preview · not published.');}catch(error){message(error.message,true);}
+  });
+  el('cancel-edit').addEventListener('click',()=>{
+    if(!remember()&&normalizeChart(input.value)!==base){message('Browser storage is unavailable. Copy your draft before closing.',true);return;}
+    restore();el('editor-panel').hidden=true;el('edit-song').setAttribute('aria-expanded','false');el('edit-song').focus();
+  });
+  el('reload-chart').addEventListener('click',async()=>{
+    if(normalizeChart(input.value)!==base&&!confirm('Replace your local draft with the latest version from GitHub?'))return;
+    setBusy(true);
+    try{const latest=await readGithubChart(song.id);usePublished(latest);input.value=latest.text;forget();restore();message('Latest version loaded.');}
+    catch(error){message(error.message,true);}finally{setBusy(false);}
+  });
+  el('sign-in').addEventListener('click',()=>{
+    if(!remember()){message('Browser storage is unavailable. Copy your draft before signing in.',true);return;}
+    try{signIn();}catch(error){message(error.message,true);}
+  });
+  el('sign-out').addEventListener('click',async()=>{
+    setBusy(true);
+    try{await signOut();user=null;message('Signed out.');}catch(error){message(error.message,true);}finally{setBusy(false);}
+  });
+  el('save-chart').addEventListener('click',async()=>{
+    if(busy||!user)return;
+    try{parseChart(input.value);}catch(error){message(error.message,true);return;}
+    remember();setBusy(true);message('Saving to GitHub…');
+    try{
+      const saved=await request('/chart',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({song:song.id,text:input.value,base})});
+      parseChart(saved.text);
+      if(normalizeChart(input.value)!==saved.text)throw new Error('GitHub did not confirm this draft. It has been preserved.');
+      usePublished(saved);input.value=saved.text;forget();preview(parseChart(saved.text));
+      message(saved.alreadySaved?'Already saved on GitHub.':'Saved on GitHub. The public page will update after publishing.');
+    }catch(error){
+      message(error.message||'Could not confirm the save. Your draft is preserved.',true);
+      try{user=await currentUser();}catch{user=null;}
+    }finally{setBusy(false);}
+  });
+  addEventListener('beforeunload',event=>{
+    if(!el('editor-panel').hidden&&normalizeChart(input.value)!==base&&!remember()){event.preventDefault();event.returnValue='';}
+  });
+  el('edit-song').disabled=false;authControls();
+  if(didReturnFromLogin())void openEditor();
+}

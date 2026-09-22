@@ -1,10 +1,9 @@
 import {BASE_KEY,KEYS,mod12,normalizeKey,parseLine,pitch,songUrl,transposeChord} from './music.mjs';
-import {song} from './songs.mjs?v=5';
-import {parseChart,normalizeChart} from './chart.mjs?v=5';
-import {setupEditor} from './editor.mjs?v=5';
+import {song} from './songs.mjs?v=6';
+import {parseChart,normalizeChart} from './chart.mjs?v=6';
+import {setupEditor} from './editor.mjs?v=6';
 
-const STORAGE='dimotika:key:'+song.id;
-const GREEK={C:'Ντο',Db:'Ρε♭',D:'Ρε',Eb:'Μι♭',E:'Μι',F:'Φα','F#':'Φα♯',G:'Σολ',Ab:'Λα♭',A:'Λα',Bb:'Σι♭',B:'Σι'};
+const STORAGE='chords:key:'+song.id;
 const byId=id=>document.getElementById(id);
 const selector=byId('song-key');
 let currentKey=BASE_KEY;
@@ -57,7 +56,7 @@ function applyKey(value,{persist=true}={}){
   return {song:song.id,key:next};
 }
 selector.replaceChildren(...KEYS.map(key=>{
-  const option=document.createElement('option');option.value=key;option.textContent=`${key} · ${GREEK[key]}`;return option;
+  const option=document.createElement('option');option.value=key;option.textContent=key;return option;
 }));
 selector.addEventListener('change',()=>applyKey(selector.value));
 byId('key-down').addEventListener('click',()=>applyKey(KEYS[mod12(pitch(currentKey)-1)]));
@@ -67,12 +66,12 @@ byId('copy-link').addEventListener('click',async()=>{
   const url=songUrl(location.href,currentKey);
   try{
     await navigator.clipboard.writeText(url);
-    byId('copy-status').textContent='Αντιγράφηκε';
+    byId('copy-status').textContent='Copied';
     byId('manual-link').hidden=true;
   }catch{
     byId('manual-link').hidden=false;
     byId('share-url').value=url;
-    byId('copy-status').textContent='Επίλεξε και αντίγραψε τον σύνδεσμο παρακάτω.';
+    byId('copy-status').textContent='Select and copy the link below.';
     byId('share-url').focus();byId('share-url').select();
   }
 });
@@ -82,7 +81,7 @@ const params=new URL(location.href).searchParams;
 const requestedSong=params.get('song');
 byId('unknown-song').hidden=!requestedSong||requestedSong===song.id;
 let saved=null;
-try{saved=localStorage.getItem(STORAGE);}catch{/* Device preferences are optional. */}
+try{saved=localStorage.getItem(STORAGE)??localStorage.getItem('dimotika:key:'+song.id);}catch{/* Device preferences are optional. */}
 try{
   const response=await fetch(song.chart,{cache:'no-cache',signal:AbortSignal.timeout(12000)});
   if(!response.ok)throw new Error('Chart unavailable');
@@ -98,7 +97,7 @@ try{
     restore:()=>{displayedVerses=parseChart(publishedText);renderScore(currentKey);},
   });
 }catch{
-  byId('score').textContent='Δεν φορτώθηκε το τραγούδι. Δοκίμασε ανανέωση της σελίδας.';
+  byId('score').textContent='Could not load the song. Please refresh the page.';
 }
 addEventListener('popstate',()=>applyKey(normalizeKey(new URL(location.href).searchParams.get('key'))??BASE_KEY,{persist:false}));
 
@@ -107,7 +106,7 @@ if(document.modelContext?.registerTool){
   const lifecycle=new AbortController();
   try{
     void Promise.resolve(document.modelContext.registerTool({
-      name:'set_song_key',title:'Αλλαγή τόνου τραγουδιού',
+      name:'set_song_key',title:'Transpose song',
       description:'Transpose the displayed song to a tonic. Changes only this browser and its shareable URL.',
       inputSchema:{type:'object',properties:{key:{type:'string',enum:KEYS}},required:['key'],additionalProperties:false},
       annotations:{readOnlyHint:false,untrustedContentHint:false},

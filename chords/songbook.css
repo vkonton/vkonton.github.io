@@ -27,7 +27,7 @@ h1 { margin:0; font-size:clamp(1.5rem,5vw,2rem); line-height:1.3; letter-spacing
 .editor-status:empty { display:none; }
 .editor-status.error { color:var(--foreground); font-weight:700; }
 .editor-panel textarea { display:block; width:100%; resize:vertical; min-height:240px; padding:12px; margin:12px 0; border:1px solid var(--border); border-radius:4px; color:var(--foreground); background:var(--background); font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:1rem; line-height:1.7; }
-.editor-actions,.github-handoff { display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px; font-size:.875rem; }
+.editor-actions,.auth-actions { display:flex; align-items:center; flex-wrap:wrap; gap:8px 12px; font-size:.875rem; }
 .save-chart { background:var(--foreground); color:var(--background); border-color:var(--foreground); }
 .save-chart:hover { background:#333; }
 .reload-chart { margin-top:12px; padding-left:0; border-color:transparent; color:var(--muted); text-decoration:underline; text-underline-offset:4px; font-size:.8rem; }
@@ -48,3 +48,6 @@ h1 { margin:0; font-size:clamp(1.5rem,5vw,2rem); line-height:1.3; letter-spacing
 noscript { display:block; margin-bottom:24px; }
 @media(max-width:600px) { .shell { padding:28px 20px 36px; } .controls { margin-bottom:28px; } .song-line { margin-bottom:10px; } }
 @media print { .song-audio,.controls,.editor-panel,.resources,.copy-status,.manual-link,#unknown-song,noscript { display:none; } .shell { max-width:none; padding:0; } .verse { break-inside:avoid; } }
+
+.auth-actions { margin-top:16px; color:var(--muted); }
+.auth-actions button { border-color:transparent; padding-left:0; text-decoration:underline; text-underline-offset:4px; }
