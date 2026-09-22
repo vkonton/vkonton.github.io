@@ -12,6 +12,10 @@ const selector=byId('song-key');
 let currentKey=song.baseKey,sourceKey=song.baseKey;
 let publishedText='',displayedVerses=[],hasChords=false;
 
+function setSongStatus(text){
+  const status=byId('song-status');
+  status.textContent=text;status.hidden=!text;
+}
 function span(className,text){
   const element=document.createElement('span');
   element.className=className;
@@ -63,7 +67,7 @@ function displayChart(text,verses=parseChart(text,{allowEmpty:true})){
   else if(!currentKey||previous!==sourceKey)currentKey=sourceKey;
   updateKeyControls();renderScore();
   history.replaceState(null,'',shareUrl());
-  byId('song-status').textContent=hasChords?(sourceKey?'Rehearsal chart':'Chords added · source key unknown'):verses.length?'Lyrics · chords needed':statusLabels[song.status];
+  setSongStatus(hasChords?(sourceKey?'':'Chords added · source key unknown'):verses.length?'Lyrics · chords needed':statusLabels[song.status]);
 }
 function shareUrl(){return songUrl(location.href,hasChords&&sourceKey?currentKey:null,song.id);}
 function applyKey(value,{persist=true}={}){
@@ -104,7 +108,7 @@ for(const [id,entry] of [['previous-song',songs[index-1]],['next-song',songs[ind
 }
 byId('song-number').textContent=String(song.number).padStart(2,'0')+' / '+songs.length;
 byId('song-title').textContent=song.title;document.title=song.title+' · Chords';
-byId('song-status').textContent=statusLabels[song.status];
+setSongStatus(song.status==='draft'?'':statusLabels[song.status]);
 byId('youtube').href=song.youtube;byId('youtube').setAttribute('aria-label','YouTube · '+song.youtubeLabel);
 byId('unknown-song').hidden=!params.get('song')||Boolean(getSong(params.get('song')));
 byId('version-note').textContent=song.notes;
