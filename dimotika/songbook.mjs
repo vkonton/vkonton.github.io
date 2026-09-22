@@ -1,5 +1,5 @@
 import {BASE_KEY,KEYS,mod12,normalizeKey,parseLine,pitch,songUrl,transposeChord} from './music.mjs';
-import {song} from './songs.mjs';
+import {song} from './songs.mjs?v=3';
 
 const STORAGE='dimotika:key:'+song.id;
 const GREEK={C:'Ντο',Db:'Ρε♭',D:'Ρε',Eb:'Μι♭',E:'Μι',F:'Φα','F#':'Φα♯',G:'Σολ',Ab:'Λα♭',A:'Λα',Bb:'Σι♭',B:'Σι'};
