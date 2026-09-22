@@ -93,7 +93,8 @@ function renderCollection(){
   byId('song-list').replaceChildren(...filtered.map(entry=>{
     const link=document.createElement('a');link.href=songUrl(location.href,null,entry.id);
     const title=span('catalog-title',String(entry.number).padStart(2,'0')+'. '+entry.title);title.lang='el';
-    link.append(title,span('catalog-status',statusLabels[entry.status]));
+    link.append(title);
+    if(entry.status!=='draft')link.append(span('catalog-status',statusLabels[entry.status]));
     if(entry.id===song.id)link.setAttribute('aria-current','page');
     return link;
   }));
