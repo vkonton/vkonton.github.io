@@ -16,7 +16,7 @@ Intro
 [Em] |x2
 [Em] | [C] | [D] | [Em] |x2
 [Bm] |x4
-[Bm] | [G] | [A] | [Bm] |x6
+[Bm] | [G] | [A] | [Bm] |x4
 [Dm] | [Bb] | [C] | [Dm] |x2
 Intro
 [Am] |x4
