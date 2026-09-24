@@ -3,16 +3,16 @@
 Intro
 [Am] | x4 
 [Am] | [Dm] |  x4
-[Gm] | [Gm] | [Gm] | [Am]
+[G] | [G] | [G] | [Am]
 [Am] | x2
 [Am] | x8
 [Am] | [Dm] | x4
-[Gm] | [Gm] | [Gm] | [Am]
+[G] | [G] | [G] | [Am]
 [Am] | x2
 [Am] | x4
 [F] | [F] | [G] | [Am] | 
 [Am] | [Dm] |  x4
-[Gm] | [Gm] | [Gm] | [Am] |
+[G] | [G] | [G] | [Am] |
 [Em] | x2
 [Em] | [C] | [D] | [Em] | x2
 [Bm] | x4
@@ -21,11 +21,12 @@ Intro
 Intro
 [Am] | x4
 [Am] | [Dm] | x4
-[Gm] | [Gm] | [Gm] | [Am] |
+[G] | [G] | [G] | [Am] |
 [Am] | x8
 [Am] | [F] | [G] | [Am] | x2
 [Am] | [Dm] | x4
-[Am] | x4
+[G] | [G] | [G] | [Am] | 
+[Am] | x2
 
 
 Νάτος κι έρχεται από πέρα, δώσ' του φουστανιού σου αέρα
