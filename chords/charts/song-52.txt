@@ -22,7 +22,7 @@ Intro
 [Am] |x4
 [Am] | [Dm] |x4
 [G] | [G] | [G] | [Am] |
-[Am] |x8
+[Am] |x4
 [Am] | [F] | [G] | [Am] |x2
 [Am] | [Dm] |x4
 [G] | [G] | [G] | [Am] | 
