@@ -1,7 +1,7 @@
 {key: unknown}
 
 [Am] | x4 
-[Am] | [Dm] |  x2
+[Am] | [Dm] |  x4
 [Gm] | [Gm] | [Gm] | [Am]
 [Am] | x2
 [Am] | [Dm] | x2
