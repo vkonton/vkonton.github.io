@@ -8,6 +8,8 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 
 ## News 
 
+* Oct, 2026: **[Memento](https://arxiv.org/abs/2604.09852) was selected for an oral presentation at [COLM 2026](https://colm.cc/)!** I will be presenting our work in San Francisco at the conference, October 6–9.
+
 * Apr, 2026: Excited to release **Memento** — we extend the effective output length of LLMs by splitting chain-of-thought into blocks and summaries, then evicting old blocks from the KV cache so the model can reason longer within a fixed context window. Check out the [blogpost](blog/memento/), the [code](https://github.com/microsoft/memento), the [paper](https://github.com/microsoft/memento/blob/main/docs/memento.pdf), and the [OpenMementos dataset](https://huggingface.co/datasets/microsoft/OpenMementos)!
 
 * Jul, 2025: I joined Microsoft Research in New York City as a Senior Researcher.
@@ -34,6 +36,20 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 [vasilyan]: https://www.vasilyan.net
 
 ## Publications
+
+1. [Scaling Discovery through Test-Time Communication](https://arxiv.org/abs/2609.21032) <br/>
+    w/ J. Park, S. Garg, A. Krishnamurthy, D. Papailiopoulos <br/>
+    Preprint, 2026
+
+1. [MEMENTO: Teaching LLMs to Manage Their Own Context](https://arxiv.org/abs/2604.09852) <br/>
+    w/ Y. Zeng, S. Garg, L. Chen, H. Tang, Z. Wang, A. Awadallah, E. Horvitz, J. Langford, D. Papailiopoulos <br/>
+    <b style='color:red;'> Selected for Oral Presentation </b> <br/>
+    [COLM 2026](https://colm.cc/)
+
+1. [Wait, Wait, Wait... Why Do Reasoning Models Loop?](https://arxiv.org/abs/2512.12895) <br/>
+    w/ C. Pipis, S. Garg, V. Shrivastava, A. Krishnamurthy, D. Papailiopoulos <br/>
+    <b> Spotlight Presentation </b> <br/>
+    [ICML 2026](https://icml.cc)
 
 1. Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions <br/>
     w/ J. Kim, K. Shah, S. M. Kakade, S. Chen <br/>
@@ -63,7 +79,8 @@ I am a Senior Researcher at [Microsoft Research](https://www.microsoft.com/en-us
 
 1. [Agnostically Learning Multi-index Models with Queries](https://arxiv.org/abs/2312.16616) <br/>
     w/ [I. Diakonikolas][idiakonikolas], [D. Kane][kane], [C. Tzamos][tzamos], [N. Zarifis][zarifis] <br/>
-    [FOCS 2024](https://focs.computer.org/2024/)
+    [FOCS 2024](https://focs.computer.org/2024/) <br/>
+    Journal version: [SIAM Journal on Computing, 2026](https://doi.org/10.1137/24M1718135)
 
 1. [Super Non-singular Decompositions of Polynomials and their](https://arxiv.org/html/2404.00529v1) <br/>
    [Application to Robustly Learning Low-degree PTFs](https://arxiv.org/html/2404.00529v1) <br/>
@@ -213,6 +230,8 @@ EC (2022, 2020), MFCS (2018), TCS (2018, 2021), ALT (2021)
 
 
 ## Talks
+
+* [MEMENTO: Teaching LLMs to Manage Their Own Context](https://arxiv.org/abs/2604.09852), upcoming oral presentation at [COLM 2026](https://colm.cc/), San Francisco, October 2026
 
 * Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension
   1. <b> Best Paper Award Talk, COLT 2024 </b> 

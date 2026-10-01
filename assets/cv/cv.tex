@@ -1,524 +1,106 @@
-%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Change the font size of your document - 10pt, 12.1pt, etc.
+% Vasilis Kontonis -- full CV. Compile this standalone file to cv.pdf.
 \documentclass[letterpaper,11pt,oneside]{article}
 \usepackage[utf8]{inputenc}
-\usepackage{setspace}
-\usepackage{hyperref}
-\hypersetup{
-  hidelinks
-}
-\usepackage{longtable}
-
-\usepackage{graphicx}
-\graphicspath{ {images/}} %upload your signature to this file
-%Change the margins to fit your CV/resume content
-\usepackage[left=1in, right=1in, bottom=1.25in, top=1.25in]{geometry}
-
-%Skype information - include your Skype name for a link to add you on Skype
-\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}}
-\newcommand{\Absender}[1][\normalsize]{\Skype}
-
-%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\usepackage[left=1in,right=1in,top=1.25in,bottom=1.25in]{geometry}
+\usepackage{array,longtable,hyperref}
+\hypersetup{hidelinks,pdftitle={Vasilis Kontonis -- Curriculum Vitae},pdfauthor={Vasilis Kontonis}}
 \pagenumbering{gobble}
-
-%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
-
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\newcommand{\cventry}[2]{#1 & \begin{minipage}[t]{\linewidth}\raggedright #2\end{minipage}\\\noalign{\vskip 0.7em}}
+\newcommand{\pub}[4]{\textbf{\href{#1}{#2}}\par #3\par #4}
 \begin{document}
-
-%%%%%%%%%%%%%%%%% NAME OF APPLICANT %%%%%%%%%%%%%%%%%%%
-
-\noindent  \LARGE{\textbf{Vasilis Kontonis}}  \\
-\vspace{-2ex}
-%\hline
-\normalsize
-
-%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
-
-\begin{center}
-\begin{tabular}{l l}
- Web: \textbf{\url{https://vkonton.github.io}} &\hspace{1in} University of Texas at Austin \\
- Mail: \href{mailto:vkonton@gmail.com}{vkonton@gmail.com}  &\hspace{1in} Department of Computer Sciences  \\ 
- Cell: +1 (608) 982-4267 &\hspace{1in} 2317 Speedway, Austin, TX, USA
-  \\
-\end{tabular}
-\end{center}
-
-\vspace{1em}
-
-%%%%%%%%%%%%%%%%% MAIN BODY %%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
-
-\noindent \begin{longtable}{@{} l l}
-
-
- \Large{Education}
-
-
-     & \textbf{University of Wisconsin-Madison} \\
-     & Ph.D., Computer Science, 2018 -- 2023. \\
-     & Thesis: Learning From Imperfect Data: Noisy Labels, Truncation, and Coarsening \\
-     & Advisor: Christos Tzamos\\
-     & \\
-
-     & \textbf{National Technical University of Athens} \\
-     & Master of Engineering in Electrical \& Computer Engineering\\
-     & Thesis: Learning Powers of Poisson Binomial Distributions\\
-     & Advisor: Dimitris Fotakis \\
-     & \\
-
-\Large{Work Experience}
-
-  & \textbf{University of Texas at Austin} \\
-  & IFML Postdoctoral Fellow, 2023 -- present. \\
-  & \\
-
-  &\textbf{Research Intern} \href{https://research.google}{Google Research}\\
-  & \emph{2022, Google Research, Mountain View, California}\\
-  &\\
-  
-  &\textbf{Systems and Services Engineer} \href{https://grnet.gr/}{GRNET}\\
-  & \emph{2016, Greek Research and Technology Network, Athens}\\
-  &\\
-
-\Large{Research Interests} & \textbf{Machine Learning, Statistics, 
-Theoretical Computer Science}
-\\
-&\\
-
- \Large{Publications\footnote{Author names are in alphabetical order unless otherwise. Only publications in peer-reviewed conferences and journals are included.}}
-
- &\textbf{Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension} \\
-\textbf{Conference} 
- & Gautam Chandrasekaran, Adam Klivans, Vasilis Kontonis, \\
-\textbf{Proceedings}
-& Raghu Meka, Konstantinos Stavropoulos \\
- & \emph{Proceedings of the 37th Annual Conference on Learning Theory} \\
- & \emph{\textbf{Best Paper Award}} \\
- & \emph{\textbf{COLT 2024}} \\
- & \\
-
- &\textbf{Active Learning with Simple Questions} \\
- & Vasilis Kontonis, Mingchen Ma, Christos Tzamos \\
- & \emph{Proceedings of the 37th Annual Conference on Learning Theory} \\
- & \emph{\textbf{COLT 2024}} \\
- & \\
-
- &\textbf{Agnostically Learning Multi-index Models with Queries}\\
- & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,\\
- & Christos Tzamos, Nikos Zarifis \\
- & \emph{Proceedings of the 65th Annual Symposium on Foundations of Computer Science} \\
- & \emph{\textbf{FOCS 2024}} \\
- & \\
-
-
- &\textbf{Super Non-singular Decompositions of Polynomials and}\\
- &\textbf{their Application to Robustly Learning Low-degree PTFs} \\
- & Ilias Diakonikolas, Daniel M Kane, Vasilis Kontonis, \\
- & Sihan Liu, Nikos Zarifis\\
- & \emph{Proceedings of the 56th Annual ACM Symposium on Theory of Computing}\\
- & \emph{\textbf{STOC 2024}} \\
- & \\
-
- &\textbf{Active Classification with Few Queries under Misspecification}\\
- & Vasilis Kontonis, Mingchen Ma, Christos Tzamos\\
- & \emph{Proceedings of the 38th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{Spotlight Presentation}} \\\
- & \emph{\textbf{NeurIPS 2024}} \\
- & \\
-
- &\textbf{Learning Noisy Halfspaces with a Margin:} \\ 
- &\textbf{Massart is no Harder than Random}\\
- & Gautam Chandrasekaran, Vasilis Kontonis, Kostas Stavropoulos, Kevin Tian\\
- & \emph{Proceedings of the 38th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{Spotlight Presentation}} \\
- & \emph{\textbf{NeurIPS 2024}} \\
- & \\
-
- &\textbf{Efficient Discrepancy Testing for Learning with Distribution Shift}\\
- & Gautam Chandrasekaran, Adam Klivans Vasilis Kontonis,\\
- & Kostas Stavropoulos, Arsen Vasilyan\\
- & \emph{Proceedings of the 38th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{NeurIPS 2024}} \\
- & \\
-
-
- &\textbf{Optimizing Solution-Samplers for Combinatorial Problems:}\\
- &\textbf{The Landscape of Policy Gradient Methods}\\
- & Constantinos Caramanis, Dimitris Fotakis, Alkis Kalavasis\\
- & Vasilis Kontonis, Christos Tzamos\\
- & \emph{Proceedings of the 37th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{Selected for Oral Presentation}} \\
- & \emph{\textbf{NeurIPS 2023}} \\
- & \\
-
- &\textbf{SLaM: Student Label Mixing for Distillation with Unlabeled Examples}\\
- & Vasilis Kontonis, Fotis Iliopoulos,  Khoa Trinh, \\
- & Cenk Baykal, Gaurav Menghani, Erik Vee\\ 
- & \emph{Proceedings of the 37th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{NeurIPS 2023}} \\
- & \\
-
- &\textbf{The Gain from Ordering in Online Learning}\\
- & Vasilis Kontonis, Mingchen Ma, Christos Tzamos\\
- & \emph{Proceedings of the 37th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{NeurIPS 2023}} \\
- & \\
-
- &\textbf{Efficient Testable Learning of Halfspaces with Adversarial Label Noise}\\
- & Ilias Diakonikolas, Daniel M Kane, Vasilis Kontonis, \\
- & Sihan Liu, Nikos Zarifis\\
- & \emph{Proceedings of the 37th Conference on Neural Information Processing Systems} \\
- & \emph{\textbf{NeurIPS 2023}} \\
- & \\
-
-
- &\textbf{Self Directed Linear Classification}\\
- & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
- & \emph{Proceedings of the 36th Annual Conference on Learning Theory}\\
- & \emph{\textbf{COLT 2023}} \\
- & \\
-
- &\textbf{Weighted Distillation with Unlabeled Examples}\\
- & Fotis Iliopoulos, Vasilis Kontonis, Cenk Baykal,\\
- & Gaurav Menghani, Khoa Trinh, Erik Vee\\ 
-& \emph{Proceedings of the 36th Conference on Neural Information Processing Systems} \\
-& \emph{\textbf{NeurIPS 2022}} \\
- & \\
-
- &\textbf{Linear Label Ranking with Bounded Noise}\\
- &  Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos \\
-& \emph{Proceedings of the 36th Conference on Neural Information Processing Systems} \\
-& \emph{\textbf{Selected for Oral Presentation}} \\
-& \emph{\textbf{NeurIPS 2022}} \\
- & \\
-
- &\textbf{Learning General Halfspaces with General Massart Noise}\\
- & \textbf{under the Gaussian Distribution}\\
- & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,\\
- & Christos Tzamos, Nikos Zarifis \\
- & \emph{Proceedings of the 54th Annual ACM Symposium on Theory of Computing}\\
- & \emph{\textbf{STOC 2022}} \\
- & \\
-
-
- &\textbf{Learning a Single Neuron with Adversarial Label Noise}\\
- & \textbf{via Gradient Descent}\\
- & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
- & \emph{Proceedings of the 35th Annual Conference on Learning Theory}\\
- & \emph{\textbf{COLT 2022}} \\
- & \\
-
-
- &\textbf{Learning General Halfspaces with Adversarial Label Noise}\\
- & \textbf{via Online Gradient Descent}\\
- & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
- & \emph{Proceedings of the 39th International Conference on Machine Learning} \\
- & \emph{\textbf{ICML 2022}} \\
- & \\
-
-
- &\textbf{A Statistical Taylor's Theorem and Extrapolation}\\
- & \textbf{of Truncated Densities}\\
- & Costis Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis \\
- & \emph{Proceedings of the 34th Annual Conference on Learning Theory} \\
- & \emph{\textbf{COLT 2021}} \\
- & \\
-
- &\textbf{Efficient Algorithms for Learning from Coarse Labels}\\
- &  Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos \\
- & \emph{Proceedings of the 34th Annual Conference on Learning Theory} \\
- & \emph{\textbf{COLT 2021}} \\
- & \\
-
-&\textbf{Agnostic Proper Learning of Halfspaces under Gaussian Marginals}\\
-& Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,\\
-& Christos Tzamos, Nikos Zarifis \\
-& \emph{Proceedings of the 34th Annual Conference on Learning Theory} \\
-& \emph{\textbf{COLT 2021}} \\
-& \\
-
-     &\textbf{Learning Online Algorithms with Distributional Advice}\\
-     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos,\\
-     & Ali Vakilian, Nikos Zarifis \\
-     & \emph{Proceedings of the 38th International Conference on Machine Learning} \\
-     & \emph{\textbf{ICML 2021}} \\
-     & \\
-
-     &\textbf{A Polynomial Time Algorithm For Learning Halfspaces}\\
-     & \textbf{with Tsybakov Noise}\\
-     & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,\\
-     & Christos Tzamos, Nikos Zarifis \\
-     & \emph{Proceedings of the 53rd Annual ACM Symposium on Theory of Computing}\\
-     & \emph{\textbf{STOC 2021}} \\
-     & \\
-
-     &\textbf{Learning Halfspaces with Tsybakov Noise}\\
-     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
-     & \emph{Proceedings of the 53rd Annual ACM Symposium on Theory of Computing} \\
-     & \emph{\textbf{STOC 2021} 
-     (Conference version merged with the above paper)
-     } \\
-     & \\
-
-
-
-     &\textbf{Non-Convex SGD Learns Halfspaces with Adversarial Label Noise} \\
-     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
-     & \emph{Proceedings of the 34th Conference on Neural Information Processing Systems} \\
-     & \emph{\textbf{NeurIPS 2020}} \\
-     & \\
-
-     &\textbf{Learning Halfspaces with Massart Noise}\\
-     &\textbf{Under Structured Distributions}\\
-     & Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis \\
-     & \emph{Proceedings of the 33th Annual Conference on Learning Theory} \\
-     & \emph{\textbf{COLT 2020}} \\
-     & \\
-
-     &\textbf{Algorithms and SQ lower bounds for PAC Learning} \\
-     & \textbf{One-Hidden-layer ReLU Networks}\\
-     & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Nikos Zarifis \\
-     & \emph{Proceedings of the 33th Annual Conference on Learning Theory} \\
-     & \emph{\textbf{COLT 2020}} \\
-     & \\
-
-     & \textbf{Truncated Statitistics with Unknown Truncation} \\
-     & Vasilis Kontonis, Christos Tzamos, Manolis Zambetakis\\
-     & \emph{Proceedings of the 60th Annual IEEE Symposium on Foundations of}\\
-     & \emph{Computer Science, \textbf{FOCS 2019}}\\
-     & \\
-
-    %  & \textbf{Removing Bias in Machine Learning via Truncated Statistics} \\
-    %  & Costis Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zambetakis\\
-    %  & \emph{Manuscript} \\
-    %  & \\
-
-     & \textbf{Opinion Dynamics with Limited Information} \\
-     & Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, and Stratis Skoulakis\\
-     & \emph{Proceedings of the 14th Conference on Web and Internet Economics} \\
-     & \emph{\textbf{WINE 2018}} \\
-     & \\
-
-     \textbf{Journal} & \textbf{Opinion Dynamics with Limited Information} \\
-     & Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, and Stratis Skoulakis\\ 
-& \emph{\textbf{Algorithmica 85, no. 12 (2023): 3855-3888}} \\
-     & \\
-
- &\textbf{Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension} \\
-
- & Gautam Chandrasekaran, Adam Klivans, Vasilis Kontonis, \\
-& Raghu Meka, Konstantinos Stavropoulos \\
- & \textbf{\emph{TheoretiCS (2024), (Invited)}} \\
- & \\
-
- &\textbf{Agnostically Learning Multi-index Models with Queries}\\
- & Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis,\\
- & Christos Tzamos, Nikos Zarifis \\
- & \textbf{\emph{SIAM Journal on Computing, Special Issue for FOCS 2024 (Invited)}} \\
- & \\
-
-
-    %  & \textbf{Learning Powers of Poisson Binomial Distributions} \\
-    %  & Dimitris Fotakis, Vasilis Kontonis, Piotr Krysta, and Paul Spirakis\\
-    %  & \emph{Manuscript, http://arxiv.org/abs/1707.05662} \\
-    %  & \\
-
-  \Large{Teaching}
-  & \textbf{Spring 2023, National Technical University of Athens} \\
-  & ``Online Learning and Bandits"\\
-  & Instructors: Constantine Caramanis, Vasilis Kontonis \\
-  & \\
-
-  & \textbf{Spring 2022, University of Wisconsin-Madison} \\
-  & Teaching Assistant, ``Introduction to Artificial Intelligence", CS 540\\
-  & Instructors: Sharon Li, Ilias Diakonikolas, Jerry Zhu \\
-  & \\
-
-  & \textbf{Fall 2021, University of Wisconsin-Madison} \\
-  & Teaching Assistant, ``Introduction to Numerical Methods", CS 412\\
-  & Instructor: Amos Ron\\
-  & \\
-
-  & \textbf{Spring 2021, University of Wisconsin-Madison} \\
-  & Teaching Assistant, ``Introduction to Algorithms", CS 577 \\
-  & Instructors: Christos Tzamos, Marc Renault \\
-  & \\
-
-  & \textbf{Fall 2020, University of Wisconsin-Madison} \\
-  & Teaching Assistant, ``Programming II", CS 300 \\
-  & Instructors: Mouna Ayari Ben Hadj Kacem, Laura Legault \\
-  & \\
-
-  & \textbf{Spring 2020, University of Wisconsin-Madison} \\
-  & Teaching Assistant, ``Introduction to Algorithms", CS 577 \\
-  & Instructor: Christos Tzamos \\
-  & \\
-
-& \textbf{Spring 2019, University of Wisconsin-Madison} \\
-& Teaching Assistant, ``Introduction to Algorithms", CS 577 \\
-& Instructor: Dieter van Melkebeek \\
-& \\
-
-&\textbf{Fall 2018, University of Wisconsin-Madison} \\
-& Teaching Assistant, ``Introduction to Algorithms", CS 577 \\
-& Instructors: Christos Tzamos, Shuchi Chawla \\
-& \\
-
-&\textbf{Fall 2017, National Technical University of Athens} \\
-& Teaching Assistant, ``Algorithms and Complexity" \\
-& Instructor: Aris Pagourtzis \\
-& \\
-
-&\textbf{Fall 2016, National Techincal University of Athens} \\
-& Teaching Assistant, ``Operating Systems" \\
-& Instructors: Nectarios Koziris, Georgios Goumas, Vangelis Koukis\\
-& \\
-
-  \Large{Service} 
-
-   &\textbf{Program Committees}\\
-   & ITCS 2025 \\
-   &\\
-
-&\textbf{Conference Reviewer}\\
-
-    & STOC 2025, FOCS 2024, STOC 2024, NeurIPS 2023, ICML 2022,  \\ 
-    & NeurIPS 2021, ICML 2021, EC 2021, STOC 2020, ALT 2020, SODA 2019 \\ 
-    & ICML 2019, EC 2019, WINE 2019, MFCS 2018 \\
-    &\\
-
-    &\textbf{Journal Reviewer}\\
-    & Theoretical Computer Science (TCS)\\
-    & \\
-
- \Large{Talks}
- &\textbf{Learning General Gaussian Mixtures with Efficient Score Matching
-} \\
- &\emph{2024, IFML/MPG Symposium, Simons Institute, UC Berkeley} \\
- & \\
-
- &\textbf{Learning from Noisy Labels: Beyond Worst Case Models} \\
- &\emph{2024, UC Santa Cruz, Computer Science and Engineering Colloquium} \\
- &\emph{2024, New Directions in Machine Learning Theory Workshop, BIRS, Canada} \\
- & \\
-
- &\textbf{Learning from Noisy Labels and Imperfect Teachers} \\
- &\emph{2024, UC San Diego, EnCORE Presentation} \\
- &\emph{2023, UT Austin, IFML Seminar} \\
- & \\
-
- &\textbf{Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension} \\
- & \emph{2024, COLT, \textbf{Best Paper Award Talk}} \\
- &\emph{2024, EnCORE Workshop on Computational vs Statistical} \\
- & \emph{Gaps in Learning and Optimization, UCLA} \\
- & \emph{2024, Theory Seminar, USC} \\
- & \emph{2024, Theory Seminar, University of Texas at Austin} \\
- & \\
-
- &\textbf{Optimizing Solution-Samplers for Combinatorial Problems}  \\
- &\emph{2023, 37th Conference on Neural Information Processing Systems} \\
- & \emph{(Oral, NeurIPS 2023)} \\
- & \\
-
- &\textbf{SLaM: Student-Label Mixing for Distillation with Unlabeled Examples} \\
- &\emph{2023, 37th Conference on Neural Information Processing Systems (NeurIPS 2023)} \\
- & \\
-
- &\textbf{Linear Label Ranking with Bounded Noise}\\ 
- &\emph{2022, 36th Conference on Neural Information Processing Systems (NeurIPS 2022)} \\
- & \\
-
- &\textbf{Learning General Halfspaces with General Massart Noise}\\
- & \textbf{under the Gaussian Distribution}\\
- & \emph{2022 54th ACM Symposium on Theory of Computing (STOC2022)}\\
- & \\
-
-
- &\textbf{A Statistical Taylor's Theorem and Extrapolation}\\
- & \textbf{of Truncated Densities}\\
- & \emph{2021, 34th Annual Conference on Learning Theory (COLT 2021)} \\
- & \\
-
- &\textbf{Agnostic Proper Learning of Halfspaces under Gaussian Marginals}\\
- & \emph{2021, 34th Annual Conference on Learning Theory (COLT 2021)} \\
- & \\
-
- &\textbf{Efficient Algorithms for Learning Halfspaces with Tsybakov Noise} \\
- & \emph{2021, 53rd Symposium on Theory of Computing (STOC 2021)} \\
- & \\
-
-     &\textbf{Non-Convex SGD Learns Halfspaces with Adversarial Label Noise} \\
-     &\emph{2020, 34th Conference on Neural Information Processing Systems (NerurIPS 2020)} \\
-     &\\
-
-     &\textbf{Learning Halfspaces with Massart Noise}\\
-     &\textbf{Under Structured Distributions}\\
-     &\emph{2020, 33th Annual Conference on Learning Theory (COLT 2020) } \\
-     &\\
-
- &\textbf{Truncated Statistics with Unknown Truncation}\\
- &\emph{2019, Symposium on Foundations of Computer Science (FOCS 2019)}\\
- &\emph{2019, Workshop on Algorithms for Learning and Economics (WALE 2019)}\\
- &\emph{2019, 14th Athens Colloquium on Algorithms and Complexity (ACAC 2019)}\\
- &\emph{2019, Theory Seminar, University of Wisconsin-Madison}\\
- &\\
-
- &\href{https://vkonton.github.io/assets/talks/pbdPowers.pdf}
- {\textbf{Learning Powers of Poisson Binomial Distributions}}\\
- &\emph{2017, ECCO Research Seminar, University of Liverpool} \\
-&\\
-
-  &\href{https://vkonton.github.io/assets/talks/learning1.pdf}{\textbf{Bias-Variance Tradeoff}},
-  \href{https://vkonton.github.io/assets/talks/learning2.pdf}{\textbf{VC-Dimension}}\\
-  &\emph{2017, Learning Theory Study Group, Corelab, NTUA}\\
-  &\\
-
-  &\href{https://vkonton.github.io/talks/}{\textbf{Applications of LP, QP, SOCP and SDP.}}\\
-  &\textbf{SDP Relaxations: MaxCut.}\\
-  &\textbf{Vector Optimization, Duality} \\
-  &\emph{2017, Convex Optimization Minicourse, Corelab, NTUA.}\\
-  &\\
-
-
-
- \Large{Awards}
- & Recipient of the Best Paper Award \\ 
- & at Conference on Learning Theory (COLT) 2024, Edmonton, CA \\ 
- & ``Smoothed Agnostic Learning of Concepts with Low-Intrinsic Dimension''\\
- & \\
-
- & Recipient of the Bodossakis Fellowship 2022 \\
- & \\
-
- & Recipient of the Gerondellis Fellowship 2020 \\
- & \\
-
- & Recipient of the Eurobank Grant ``The great moment for Education'' in 2010\\
- & for graduating first in my high-school. \\
- &\\
-
- & Recipient of the Touramanoglou Grant in 2010 for ranking among the top \\
- & high school graduates of the cities of Ilioupolis and Ymittos. \\
- &\\
-
-  \Large{Languages}   & English(native), German (advanced) \\
-\Large{and Skills}    & Pytorch, Tensorflow, Mathematica, Python, \LaTeX, GNU/Linux\\
-&\\
-
-
+{\LARGE\textbf{Vasilis Kontonis}}\par\vspace{0.6em}
+\begin{tabular}{@{}p{3.6in}p{2.9in}@{}}
+Microsoft Research New York, Room 4A05 & \href{mailto:vkonton@gmail.com}{vkonton@gmail.com}\\
+300 Lafayette St, New York, NY 10012-2713 & \href{mailto:vkontonis@microsoft.com}{vkontonis@microsoft.com}\\
+Web: \url{https://vkonton.github.io} & Cell: +1 (608) 982-4267
+\end{tabular}\par
+\vspace{2em}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{1.8in}@{\hspace{0.2in}}p{4.5in}@{}}
+\cventry{\Large Experience}{\textbf{Microsoft Research}\par \emph{Senior Researcher, Jul 2025 -- present}\par \emph{New York City, NY, USA}}
+\cventry{}{\textbf{University of Texas at Austin}\par \emph{IFML Postdoctoral Fellow Sep 2023 -- Jul 2025}\par \emph{Austin, TX, USA}}
+\cventry{}{\textbf{Google}\par \emph{Research Intern, May 2022 -- Nov 2022}\par \emph{Mountain View, CA, USA}}
+\cventry{}{\textbf{GRNET (Greek Research and Technology Network)}\par \emph{Systems and Services Engineer, 2016}\par \emph{Athens, Greece}}
+\cventry{\Large Education}{\textbf{University of Wisconsin-Madison}\par Ph.D., Computer Science, 2018 -- 2023.\par Thesis: Learning From Imperfect Data: Noisy Labels, Truncation, and Coarsening\par Advisor: Christos Tzamos}
+\cventry{}{\textbf{National Technical University of Athens}\par Master of Engineering in Electrical \& Computer Engineering\par Thesis: Learning Powers of Poisson Binomial Distributions\par Advisor: Dimitris Fotakis}
+\cventry{\Large Awards}{\textbf{Selected for Oral Presentation}\par\textbf{Conference on Language Modeling (COLM) 2026}\par San Francisco, CA, USA\par MEMENTO: Teaching LLMs to Manage Their Own Context}
+\cventry{}{\textbf{Outstanding Paper Award}\par \textbf{International Conference on Machine Learning (ICML) 2025}\par Vancouver, CA\par Train for the Worst, Plan for the Best\par Understanding Token Ordering in Masked Diffusions}
+\cventry{}{\textbf{Best Paper Award}\par \textbf{Conference on Learning Theory (COLT) 2024}\par Edmonton, CA\par Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension}
+\cventry{\Large Research Interests}{\textbf{Machine Learning, Statistics, Theoretical Computer Science}}
+\cventry{\Large Preprints}{\pub{https://arxiv.org/abs/2609.21032}{Scaling Discovery through Test-Time Communication}{Jongho Park, Vasilis Kontonis, Shivam Garg, Akshay Krishnamurthy, Dimitris Papailiopoulos}{\emph{arXiv:2609.21032, September 2026}}}
+\cventry{\Large Publications}{\small Author names follow the order in the published paper. Preprints are listed separately.}
+\cventry{}{\pub{https://arxiv.org/abs/2604.09852}{MEMENTO: Teaching LLMs to Manage Their Own Context}{Vasilis Kontonis, Yuchen Zeng, Shivam Garg, Lingjiao Chen, Hao Tang, Ziyan Wang, Ahmed Awadallah, Eric Horvitz, John Langford, Dimitris Papailiopoulos}{\emph{Third Conference on Language Modeling}\par\textbf{\emph{Selected for Oral Presentation}}\par\textbf{\emph{COLM 2026}}}}
+\cventry{}{\pub{https://arxiv.org/abs/2512.12895}{Wait, Wait, Wait... Why Do Reasoning Models Loop?}{Charilaos Pipis, Shivam Garg, Vasilis Kontonis, Vaishnavi Shrivastava, Akshay Krishnamurthy, Dimitris Papailiopoulos}{\emph{43rd International Conference on Machine Learning}\par\textbf{\emph{Spotlight Presentation}}\par\textbf{\emph{ICML 2026}}}}
+\cventry{}{\textbf{Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions}\par J. Kim, K. Shah, V. Kontonis, S. M. Kakade, S. Chen\par \emph{Proceedings of the 42nd International Conference on Machine Learning}\par \textbf{\emph{Outstanding Paper Award}}\par \textbf{\emph{ICML 2025}}}
+\cventry{}{\textbf{Learning General Gaussian Mixtures with Efficient Score Matching}\par S. Chen, V. Kontonis, K. Shah\par \emph{Proceedings of the 38th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2025}}}
+\cventry{}{\textbf{Online Linear Classification with Massart Noise}\par I. Diakonikolas, V. Kontonis, C. Tzamos, N. Zarifis\par \emph{Proceedings of the 42nd International Conference on Machine Learning}\par \textbf{\emph{ICML 2025}}}
+\cventry{}{\textbf{Oracle-Efficient Truncated Statistics}\par K. Karatapanis, V. Kontonis, C. Tzamos\par \emph{Proceedings of the 13th International Conference on Learning Representations}\par \textbf{\emph{ICLR 2025}}}
+\cventry{}{\textbf{Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension}\par Gautam Chandrasekaran, Adam Klivans, Vasilis Kontonis, Raghu Meka, Konstantinos Stavropoulos\par \emph{Proceedings of the 37th Annual Conference on Learning Theory}\par \textbf{\emph{Best Paper Award}}\par \textbf{\emph{COLT 2024}}}
+\cventry{}{\textbf{Active Learning with Simple Questions}\par Vasilis Kontonis, Mingchen Ma, Christos Tzamos\par \emph{Proceedings of the 37th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2024}}}
+\cventry{}{\textbf{Agnostically Learning Multi-index Models with Queries}\par Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 65th Annual Symposium on Foundations of Computer Science}\par \textbf{\emph{FOCS 2024}}}
+\cventry{}{\textbf{Super Non-singular Decompositions of Polynomials and their Application to Robustly Learning Low-degree PTFs}\par Ilias Diakonikolas, Daniel M Kane, Vasilis Kontonis, Sihan Liu, Nikos Zarifis\par \emph{Proceedings of the 56th Annual ACM Symposium on Theory of Computing}\par \textbf{\emph{STOC 2024}}}
+\cventry{}{\textbf{Active Classification with Few Queries under Misspecification}\par Vasilis Kontonis, Mingchen Ma, Christos Tzamos\par \emph{Proceedings of the 38th Conference on Neural Information Processing Systems}\par \textbf{\emph{Spotlight Presentation}}\par \textbf{\emph{NeurIPS 2024}}}
+\cventry{}{\textbf{Learning Noisy Halfspaces with a Margin: Massart is no Harder than Random}\par Gautam Chandrasekaran, Vasilis Kontonis, Kostas Stavropoulos, Kevin Tian\par \emph{Proceedings of the 38th Conference on Neural Information Processing Systems}\par \textbf{\emph{Spotlight Presentation}}\par \textbf{\emph{NeurIPS 2024}}}
+\cventry{}{\textbf{Efficient Discrepancy Testing for Learning with Distribution Shift}\par Gautam Chandrasekaran, Adam Klivans, Vasilis Kontonis, Kostas Stavropoulos, Arsen Vasilyan\par \emph{Proceedings of the 38th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2024}}}
+\cventry{}{\textbf{Optimizing Solution-Samplers for Combinatorial Problems: The Landscape of Policy Gradient Methods}\par Constantinos Caramanis, Dimitris Fotakis, Alkis Kalavasis, Vasilis Kontonis, Christos Tzamos\par \emph{Proceedings of the 37th Conference on Neural Information Processing Systems}\par \textbf{\emph{Selected for Oral Presentation}}\par \textbf{\emph{NeurIPS 2023}}}
+\cventry{}{\textbf{SLaM: Student Label Mixing for Distillation with Unlabeled Examples}\par Vasilis Kontonis, Fotis Iliopoulos, Khoa Trinh, Cenk Baykal, Gaurav Menghani, Erik Vee\par \emph{Proceedings of the 37th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2023}}}
+\cventry{}{\textbf{The Gain from Ordering in Online Learning}\par Vasilis Kontonis, Mingchen Ma, Christos Tzamos\par \emph{Proceedings of the 37th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2023}}}
+\cventry{}{\textbf{Efficient Testable Learning of Halfspaces with Adversarial Label Noise}\par Ilias Diakonikolas, Daniel M Kane, Vasilis Kontonis, Sihan Liu, Nikos Zarifis\par \emph{Proceedings of the 37th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2023}}}
+\cventry{}{\textbf{Self Directed Linear Classification}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 36th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2023}}}
+\cventry{}{\textbf{Opinion Dynamics with Limited Information}\par Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, Stratis Skoulakis\par \emph{Algorithmica}\par \textbf{\emph{ALGORITHMICA 2023}}}
+\cventry{}{\textbf{Weighted Distillation with Unlabeled Examples}\par Fotis Iliopoulos, Vasilis Kontonis, Cenk Baykal, Gaurav Menghani, Khoa Trinh, Erik Vee\par \emph{Proceedings of the 36th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2022}}}
+\cventry{}{\textbf{Linear Label Ranking with Bounded Noise}\par Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos\par \emph{Proceedings of the 36th Conference on Neural Information Processing Systems}\par \textbf{\emph{Selected for Oral Presentation}}\par \textbf{\emph{NeurIPS 2022}}}
+\cventry{}{\textbf{Learning General Halfspaces with General Massart Noise under the Gaussian Distribution}\par Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 54th Annual ACM Symposium on Theory of Computing}\par \textbf{\emph{STOC 2022}}}
+\cventry{}{\textbf{Learning a Single Neuron with Adversarial Label Noise via Gradient Descent}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 35th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2022}}}
+\cventry{}{\textbf{Learning General Halfspaces with Adversarial Label Noise via Online Gradient Descent}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 39th International Conference on Machine Learning}\par \textbf{\emph{ICML 2022}}}
+\cventry{}{\textbf{A Statistical Taylor's Theorem and Extrapolation of Truncated Densities}\par Costis Daskalakis, Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis\par \emph{Proceedings of the 34th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2021}}}
+\cventry{}{\textbf{Efficient Algorithms for Learning from Coarse Labels}\par Dimitris Fotakis, Alvertos Kalavasis, Vasilis Kontonis, Christos Tzamos\par \emph{Proceedings of the 34th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2021}}}
+\cventry{}{\textbf{Agnostic Proper Learning of Halfspaces under Gaussian Marginals}\par Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 34th Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2021}}}
+\cventry{}{\textbf{Learning Online Algorithms with Distributional Advice}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Ali Vakilian, Nikos Zarifis\par \emph{Proceedings of the 38th International Conference on Machine Learning}\par \textbf{\emph{ICML 2021}}}
+\cventry{}{\textbf{A Polynomial Time Algorithm For Learning Halfspaces with Tsybakov Noise}\par Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 53rd Annual ACM Symposium on Theory of Computing}\par \textbf{\emph{STOC 2021}}}
+\cventry{}{\textbf{Learning Halfspaces with Tsybakov Noise}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 53rd Annual ACM Symposium on Theory of Computing}\par \textbf{\emph{STOC 2021 (Conference version merged with the above paper)}}}
+\cventry{}{\textbf{Non-Convex SGD Learns Halfspaces with Adversarial Label Noise}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 34th Conference on Neural Information Processing Systems}\par \textbf{\emph{NeurIPS 2020}}}
+\cventry{}{\textbf{Learning Halfspaces with Massart Noise Under Structured Distributions}\par Ilias Diakonikolas, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis\par \emph{Proceedings of the 33rd Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2020}}}
+\cventry{}{\textbf{Algorithms and SQ lower bounds for PAC Learning One-Hidden-layer ReLU Networks}\par Ilias Diakonikolas, Daniel M. Kane, Vasilis Kontonis, Nikos Zarifis\par \emph{Proceedings of the 33rd Annual Conference on Learning Theory}\par \textbf{\emph{COLT 2020}}}
+\cventry{}{\textbf{Efficient Truncated Statistics with Unknown Truncation}\par Vasilis Kontonis, Christos Tzamos, Manolis Zampetakis\par \emph{Proceedings of the 60th Annual IEEE Symposium on Foundations of Computer Science, FOCS 2019}}
+\cventry{}{\textbf{Opinion Dynamics with Limited Information}\par Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, and Stratis Skoulakis\par \emph{Proceedings of the 14th Conference on Web and Internet Economics}\par \textbf{\emph{WINE 2018}}}
+\cventry{\Large Journal}{\pub{https://doi.org/10.1137/24M1718135}{Agnostically Learning Multi-Index Models with Queries}{Ilias Diakonikolas, Daniel Kane, Vasilis Kontonis, Christos Tzamos, Nikos Zarifis}{\emph{SIAM Journal on Computing, Special Section FOCS 2024}\par\emph{FOCS24-435--FOCS24-486, July 2026}}}
+\cventry{}{\textbf{Opinion Dynamics with Limited Information}\par Dimitris Fotakis, Vardis Kandiros, Vasilis Kontonis, and Stratis Skoulakis\par \textbf{\emph{Algorithmica 85, no. 12 (2023): 3855-3888}}}
+\cventry{\Large Teaching}{\textbf{Spring 2023, National Technical University of Athens}\par ``Online Learning and Bandits''\par Instructors: Constantine Caramanis, Vasilis Kontonis}
+\cventry{}{\textbf{Spring 2022, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Artificial Intelligence'', CS 540\par Instructors: Sharon Li, Ilias Diakonikolas, Jerry Zhu}
+\cventry{}{\textbf{Fall 2021, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Numerical Methods'', CS 412\par Instructor: Amos Ron}
+\cventry{}{\textbf{Spring 2021, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Algorithms'', CS 577\par Instructors: Christos Tzamos, Marc Renault}
+\cventry{}{\textbf{Fall 2020, University of Wisconsin-Madison}\par Teaching Assistant, ``Programming II'', CS 300\par Instructors: Mouna Ayari Ben Hadj Kacem, Laura Legault}
+\cventry{}{\textbf{Spring 2020, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Algorithms'', CS 577\par Instructor: Christos Tzamos}
+\cventry{}{\textbf{Spring 2019, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Algorithms'', CS 577\par Instructor: Dieter van Melkebeek}
+\cventry{}{\textbf{Fall 2018, University of Wisconsin-Madison}\par Teaching Assistant, ``Introduction to Algorithms'', CS 577\par Instructors: Christos Tzamos, Shuchi Chawla}
+\cventry{}{\textbf{Fall 2017, National Technical University of Athens}\par Teaching Assistant, ``Algorithms and Complexity''\par Instructor: Aris Pagourtzis}
+\cventry{}{\textbf{Fall 2016, National Technical University of Athens}\par Teaching Assistant, ``Operating Systems''\par Instructors: Nectarios Koziris, Georgios Goumas, Vangelis Koukis}
+\cventry{\Large Service}{\textbf{Program Committees}\par ITCS 2025}
+\cventry{}{\textbf{Conference Reviewer}\par STOC 2025, FOCS 2024, STOC 2024, NeurIPS 2023, ICML 2022,\par NeurIPS 2021, ICML 2021, EC 2021, STOC 2020, ALT 2020, SODA 2019\par ICML 2019, EC 2019, WINE 2019, MFCS 2018}
+\cventry{}{\textbf{Journal Reviewer}\par Theoretical Computer Science (TCS)}
+\cventry{\Large Talks}{\textbf{MEMENTO: Teaching LLMs to Manage Their Own Context}\par\emph{Upcoming oral presentation, COLM 2026, San Francisco, CA}\par\emph{October 2026}}
+\cventry{}{\textbf{Learning General Gaussian Mixtures with Efficient Score Matching}\par \emph{2024, IFML/MPG Symposium, Simons Institute, UC Berkeley}}
+\cventry{}{\textbf{Learning from Noisy Labels: Beyond Worst Case Models}\par \emph{2024, UC Santa Cruz, Computer Science and Engineering Colloquium}\par \emph{2024, New Directions in Machine Learning Theory Workshop, BIRS, Canada}}
+\cventry{}{\textbf{Learning from Noisy Labels and Imperfect Teachers}\par \emph{2024, UC San Diego, EnCORE Presentation}\par \emph{2023, UT Austin, IFML Seminar}}
+\cventry{}{\textbf{Smoothed Analysis for Learning Concepts with Low Intrinsic Dimension}\par \emph{2024, INFORMS Annual Meeting, Seattle, WA}\par \emph{2024, COLT, Best Paper Award Talk}\par \emph{2024, EnCORE Workshop on Computational vs Statistical}\par \emph{Gaps in Learning and Optimization, UCLA}\par \emph{2024, Theory Seminar, USC}\par \emph{2024, Theory Seminar, University of Texas at Austin}}
+\cventry{}{\textbf{Optimizing Solution-Samplers for Combinatorial Problems}\par \emph{2023, 37th Conference on Neural Information Processing Systems}\par \emph{(Oral, NeurIPS 2023)}}
+\cventry{}{\textbf{SLaM: Student-Label Mixing for Distillation with Unlabeled Examples}\par \emph{2023, 37th Conference on Neural Information Processing Systems}\par \emph{(NeurIPS 2023)}}
+\cventry{}{\textbf{Linear Label Ranking with Bounded Noise}\par \emph{2022, 36th Conference on Neural Information Processing Systems}\par \emph{(NeurIPS 2022)}}
+\cventry{}{\textbf{Learning General Halfspaces with General Massart Noise under the Gaussian Distribution}\par \emph{2022 54th ACM Symposium on Theory of Computing (STOC2022)}}
+\cventry{}{\textbf{A Statistical Taylor's Theorem and Extrapolation of Truncated Densities}\par \emph{2021, 34th Annual Conference on Learning Theory (COLT 2021)}}
+\cventry{}{\textbf{Agnostic Proper Learning of Halfspaces under Gaussian Marginals}\par \emph{2021, 34th Annual Conference on Learning Theory (COLT 2021)}}
+\cventry{}{\textbf{Efficient Algorithms for Learning Halfspaces with Tsybakov Noise}\par \emph{2021, 53rd Symposium on Theory of Computing (STOC 2021)}}
+\cventry{}{\textbf{Non-Convex SGD Learns Halfspaces with Adversarial Label Noise}\par \emph{2020, 34th Conference on Neural Information Processing Systems}\par \emph{(NeurIPS 2020)}}
+\cventry{}{\textbf{Learning Halfspaces with Massart Noise Under Structured Distributions}\par \emph{2020, 33rd Annual Conference on Learning Theory (COLT 2020)}}
+\cventry{}{\textbf{Truncated Statistics with Unknown Truncation}\par \emph{Symposium on Foundations of Computer Science (FOCS 2019)}\par \emph{Workshop on Algorithms for Learning and Economics (WALE 2019)}\par \emph{14th Athens Colloquium on Algorithms and Complexity (ACAC 2019)}\par \emph{Theory Study Group, University of Wisconsin-Madison}}
+\cventry{}{\textbf{Learning Powers of Poisson Binomial Distributions}\par \emph{2017, ECCO Research Seminar, University of Liverpool}}
+\cventry{}{\textbf{Bias-Variance Tradeoff , VC-Dimension}\par \emph{2017, Learning Theory Study Group, Corelab, NTUA}}
+\cventry{}{\textbf{Applications of LP, QP, SOCP and SDP. SDP Relaxations: MaxCut. Vector Optimization, Duality}\par \emph{2017, Convex Optimization Minicourse, Corelab, NTUA.}}
+\cventry{\Large Fellowships \& Grants}{Bodossakis Fellowship 2022, Gerondellis Fellowship 2020}
+\cventry{}{Eurobank Grant ``The great moment for Education'' 2010\par Touramanoglou Grant 2010}
 \end{longtable}
-
 \end{document}
-
- \Large{References}
- & \href{http://www.tzamos.com}{\textbf{Christos Tzamos}} \\
- & Assistant Professor, University of Wisconsin-Madison (UWM) \\
- & \href{https://people.csail.mit.edu/costis/}{\textbf{Costantinos Daskalakis}} \\ 
- & Professor, Massachusetts Institute of Technology (MIT) \\
- & \href{http://www.iliasdiakonikolas.org}{\textbf{Ilias Diakonikolas}} \\
- & Professor, University of Wisconsin-Madison (UWM) \\
- & \href{http://www.fotakis.cs.ntua.gr}{\textbf{Dimitris Fotakis}} \\
- & Professor, National Techincal University of Athens (NTUA) \\
- & \href{https://scholar.google.com/citations?user=1u8drP0AAAAJ&hl=en
-}{\textbf{Erik Vee}} \\
- & Google Research \\
